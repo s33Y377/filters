@@ -1,0 +1,32 @@
+! ######### Social network #########
+!
+||facebook.*
+||twitter.*
+||linkedin.*
+||vk.*
+||pinterest.*
+||instagram.*
+!
+!
+! ######### google- microsoft #########
+!
+||google.*
+||windows.*
+# ||microsoft.*
+||googleapis.*
+||gstatic.*
+!
+@@||youtube-ui.l.google.com
+@@||play.googleapis.com
+@@||ajax.googleapis.com
+@@||android.clients.google.com
+!
+!
+! ######## others #########
+!
+||disqus.*
+||v.fwmrm.net^
+||api.privacy-center.*
+||sdk.privacy-center.*
+||*-pub-kairos.*
+||adenabler-sfr.pfd.sfr.net
