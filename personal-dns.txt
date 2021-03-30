@@ -1,5 +1,7 @@
 ! Title: personal-dns
 ! Description: personal-optimized-dns
+! Version: V.1.0 Beta update some rules
+! TimeUpdated: 2021-03-30
 ! ######### Social network #########
 !
 ||facebook.*
