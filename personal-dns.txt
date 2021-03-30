@@ -1,3 +1,5 @@
+! Title: personal-dns
+! Description: personal-optimized-dns
 ! ######### Social network #########
 !
 ||facebook.*
