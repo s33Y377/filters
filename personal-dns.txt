@@ -19,16 +19,22 @@
 ||vimeo.*
 ||viber.*
 ||wechat.*
+||spotify.*
 !
 !
 ! ######### google- microsoft #########
 !
 ||google.*
+||bing.*
+||baidu.*
 ||windows.*
-# ||microsoft.*
+#||microsoft.*
 #||googleapis.*
 #||gstatic.*
 !
+!
+! ######## Allowed Domain ##########
+@@||m.facebook.com
 @@||api.twitter.com
 @@||mobile.twitter.com
 @@||youtube-ui.l.google.com
@@ -38,19 +44,18 @@
 !
 !
 ! ######## others #########
-!
 ||disqus.*
 ||v.fwmrm.net^
 ||api.privacy-center.*
 ||sdk.privacy-center.*
 ||*-pub-kairos.*
 ||adenabler-sfr.pfd.sfr.net
-
-
+!
+!
 #########Ads#################
 ||ads.yap.yahoo.com^
-
-
+!
+!
 ########Annoying Content#########
 ||watch.redd.it^
 
