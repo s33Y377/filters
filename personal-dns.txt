@@ -46,5 +46,8 @@
 
 
 #########Ads#################
-||watch.redd.it^
 ||ads.yap.yahoo.com^
+
+
+########Annoying Content#########
+||watch.redd.it^
