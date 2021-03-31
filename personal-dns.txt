@@ -46,6 +46,6 @@
 
 
 #########Ads#################
-||ads.reddir.com^
+||ads.reddit.com^
 ||watch.redd.it^
 ||ads.yap.yahoo.com^
