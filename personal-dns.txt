@@ -54,6 +54,6 @@
 
 
 #########News Sites################
-||inshorts.com^
-||aajtaklive.in^
-||aajtak.*^
+||inshorts.*
+||aajtaklive.*
+||aajtak.*
