@@ -93,3 +93,4 @@
 ||fonts.googleapis.*
 ||googlesyndication.*
 ||mxplay.*
+||sharechat.*
