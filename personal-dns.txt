@@ -1,6 +1,6 @@
 ! Title: personal-dns
 ! Description: personal-optimized-dns
-! Version: V.0.1 Beta update some rules
+! Version: V.0.1 update some rules
 ! TimeUpdated: 2021-03-31
 ! ######### Social network #########
 !
@@ -46,6 +46,5 @@
 
 
 #########Ads#################
-||ads.reddit.com^
 ||watch.redd.it^
 ||ads.yap.yahoo.com^
