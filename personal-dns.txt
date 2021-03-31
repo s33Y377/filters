@@ -37,7 +37,7 @@
 ||photos.google.*
 #||microsoft.*
 ||googleapis.*
-||gstatic.*
+#||gstatic.*
 !
 !
 ! ######## Allowed Domain ##########
