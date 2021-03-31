@@ -22,8 +22,9 @@
 ||spotify.*
 !
 !
-! ######### google- microsoft #########
+! ######### top level domain #########
 !
+||netflix.*
 ||yahoo.*
 ||google.*
 ||bing.*
@@ -58,7 +59,10 @@
 !
 !
 ########Annoying Content#########
-||watch.redd.it^
+||watch.redd.it*
+||linktr.ee*
+||onlyfans.com*
+||unlockd.me*
 
 
 #########News Sites################
