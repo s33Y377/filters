@@ -24,6 +24,7 @@
 !
 ! ######### google- microsoft #########
 !
+||yahoo.*
 ||google.*
 ||bing.*
 ||baidu.*
