@@ -92,3 +92,4 @@
 ||optimizely.*
 ||fonts.googleapis.*
 ||googlesyndication.*
+||mxplay.*
