@@ -20,6 +20,7 @@
 ||viber.*
 ||wechat.*
 ||spotify.*
+||primevideo.*
 !
 !
 ! ######### top level domain #########
@@ -30,6 +31,7 @@
 ||bing.*
 ||baidu.*
 ||windows.*
+||twitch.*
 #||microsoft.*
 #||googleapis.*
 #||gstatic.*
