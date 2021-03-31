@@ -51,3 +51,9 @@
 
 ########Annoying Content#########
 ||watch.redd.it^
+
+
+#########News Sites################
+||inshorts.com^
+||aajtaklive.in^
+||aajtak.*^
