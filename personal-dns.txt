@@ -43,3 +43,9 @@
 ||sdk.privacy-center.*
 ||*-pub-kairos.*
 ||adenabler-sfr.pfd.sfr.net
+
+
+#########Ads#################
+||ads.reddir.com^
+||watch.redd.it^
+||ads.yap.yahoo.com^
