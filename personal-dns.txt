@@ -36,8 +36,8 @@
 ||twitch.*
 ||photos.google.*
 #||microsoft.*
-#||googleapis.*
-#||gstatic.*
+||googleapis.*
+||gstatic.*
 !
 !
 ! ######## Allowed Domain ##########
