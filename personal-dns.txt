@@ -9,7 +9,7 @@
 ||linkedin.*
 ||vk.*
 ||pinterest.*
-||instagram.*
+# ||instagram.*
 ||snapchat.*
 ||discord.*
 ||patreon.*
@@ -29,6 +29,8 @@
 #||googleapis.*
 #||gstatic.*
 !
+@@||api.twitter.com
+@@||mobile.twitter.com
 @@||youtube-ui.l.google.com
 @@||play.googleapis.com
 @@||ajax.googleapis.com
