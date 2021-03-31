@@ -2,6 +2,8 @@
 ! Description: personal-optimized-dns
 ! Version: V.0.1 update some rules
 ! TimeUpdated: 2021-03-31
+!
+!
 ! ######### Social network #########
 !
 ||facebook.*
@@ -39,6 +41,7 @@
 !
 !
 ! ######## Allowed Domain ##########
+!
 @@||m.facebook.com
 @@||api.twitter.com
 @@||mobile.twitter.com
@@ -57,7 +60,7 @@
 ||adenabler-sfr.pfd.sfr.net
 !
 !
-#########Ads#################
+!#########Ads#################
 ||ads.yap.yahoo.com^
 !
 !
