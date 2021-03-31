@@ -38,6 +38,7 @@
 #||microsoft.*
 ||googleapis.*
 #||gstatic.*
+
 !
 !
 ! ######## Allowed Domain ##########
@@ -60,8 +61,11 @@
 ||adenabler-sfr.pfd.sfr.net
 !
 !
-!#########Ads#################
-||ads.yap.yahoo.com^
+!#########Ads & Analytics Domains#################
+||ads.yap.yahoo.*
+||htmedia.*
+||chartbeat.*
+||adservice.google.*
 !
 !
 ########Annoying Content#########
@@ -79,3 +83,12 @@
 ||indianexpress.*
 ||indiatvnews.*
 ||thehindu.*
+
+########## SUb-Domains ###########
+||fonts.googleapis.*
+||ggpht.*
+||ytimg.*
+||doubleclick.*
+||optimizely.*
+||fonts.googleapis.*
+||googlesyndication.*
