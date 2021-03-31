@@ -32,6 +32,7 @@
 ||baidu.*
 ||windows.*
 ||twitch.*
+||photos.google.*
 #||microsoft.*
 #||googleapis.*
 #||gstatic.*
@@ -71,3 +72,7 @@
 ||inshorts.*
 ||aajtaklive.*
 ||aajtak.*
+||ndtv.*
+||indianexpress.*
+||indiatvnews.*
+||thehindu.*
