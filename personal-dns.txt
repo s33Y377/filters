@@ -96,3 +96,5 @@
 ||mxplay.*
 ||sharechat.*
 ||googleadservices.com/pagead/$important
+||incoming.telemetry.mozilla.*
+||js-agent.newrelic.*
