@@ -43,7 +43,7 @@
 !
 ! ######## Allowed Domain ##########
 !
-@@||inbox.google.com
+@@||inbox.google.com/sync/
 @@||m.facebook.com
 @@||api.twitter.com
 @@||mobile.twitter.com
