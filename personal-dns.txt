@@ -23,11 +23,11 @@
 ||wechat.*
 ||spotify.*
 ||primevideo.*
+||netflix.*
 !
 !
 ! ######### top level domain #########
 !
-||netflix.*
 ||yahoo.*
 ||google.*
 ||bing.*
