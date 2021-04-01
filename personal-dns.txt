@@ -43,6 +43,7 @@
 !
 ! ######## Allowed Domain ##########
 !
+@@||inbox.google.com
 @@||m.facebook.com
 @@||api.twitter.com
 @@||mobile.twitter.com
