@@ -36,7 +36,7 @@
 ||twitch.*
 ||photos.google.*
 #||microsoft.*
-||googleapis.*
+#||googleapis.*
 #||gstatic.*
 
 !
