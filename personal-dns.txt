@@ -94,3 +94,4 @@
 ||googlesyndication.*
 ||mxplay.*
 ||sharechat.*
+||googleadservices.com/pagead/$important
