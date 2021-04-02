@@ -88,7 +88,7 @@
 ########## SUb-Domains ###########
 ||fonts.googleapis.*
 ||ggpht.*
-||ytimg.*
+#||ytimg.*
 ||doubleclick.*
 ||optimizely.*
 ||fonts.googleapis.*
