@@ -51,6 +51,8 @@
 @@||play.googleapis.com
 @@||ajax.googleapis.com
 @@||android.clients.google.com
+@@||myactivity.google.com/myactivity
+@@||myaccount.google.com
 !
 !
 ! ######## others #########
