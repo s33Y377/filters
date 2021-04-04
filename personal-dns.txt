@@ -11,7 +11,7 @@
 ||linkedin.*
 ||vk.*
 ||pinterest.*
-||instagram.*
+#||instagram.*
 ||snapchat.*
 ||discord.*
 ||patreon.*
