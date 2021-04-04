@@ -29,7 +29,7 @@
 ! ######### top level domain #########
 !
 ||yahoo.*
-||google.*
+#||google.*
 ||bing.*
 ||baidu.*
 ||windows.*
