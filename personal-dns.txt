@@ -1,7 +1,7 @@
 ! Title: personal-dns
 ! Description: personal-optimized-dns
 ! Version: V.0.1 update some rules
-! TimeUpdated: 2021-03-31
+! TimeUpdated: 2021-04-04
 !
 !
 ! ######### Social network #########
@@ -38,7 +38,7 @@
 #||microsoft.*
 #||googleapis.*
 #||gstatic.*
-
+!
 !
 !
 ! ######## Allowed Domain ##########
@@ -77,8 +77,8 @@
 ||onlyfans.com*
 ||unlockd.me*
 ||skimresources.*
-
-
+!
+!
 #########News Sites################
 ||inshorts.*
 ||aajtaklive.*
@@ -87,7 +87,8 @@
 ||indianexpress.*
 ||indiatvnews.*
 ||thehindu.*
-
+!
+!
 ########## SUb-Domains ###########
 ||fonts.googleapis.*
 ||ggpht.*
