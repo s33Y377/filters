@@ -46,7 +46,7 @@
 @@||inbox.google.com/sync/
 @@||m.facebook.com
 @@||api.twitter.com
-@@||mobile.twitter.com
+#@@||mobile.twitter.com
 @@||youtube-ui.l.google.com
 @@||play.googleapis.com
 @@||ajax.googleapis.com
@@ -76,6 +76,7 @@
 ||linktr.ee*
 ||onlyfans.com*
 ||unlockd.me*
+||skimresources.*
 
 
 #########News Sites################
@@ -90,7 +91,7 @@
 ########## SUb-Domains ###########
 ||fonts.googleapis.*
 ||ggpht.*
-#||ytimg.*
+#||ytimg.* # responsible for youtube image
 ||doubleclick.*
 ||optimizely.*
 ||fonts.googleapis.*
