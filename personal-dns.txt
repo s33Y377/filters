@@ -71,6 +71,7 @@
 ||chartbeat.*
 ||adservice.google.*
 ||ads.reddit.*
+||click.oneplus.*
 !
 !
 ########Annoying Content#########
