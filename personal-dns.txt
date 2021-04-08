@@ -72,6 +72,13 @@
 ||adservice.google.*
 ||ads.reddit.*
 ||click.oneplus.*
+||open.opeplus.*
+||insights.samsung.*
+||analytics-api.samsunghealthcn.*
+||supportmetrics.apple.*
+||metric.icloud.*
+||metric.mzstatic.*
+||trackingshipment.apple.*
 !
 !
 ########Annoying Content#########
