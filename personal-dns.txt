@@ -79,6 +79,7 @@
 ||metric.icloud.*
 ||metric.mzstatic.*
 ||trackingshipment.apple.*
+||9gag.*
 !
 !
 ########Annoying Content#########
