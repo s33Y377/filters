@@ -113,3 +113,4 @@
 ||googleadservices.com/pagead/$important
 ||incoming.telemetry.mozilla.*
 ||js-agent.newrelic.*
+||googleweblight.com^
