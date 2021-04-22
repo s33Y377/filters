@@ -1,6 +1,6 @@
 !Title: personal-dns
 !Description: personal-optimized-dns
-!Version: V.0.1 update some rules
+!Version: V.2021.04.22 update some rules
 !TimeUpdated: 2021-04-22
 !
 !
