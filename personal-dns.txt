@@ -57,6 +57,7 @@
 !
 !
 ! ######## others #########
+!
 ||disqus.com^
 ||v.fwmrm.net^
 ||api.privacy-center.*
@@ -66,6 +67,7 @@
 !
 !
 !#########Ads & Analytics Domains#################
+!
 ||ads.yap.yahoo.*
 ||htmedia.*
 ||chartbeat.*
@@ -83,6 +85,7 @@
 !
 !
 ########Annoying Content#########
+!
 ||watch.redd.it*
 ||linktr.ee*
 ||onlyfans.com^
@@ -91,6 +94,7 @@
 !
 !
 #########News Sites################
+!
 ||inshorts.*
 ||aajtaklive.in^
 ||aajtak.*
@@ -101,6 +105,7 @@
 !
 !
 ########## SUb-Domains ###########
+!
 ||fonts.googleapis.com^
 ||ggpht.com^
 #||ytimg.* # responsible for youtube image
