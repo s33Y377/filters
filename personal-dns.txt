@@ -111,6 +111,7 @@
 ||mxplay.*
 ||sharechat.*
 ||googleadservices.com/pagead/$important
+||googleadservices*
 ||incoming.telemetry.mozilla.*
 ||js-agent.newrelic.*
 ||googleweblight.com^
