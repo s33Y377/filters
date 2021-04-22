@@ -4,6 +4,13 @@
 !TimeUpdated: 2021-04-22
 !
 !
+!
+! ########## Block all cookies from following Domain ################
+!
+||medium.com^cookie
+||towardsdatascience.com^cookie
+!
+!
 ! ######### Social network #########
 !
 ||facebook.com^
@@ -121,3 +128,5 @@
 ||incoming.telemetry.mozilla.*
 ||js-agent.newrelic.*
 ||googleweblight.com^
+!
+!
