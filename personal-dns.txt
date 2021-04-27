@@ -1,7 +1,7 @@
 !Title: personal-dns
-!Description: personal-optimized-dns
-!Version: V.2021.04.22 update some rules
-!TimeUpdated: 2021-04-22
+!Description: personal-optimized-filters
+!Version: V.2021.04.27 update some rules
+!TimeUpdated: 2021-04-27
 !
 !
 ! ########## $removeparam ##########################
