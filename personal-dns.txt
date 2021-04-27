@@ -4,6 +4,13 @@
 !TimeUpdated: 2021-04-22
 !
 !
+! ########## $removeparam ##########################
+!
+$removeparam=client
+$removeparam=source
+$removeparam=FORM
+$removeparam=uc_param_str
+!
 !
 ! ########## Block all cookies from following Domain ################
 !
