@@ -10,6 +10,7 @@ $removeparam=client
 $removeparam=source
 $removeparam=FORM
 $removeparam=uc_param_str
+$removeparam=utm_*
 !
 !
 ! ########## Block all cookies from following Domain ################
