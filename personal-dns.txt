@@ -109,6 +109,7 @@ $cookie=/__utm[a-z]/
 ||onlyfans.com^
 ||unlockd.me^
 ||skimresources.^
+||*.fun^$important
 !
 !
 #########News Sites################
