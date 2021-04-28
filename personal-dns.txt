@@ -1,7 +1,7 @@
 !Title: personal-dns
 !Description: personal-optimized-filters
-!Version: V.2021.04.27 update some rules
-!TimeUpdated: 2021-04-27
+!Version: V.2021.04.28 update some rules
+!TimeUpdated: 2021-04-28
 !
 !
 ! ########## $removeparam ##########################
@@ -132,8 +132,8 @@ $cookie=/__utm[a-z]/
 ||googlesyndication.*
 ||mxplay.*
 ||sharechat.*
-||googleadservices.com/pagead/$important
-||googleadservices*
+||googleadservices.com/pagead/^$important
+||googleadservices*^$important
 ||incoming.telemetry.mozilla.*
 ||js-agent.newrelic.*
 ||googleweblight.com^
