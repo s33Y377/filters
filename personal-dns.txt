@@ -123,7 +123,7 @@ $cookie=/__utm[a-z]/
 ||thehindu.com^
 !
 !
-########## SUb-Domains ###########
+########## Sub-Domains ###########
 !
 ||fonts.googleapis.com^
 ||ggpht.com^
