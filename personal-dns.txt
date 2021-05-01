@@ -11,6 +11,14 @@ $removeparam=source
 $removeparam=FORM
 $removeparam=uc_param_str
 $removeparam=utm_*
+$removeparam=ad_id
+$removeparam=adset_id
+$removeparam=campaign_id
+$removeparam=ad_name
+$removeparam=adset_name
+$removeparam=campaign_name
+$removeparam=placement
+$removeparam=site_source_name
 !
 !
 ! ########## Block all cookies from following Domain ################
