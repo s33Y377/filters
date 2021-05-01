@@ -67,7 +67,6 @@ $cookie=/__utm[a-z]/
 #||gstatic.*
 !
 !
-!
 ! ######## Allowed Domain ##########
 !
 @@||inbox.google.com/sync/
