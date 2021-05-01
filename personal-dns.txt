@@ -147,6 +147,5 @@ $cookie=/__utm[a-z]/
 ||js-agent.newrelic.*
 ||googleweblight.com^
 ||encrypted-*.gstatic.com^
-||*cvhe.googlevideo.com^
 !
 !
