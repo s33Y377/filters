@@ -79,7 +79,7 @@ $cookie=/__utm[a-z]/
 @@||play.googleapis.com^
 @@||ajax.googleapis.com^
 @@||android.clients.google.com^
-@@||subtitle.mcplay.com^
+@@||subtitle.mxplay.com^
 #@@||myactivity.google.com/myactivity
 #@@||myaccount.google.com
 !
