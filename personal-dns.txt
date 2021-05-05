@@ -162,6 +162,7 @@ $cookie=/__utm[a-z]/
 !
 !
 ########### Snapchat ads and tracking ###########
+!
 ||sc-analytics.appspot.*
 ||app-analytics.snapchat.*
 ||adserver.snapads.*
@@ -173,6 +174,7 @@ $cookie=/__utm[a-z]/
 !
 !
 ########### Whatsapp ##################
+!
 ||crashlogs.whatsapp.*^
 !
 !
