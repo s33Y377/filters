@@ -11,6 +11,7 @@ $removeparam=source
 $removeparam=FORM
 $removeparam=uc_param_str
 $removeparam=utm_*
+####### FB ###############
 $removeparam=ad_id
 $removeparam=adset_id
 $removeparam=campaign_id
@@ -19,8 +20,15 @@ $removeparam=adset_name
 $removeparam=campaign_name
 $removeparam=placement
 $removeparam=site_source_name
+###### Twitter #############
 $removeparam=twclid
 $removeparam=hss_channel
+###### Bing/Microsoft ################
+$removeparam=ref
+$removeparam=keyword
+$removeparam=cmpid
+$removeparam=agid
+$removeparam=adid
 !
 !
 ! ########## Block all cookies from following Domain ################
