@@ -72,13 +72,14 @@ $cookie=/__utm[a-z]/
 ! ######## Allowed Domain ##########
 !
 @@||inbox.google.com/sync/
-@@||m.facebook.com
-@@||api.twitter.com
-#@@||mobile.twitter.com
-@@||youtube-ui.l.google.com
-@@||play.googleapis.com
-@@||ajax.googleapis.com
-@@||android.clients.google.com
+@@||m.facebook.com^
+@@||api.twitter.com^
+#@@||mobile.twitter.com^
+@@||youtube-ui.l.google.com^
+@@||play.googleapis.com^
+@@||ajax.googleapis.com^
+@@||android.clients.google.com^
+@@||subtitle.mcplay.com^
 #@@||myactivity.google.com/myactivity
 #@@||myaccount.google.com
 !
