@@ -158,5 +158,22 @@ $cookie=/__utm[a-z]/
 ||js-agent.newrelic.*
 ||googleweblight.com^
 ||encrypted-*.gstatic.com^
+||yt.moatads.*^
+!
+!
+########### Snapchat ads and tracking ###########
+||sc-analytics.appspot.*
+||app-analytics.snapchat.*
+||adserver.snapads.*
+||euw.adserver.snapads.*
+||euc.adserver.snapads.*
+||usc.adserver.snapads.*
+||ase.adserver.snapads.*
+||tr.snapchat.*
+!
+!
+########### Whatsapp ##################
+||crashlogs.whatsapp.*^
+!
 !
 !
