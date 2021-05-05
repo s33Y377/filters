@@ -20,6 +20,7 @@ $removeparam=campaign_name
 $removeparam=placement
 $removeparam=site_source_name
 $removeparam=twclid
+$removeparam=hss_channel
 !
 !
 ! ########## Block all cookies from following Domain ################
