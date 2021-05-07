@@ -37,7 +37,7 @@ $removeparam=adid
 ||facebook.com^cookie
 ||towardsdatascience.com^cookie
 $cookie=/__utm[a-z]/
-||facebook.com^$third-party,cookie=c_user
+#||facebook.com^$third-party,cookie=c_user
 !
 !
 ! ######### Social network #########
