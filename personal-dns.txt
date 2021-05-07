@@ -1,7 +1,7 @@
 !Title: personal-dns
 !Description: personal-optimized-filters
-!Version: V.2021.05.05 update some rules
-!TimeUpdated: 2021-05-05
+!Version: V.2021.05.07 update some rules
+!TimeUpdated: 2021-05-07
 !
 !
 ! ########## $removeparam Tracking Parameters ##########################
@@ -47,7 +47,7 @@ $cookie=/__utm[a-z]/
 ||linkedin.com^
 ||vk.com^
 ||pinterest.com^
-#||instagram.com^
+||instagram.com^
 ||snapchat.com^
 ||discord.com^
 ||patreon.com^
@@ -159,6 +159,8 @@ $cookie=/__utm[a-z]/
 ||googleweblight.com^
 ||encrypted-*.gstatic.com^
 ||yt.moatads.*^
+||*fbcdn.net^
+||*fbcdn.com^
 !
 !
 ########### Snapchat ads and tracking ###########
