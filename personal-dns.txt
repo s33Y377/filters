@@ -34,6 +34,7 @@ $removeparam=adid
 ! ########## Block all cookies from following Domain ################
 !
 ||medium.com^cookie
+||facebook.com^cookie
 ||towardsdatascience.com^cookie
 $cookie=/__utm[a-z]/
 ||facebook.com^$third-party,cookie=c_user
@@ -42,6 +43,7 @@ $cookie=/__utm[a-z]/
 ! ######### Social network #########
 !
 ||facebook.com^
+||m.facebook.com^
 ||facebook.net^
 #||twitter.com^
 ||linkedin.com^
