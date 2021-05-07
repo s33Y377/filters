@@ -82,7 +82,7 @@ $cookie=/__utm[a-z]/
 ! ######## Allowed Domain ##########
 !
 @@||inbox.google.com/sync/
-@@||m.facebook.com^
+#@@||m.facebook.com^
 @@||api.twitter.com^
 #@@||mobile.twitter.com^
 @@||youtube-ui.l.google.com^
