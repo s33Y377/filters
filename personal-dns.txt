@@ -1,7 +1,7 @@
 !Title: personal-dns
 !Description: personal-optimized-filters
-!Version: V.2021.05.07 update some rules
-!TimeUpdated: 2021-05-07
+!Version: V.2021.05.13 update some rules
+!TimeUpdated: 2021-05-13
 !
 !
 ! ########## $removeparam Tracking Parameters ##########################
@@ -77,6 +77,7 @@ $cookie=/__utm[a-z]/
 #||microsoft.*
 #||googleapis.*
 #||gstatic.*
+||analytics.withgoogle.com^
 !
 !
 ! ######## Allowed Domain ##########
