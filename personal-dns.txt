@@ -246,7 +246,6 @@ $cookie=/__utm[a-z]/
 ||pinterest.com^
 ||track.clickonik.com^
 ||safebrowsing.googleapis.com^
-||evt.mxplay.com^
 ||3p.ampproject.net^
 ||www.googleadservices.com^
 ||d2r1yp2w7bby2u.cloudfront.net^
@@ -264,8 +263,6 @@ $cookie=/__utm[a-z]/
 ||robbreport.com^
 ||spy.com^
 ||launches.appsflyer.com^
-||mxshorts.mxplay.com^
-||mxeffects.mxplay.com^
 ||mxshorts.akamaized.net^
 ||vodhls-vh.akamaihd.net^
 ||ipv4only.arpa^
