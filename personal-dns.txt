@@ -176,6 +176,7 @@ $cookie=/__utm[a-z]/
 !
 !
 ############ User Filters #################
+!
 ||data.mistat.intl.xiaomi.com^
 ||service.hotstar.com^
 ||bifrost-api.hotstar.com^
