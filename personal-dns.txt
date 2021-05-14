@@ -328,7 +328,7 @@ $cookie=/__utm[a-z]/
 ||allot10.smnvc.com^
 ||books.google.com^
 ||topdailylist.com^
-||www.googleadservices.com^
+||googleadservices.com^
 ||e.crashlytics.com^
 ||app.adjust.com^
 ||track.saygames.io^
