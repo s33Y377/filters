@@ -243,7 +243,6 @@ $cookie=/__utm[a-z]/
 ||apis.sharechat.com^
 ||cdn2.sharechat.com^
 ||cdn.sharechat.com^
-||pinterest.com^
 ||track.clickonik.com^
 ||safebrowsing.googleapis.com^
 ||3p.ampproject.net^
