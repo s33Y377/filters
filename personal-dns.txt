@@ -339,3 +339,8 @@ $cookie=/__utm[a-z]/
 ||ecommerce.iap.unity3d.com^
 ||web.facebook.com^
 ||scontent-bom1-2.xx.fbcdn.net^
+||zee5.com^
+||airtelxstream.in^
+!
+!
+!
