@@ -75,7 +75,7 @@ $cookie=/__utm[a-z]/
 ||twitch.*
 ||photos.google.*
 #||microsoft.*
-||googleapis.*
+#||googleapis.*
 #||gstatic.*
 ||analytics.withgoogle.com^
 !
