@@ -165,10 +165,7 @@ $cookie=/__utm[a-z]/
 ||sc-analytics.appspot.*
 ||app-analytics.snapchat.*
 ||adserver.snapads.*
-||euw.adserver.snapads.*
-||euc.adserver.snapads.*
-||usc.adserver.snapads.*
-||ase.adserver.snapads.*
+||*.adserver.snapads.*
 ||tr.snapchat.*
 !
 !
