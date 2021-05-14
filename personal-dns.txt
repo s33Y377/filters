@@ -339,6 +339,7 @@ $cookie=/__utm[a-z]/
 ||airtelxstream.in^
 ||cleverads.vn^
 ||hicloud.com^
+||duckduckgo.com^
 !
 !
 !
