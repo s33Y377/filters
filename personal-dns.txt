@@ -337,6 +337,8 @@ $cookie=/__utm[a-z]/
 ||scontent-bom1-2.xx.fbcdn.net^
 ||zee5.com^
 ||airtelxstream.in^
+||cleverads.vn^
+||hicloud.com^
 !
 !
 !
