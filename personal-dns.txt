@@ -46,7 +46,7 @@ $cookie=/__utm[a-z]/
 ||m.facebook.com^
 ||facebook.net^
 #||twitter.com^
-||linkedin.com^
+#||linkedin.com^
 ||vk.com^
 ||pinterest.com^
 ||instagram.com^
