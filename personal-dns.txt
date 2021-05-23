@@ -115,7 +115,7 @@ $cookie=/__utm[a-z]/
 ||metric.icloud.*
 ||metric.mzstatic.*
 ||trackingshipment.apple.*
-||9gag.com^
+#||9gag.com^
 !
 !
 ########Annoying Content#########
