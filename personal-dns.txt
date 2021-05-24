@@ -1,7 +1,7 @@
 !Title: personal-dns
 !Description: personal-optimized-filters
-!Version: V.2021.05.20 update some rules
-!TimeUpdated: 2021-05-20
+!Version: V.2021.05.24 update some rules
+!TimeUpdated: 2021-05-24
 !
 !
 ! ########## $removeparam Tracking Parameters ##########################
@@ -42,9 +42,8 @@ $cookie=/__utm[a-z]/
 !
 ! ######### Social network #########
 !
-||facebook.com^
+||facebook.*^
 ||m.facebook.com^
-||facebook.net^
 #||twitter.com^
 #||linkedin.com^
 ||vk.com^
