@@ -1,7 +1,7 @@
 !Title: personal-dns
 !Description: personal-optimized-filters
-!Version: V.2021.05.24 update some rules
-!TimeUpdated: 2021-05-24
+!Version: V.2021.05.31 update some rules
+!TimeUpdated: 2021-05-31
 !
 !
 ! ########## $removeparam Tracking Parameters ##########################
@@ -29,6 +29,7 @@ $removeparam=keyword
 $removeparam=cmpid
 $removeparam=agid
 $removeparam=adid
+$removeparam=app
 !
 !
 ! ########## Block all cookies from following Domain ################
