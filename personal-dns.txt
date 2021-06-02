@@ -346,6 +346,7 @@ $cookie=/__utm[a-z]/
 ||fastclick.com^
 ||adsystem.com^
 ||id.google.*
+||livelogs.slike.in^
 !
 !
 !
