@@ -35,6 +35,7 @@ $removeparam=app
 ! ########## Block all cookies from following Domain ################
 !
 ||medium.com^cookie
+||zeenews.*^cookie
 ||facebook.com^cookie
 ||towardsdatascience.com^cookie
 $cookie=/__utm[a-z]/
