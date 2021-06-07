@@ -169,6 +169,9 @@ $cookie=/__utm[a-z]/
 ||tr.snapchat.*
 !
 !
+############## webrtc ################
+||google.com^$webrtc
+!
 ########### Whatsapp ##################
 !
 ||crashlogs.whatsapp.*^
