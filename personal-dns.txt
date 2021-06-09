@@ -70,7 +70,7 @@ $cookie=/__utm[a-z]/
 #||yahoo.com^
 ||yandex.com^
 #||google.*
-||bing.com^
+#||bing.com^
 ||baidu.*
 ||windows.*
 ||twitch.*
