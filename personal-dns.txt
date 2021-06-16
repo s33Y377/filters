@@ -176,6 +176,7 @@ $cookie=/__utm[a-z]/
 ########### Whatsapp ##################
 !
 ||crashlogs.whatsapp.*^
+||pps.whatsapp.net^
 !
 !
 !
