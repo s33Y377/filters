@@ -84,7 +84,7 @@ $cookie=/__utm[a-z]/
 !######### Allowed Domain ##########
 !
 @@||inbox.google.com/sync/
-#@@||m.facebook.com^
+@@||m.facebook.com^
 @@||api.twitter.com^
 #@@||mobile.twitter.com^
 @@||youtube-ui.l.google.com^
@@ -147,7 +147,7 @@ $cookie=/__utm[a-z]/
 ||doubleclick.*
 ||optimizely.*
 ||fonts.googleapis.*
-||googlesyndication.*
+||*googlesyndication.com
 ||mxplay.*
 ||sharechat.*
 ||googleadservices.com/pagead/^$important
@@ -220,7 +220,6 @@ $cookie=/__utm[a-z]/
 ||logservice1.hicloud.com^
 ||logservice.hicloud.com^
 ||ads.reddit.com^
-||graph.facebook.com^
 ||ads.facebook.com^
 ||graph.facebook.com^
 ||api.gfycat.com^
@@ -231,7 +230,6 @@ $cookie=/__utm[a-z]/
 ||maxcdn-bootstrapcdn.com^
 ||maxcdn.bootstrapcdn.com^
 ||branch.io^
-||pagead.googlesyndication.com^
 ||notify.bugsnag.com^
 ||analytics.facebook.com^
 ||analytics.twitter.com^
@@ -240,10 +238,8 @@ $cookie=/__utm[a-z]/
 ||ads.tiktok.com^
 ||extmaps-api.yandex.net^
 ||adsdk.yandex.ru^
-||www.airtel.in^
-||www.indusos.com^
-||www.jiosaavn.com^
-||www.ozee.com^
+||indusos.com^
+||ozee.com^
 ||apis.sharechat.com^
 ||cdn2.sharechat.com^
 ||cdn.sharechat.com^
@@ -285,7 +281,7 @@ $cookie=/__utm[a-z]/
 ||mosite.in^
 ||insight.ucweb.com^
 ||gjapplog.ucweb.com^
-||www.appspot.com^
+||*appspot.com^
 ||img.vidmatefilm.org^
 ||bid.mobshark.net^
 ||track.mobshark.net^
@@ -295,19 +291,14 @@ $cookie=/__utm[a-z]/
 ||onlineapi.youappi.com^
 ||api.easeutility.com^
 ||mqtt-mini.facebook.com^
-||graph.facebook.com^
 ||geomobileservices-pa.googleapis.com^
 ||sessions.bugsnag.com^
 ||googletagmanager.com^
-||ade.googlesyndication.com^
 ||incimages.com^
 ||sentry.io^
 ||f.vimeocdn.com^
 ||disqus.com^
 ||blog.disqus.com^
-||connect.facebook.net^
-||facebook.com^
-||pagead2.googlesyndication.com^
 ||ads-serve.brave.com^
 ||d3jaymjyiads5d.cloudfront.net^
 ||edge-mqtt.facebook.com^
