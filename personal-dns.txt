@@ -1,10 +1,10 @@
 !Title: personal-dns
 !Description: personal-optimized-filters
-!Version: V.2021.06.07 update some rules
-!TimeUpdated: 2021-06-07
+!Version: V.2021.06.16 update some rules
+!TimeUpdated: 2021-06-16
 !
 !
-! ########## $removeparam Tracking Parameters ##########################
+!########### $removeparam Tracking Parameters ##########################
 !
 $removeparam=client
 $removeparam=source
@@ -32,7 +32,7 @@ $removeparam=adid
 $removeparam=app
 !
 !
-! ########## Block all cookies from following Domain ################
+!########### Block all cookies from following Domain ################
 !
 ||medium.com^cookie
 ||zeenews.*^cookie
@@ -42,7 +42,7 @@ $cookie=/__utm[a-z]/
 #||facebook.com^$third-party,cookie=c_user
 !
 !
-! ######### Social network #########
+!########## Social network #########
 !
 ||facebook.*^
 ||m.facebook.com^
@@ -65,7 +65,7 @@ $cookie=/__utm[a-z]/
 ||netflix.com^
 !
 !
-! ######### top level domain #########
+!########## top level domain #########
 !
 #||yahoo.com^
 ||yandex.com^
@@ -81,7 +81,7 @@ $cookie=/__utm[a-z]/
 ||analytics.withgoogle.com^
 !
 !
-! ######## Allowed Domain ##########
+!######### Allowed Domain ##########
 !
 @@||inbox.google.com/sync/
 #@@||m.facebook.com^
@@ -96,7 +96,7 @@ $cookie=/__utm[a-z]/
 #@@||myaccount.google.com
 !
 !
-! ######## others #########
+!######### others #########
 !
 ||disqus.com^
 ||v.fwmrm.net^
@@ -195,7 +195,7 @@ $cookie=/__utm[a-z]/
 ||browser.sentry-cdn.com^
 ||talentjobs.mailspear.com^
 ||userlocation.googleapis.com^
-||*.data.hicloud.com^
+||*.hicloud.com^
 ||metrics.apple.com^
 ||securemetrics.apple.com^
 ||bigdata.ssp.samsung.com^
@@ -213,8 +213,8 @@ $cookie=/__utm[a-z]/
 ||metrics.mzstatic.com^
 ||insights.samsung.com^
 ||open.oneplus.net^
-||click.oneplus.cn^
-||click.oneplus.com^
+||*oneplus.cn^
+||*oneplus.com^
 ||analytics.oneplus.cn^
 ||logbak.hicloud.com^
 ||logservice1.hicloud.com^
@@ -228,7 +228,7 @@ $cookie=/__utm[a-z]/
 ||lightstep.medium.systems^
 ||d1y3vfophxf7ip.cloudfront.net^
 ||update.googleapis.com^
-||www.maxcdn-bootstrapcdn.com^
+||maxcdn-bootstrapcdn.com^
 ||maxcdn.bootstrapcdn.com^
 ||branch.io^
 ||pagead.googlesyndication.com^
@@ -298,15 +298,15 @@ $cookie=/__utm[a-z]/
 ||graph.facebook.com^
 ||geomobileservices-pa.googleapis.com^
 ||sessions.bugsnag.com^
-||www.googletagmanager.com^
+||googletagmanager.com^
 ||ade.googlesyndication.com^
-||www.incimages.com^
+||incimages.com^
 ||sentry.io^
 ||f.vimeocdn.com^
 ||disqus.com^
 ||blog.disqus.com^
 ||connect.facebook.net^
-||www.facebook.com^
+||facebook.com^
 ||pagead2.googlesyndication.com^
 ||ads-serve.brave.com^
 ||d3jaymjyiads5d.cloudfront.net^
@@ -323,7 +323,7 @@ $cookie=/__utm[a-z]/
 ||graph.instagram.com^
 ||l.facebook.com^
 ||api.mcoreads.com^
-||www.googleadservices.com^
+||googleadservices.com^
 ||reports.crashlytics.com^
 ||apis.google.com^
 ||s.youtube.com^
