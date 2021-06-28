@@ -1,7 +1,7 @@
 !Title: personal-dns
 !Description: personal-optimized-filters
-!Version: V.2021.06.17 update some rules
-!TimeUpdated: 2021-06-17
+!Version: V.2021.06.28 update some rules
+!TimeUpdated: 2021-06-28
 !
 !
 !###################### WishListed Domain #############################
