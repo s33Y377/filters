@@ -347,6 +347,7 @@ $cookie=/__utm[a-z]/
 ||adsystem.com^
 ||id.google.*
 ||livelogs.slike.in^
+||pdisk.net^
 !
 !
 !
