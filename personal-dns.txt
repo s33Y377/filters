@@ -349,6 +349,7 @@ $cookie=/__utm[a-z]/
 ||livelogs.slike.in^
 ||pdisk.net^
 ||onetrust.com^
+||*mtalk.google.com^
 !
 !
 !
