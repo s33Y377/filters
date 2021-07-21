@@ -351,6 +351,7 @@ $cookie=/__utm[a-z]/
 ||onetrust.com^
 ||*mtalk.google.com^
 ||cdn.ampproject.org^
+||kriply.com^
 !
 !
 !
