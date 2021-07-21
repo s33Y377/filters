@@ -1,7 +1,7 @@
 !Title: personal-dns
 !Description: personal-optimized-filters
-!Version: V.2021.07.13 update some rules
-!TimeUpdated: 2021-07-13
+!Version: V.2021.07.21 update some rules
+!TimeUpdated: 2021-07-21
 !
 !
 !###################### WishListed Domain #############################
@@ -56,7 +56,7 @@ $cookie=/__utm[a-z]/
 ||pinterest.com^
 ||instagram.com^
 ||snapchat.com^
-#||discord.com^
+||discord.com^
 ||patreon.com^
 ||tumbler.com^
 ||tiktok.com^
@@ -71,10 +71,10 @@ $cookie=/__utm[a-z]/
 !
 !########## top level domain #########
 !
-#||yahoo.com^
+||yahoo.com^
 ||yandex.com^
 #||google.*
-#||bing.com^
+||bing.com^
 ||baidu.*
 ||windows.*
 ||twitch.*
