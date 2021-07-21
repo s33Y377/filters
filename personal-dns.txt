@@ -350,6 +350,7 @@ $cookie=/__utm[a-z]/
 ||pdisk.net^
 ||onetrust.com^
 ||*mtalk.google.com^
+||cdn.ampproject.org^
 !
 !
 !
