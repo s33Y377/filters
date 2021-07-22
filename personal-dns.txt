@@ -1,7 +1,7 @@
 !Title: personal-dns
 !Description: personal-optimized-filters
-!Version: V.2021.07.21 update some rules
-!TimeUpdated: 2021-07-21
+!Version: V.2021.07.22 update some rules
+!TimeUpdated: 2021-07-22
 !
 !
 !###################### WishListed Domain #############################
@@ -88,7 +88,6 @@ $cookie=/__utm[a-z]/
 !######### Allowed Domain ##########
 !
 @@||inbox.google.com/sync/
-@@||m.facebook.com^
 @@||api.twitter.com^
 #@@||mobile.twitter.com^
 @@||youtube-ui.l.google.com^
@@ -136,7 +135,7 @@ $cookie=/__utm[a-z]/
 !
 ||inshorts.*^
 ||aajtaklive.in^
-||aajtak.*
+||aajtak.*^
 ||ndtv.com^
 #||indianexpress.com^
 ||indiatvnews.com^
