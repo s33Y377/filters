@@ -352,6 +352,7 @@ $cookie=/__utm[a-z]/
 ||cdn.ampproject.org^
 ||kriply.com^
 ||cdn.taboola.com^
+||cdn.optimizely.com^
 !
 !
 !
