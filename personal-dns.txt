@@ -111,14 +111,14 @@ $cookie=/__utm[a-z]/
 !
 !#########Ads & Analytics Domains#################
 !
-||htmedia.*
-||chartbeat.*
-||adservice.google.*
-||analytics-api.samsunghealthcn.*
-||supportmetrics.apple.*
-||metric.icloud.*
-||metric.mzstatic.*
-||trackingshipment.apple.*
+||htmedia.*^
+||chartbeat.*^
+||adservice.google.*^
+||analytics-api.samsunghealthcn.*^
+||supportmetrics.apple.*^
+||metric.icloud.*^
+||metric.mzstatic.*^
+||trackingshipment.apple.*^
 #||9gag.com^
 !
 !
@@ -217,8 +217,7 @@ $cookie=/__utm[a-z]/
 ||metrics.mzstatic.com^
 ||insights.samsung.com^
 ||open.oneplus.net^
-||*oneplus.cn^
-||*oneplus.com^
+||*oneplus.*^
 ||analytics.oneplus.cn^
 ||logbak.hicloud.com^
 ||logservice1.hicloud.com^
