@@ -43,7 +43,7 @@ $removeparam=app
 ||facebook.com^cookie
 ||towardsdatascience.com^cookie
 $cookie=/__utm[a-z]/
-#||facebook.com^$third-party,cookie=c_user
+||facebook.com^$third-party,cookie=c_user
 !
 !
 !########## Social network #########
@@ -67,6 +67,10 @@ $cookie=/__utm[a-z]/
 ||spotify.com^
 ||primevideo.com^
 ||netflix.com^
+||weibo.com^
+||tinder.com^
+||foursquare.com^
+||myspace.com^
 !
 !
 !########## top level domain #########
@@ -116,7 +120,6 @@ $cookie=/__utm[a-z]/
 ||adservice.google.*^
 ||analytics-api.samsunghealthcn.*^
 ||supportmetrics.apple.*^
-||metric.icloud.*^
 ||metric.mzstatic.*^
 ||trackingshipment.apple.*^
 #||9gag.com^
@@ -199,7 +202,7 @@ $cookie=/__utm[a-z]/
 ||browser.sentry-cdn.com^
 ||talentjobs.mailspear.com^
 ||userlocation.googleapis.com^
-||*.hicloud.com^
+||*hicloud.com^
 ||metrics.apple.com^
 ||securemetrics.apple.com^
 ||bigdata.ssp.samsung.com^
@@ -249,7 +252,6 @@ $cookie=/__utm[a-z]/
 ||track.clickonik.com^
 ||safebrowsing.googleapis.com^
 ||3p.ampproject.net^
-||www.googleadservices.com^
 ||d2r1yp2w7bby2u.cloudfront.net^
 ||d33wubrfki0l68.cloudfront.net^
 ||a.opmnstr.com^
@@ -308,16 +310,13 @@ $cookie=/__utm[a-z]/
 ||api.starhalo.mobi^
 ||v.starhalo.mobi^
 ||tracking.mcoreads.com^
-||tracking.mcoreads.com^
 ||www.googletagservices.com^
-||yt3.ggpht.com^
 ||aresssl.agoop.net^
 ||j2apps.s.llnwi.net^
 ||vapi.apk.vidmate.net^
 ||graph.instagram.com^
 ||l.facebook.com^
 ||api.mcoreads.com^
-||googleadservices.com^
 ||reports.crashlytics.com^
 ||apis.google.com^
 ||s.youtube.com^
@@ -326,7 +325,6 @@ $cookie=/__utm[a-z]/
 ||allot10.smnvc.com^
 ||books.google.com^
 ||topdailylist.com^
-||googleadservices.com^
 ||e.crashlytics.com^
 ||app.adjust.com^
 ||track.saygames.io^
@@ -336,11 +334,9 @@ $cookie=/__utm[a-z]/
 ||zee5.com^
 ||airtelxstream.in^
 ||cleverads.vn^
-||hicloud.com^
 ||duckduckgo.com^
 ||xiaomi.com^
 ||miui.com^
-||hicloud.com^
 ||fastclick.com^
 ||adsystem.com^
 ||id.google.*
