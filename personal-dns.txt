@@ -36,6 +36,15 @@ $removeparam=adid
 $removeparam=app
 !
 !
+############ Search Engine Block ####################################
+!
+||duckduckgo.com^
+||bing.com^
+||yahoo.com^
+||yandex.com^
+#||google.*
+||baidu.*
+!
 !########### Block all cookies from following Domain ################
 !
 ||medium.com^cookie
@@ -75,11 +84,6 @@ $cookie=/__utm[a-z]/
 !
 !########## top level domain #########
 !
-||yahoo.com^
-||yandex.com^
-#||google.*
-||bing.com^
-||baidu.*
 ||windows.*
 ||twitch.*
 ||photos.google.*
@@ -105,7 +109,6 @@ $cookie=/__utm[a-z]/
 !
 !######### others #########
 !
-||disqus.com^
 ||v.fwmrm.net^
 ||api.privacy-center.*
 ||sdk.privacy-center.*
@@ -140,7 +143,7 @@ $cookie=/__utm[a-z]/
 ||aajtaklive.in^
 ||aajtak.*^
 ||ndtv.com^
-#||indianexpress.com^
+||indianexpress.com^
 ||indiatvnews.com^
 #||thehindu.com^
 !
@@ -308,8 +311,7 @@ $cookie=/__utm[a-z]/
 ||edge-mqtt.facebook.com^
 ||api.starhalo.mobi^
 ||v.starhalo.mobi^
-||tracking.mcoreads.com^
-||www.googletagservices.com^
+||googletagservices.com^
 ||aresssl.agoop.net^
 ||j2apps.s.llnwi.net^
 ||vapi.apk.vidmate.net^
@@ -333,7 +335,6 @@ $cookie=/__utm[a-z]/
 ||zee5.com^
 ||airtelxstream.in^
 ||cleverads.vn^
-||duckduckgo.com^
 ||xiaomi.com^
 ||miui.com^
 ||fastclick.com^
