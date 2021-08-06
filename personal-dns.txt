@@ -1,7 +1,7 @@
 !Title: personal-dns
 !Description: personal-optimized-filters
-!Version: V.2021.08.03 update some rules
-!TimeUpdated: 2021-08-03
+!Version: V.2021.08.06 update some rules
+!TimeUpdated: 2021-08-06
 !
 !
 !###################### WishListed Domain #############################
@@ -209,7 +209,6 @@ $cookie=/__utm[a-z]/
 ||samsungadhub.com^
 ||nmetrics.samsung.com^
 ||ad.samsungadhub.com^
-||adservice.google.com^
 ||adtools.facebook.com^
 ||sa.api.intl.miui.com^
 ||analytics.samsungknox.com^
