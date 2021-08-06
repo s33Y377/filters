@@ -348,7 +348,7 @@ $cookie=/__utm[a-z]/
 ||kriply.com^
 ||cdn.taboola.com^
 ||cdn.optimizely.com^
-||airtel.in/dot/*^$domain=airtel.*
+||airtel.in/dot*^$domain=airtel.*
 !
 !
 !
