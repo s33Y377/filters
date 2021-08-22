@@ -352,7 +352,6 @@ $cookie=/__utm[a-z]/
 ||kriply.com^
 ||cdn.taboola.com^
 ||cdn.optimizely.com^
-||app.adjust.com^$important
 !
 !
 !
