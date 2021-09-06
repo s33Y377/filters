@@ -44,7 +44,7 @@ $removeparam=app
 ############ Search Engine Block ####################################
 !
 ||duckduckgo.com^
-||bing.com^
+@@||bing.com^
 ||yahoo.com^
 ||yandex.com^
 #||google.*
