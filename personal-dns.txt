@@ -131,6 +131,7 @@ $cookie=/__utm[a-z]/
 ||metric.mzstatic.*^
 ||trackingshipment.apple.*^
 #||9gag.com^
+||adconfig.wynk.*
 !
 !
 ########Annoying Content#########
