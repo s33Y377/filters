@@ -1,7 +1,7 @@
 !Title: personal-dns
 !Description: personal-optimized-filters
-!Version: V.2021.09.08 update some rules
-!TimeUpdated: 2021-09-08
+!Version: V.2021.09.24 update some rules
+!TimeUpdated: 2021-09-24
 !
 !
 !###################### WishListed Domain #############################
@@ -140,7 +140,7 @@ $cookie=/__utm[a-z]/
 ||onlyfans.com^
 ||unlockd.me^
 ||skimresources.^
-||*.fun^$important
+||fun^$important
 !
 !
 #########News Sites################
