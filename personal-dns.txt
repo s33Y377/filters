@@ -156,7 +156,7 @@ $cookie=/__utm[a-z]/
 ########## Sub-Domains ###########
 !
 ||fonts.googleapis.com^
-||ggpht.com^
+#||ggpht.com^
 ||doubleclick.*
 ||optimizely.*
 ||fonts.googleapis.*
