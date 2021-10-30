@@ -1,6 +1,6 @@
 !Title: personal-dns
 !Description: personal-optimized-filters
-!Version: V.2021.10.10 update some rules
+!Version: V.2021.10.30 update some rules
 !TimeUpdated: 2021-10-30
 !
 !
