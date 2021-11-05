@@ -1,7 +1,7 @@
 !Title: personal-dns
 !Description: personal-optimized-filters
-!Version: V.2021.10.30 update some rules
-!TimeUpdated: 2021-10-30
+!Version: V.2021.11.05 update some rules
+!TimeUpdated: 2021-11-05
 !
 !
 !###################### WishListed Domain #############################
@@ -356,6 +356,7 @@ $cookie=/__utm[a-z]/
 ||kriply.com^
 ||cdn.taboola.com^
 ||cdn.optimizely.com^
+||*.ngrok.io^
 !
 !
 !
