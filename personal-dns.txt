@@ -151,6 +151,7 @@ $cookie=/__utm[a-z]/
 ||ndtv.com^
 ||indianexpress.com^
 ||indiatvnews.com^
+||zeenews.india.com
 !
 !
 ########## Sub-Domains ###########
