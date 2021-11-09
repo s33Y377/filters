@@ -1,11 +1,12 @@
 !Title: personal-dns
 !Description: personal-optimized-filters
-!Version: V.2021.11.05 update some rules
-!TimeUpdated: 2021-11-05
+!Version: V.2021.11.09 update some rules
+!TimeUpdated: 2021-11-09
 !
 !
 !###################### WishListed Domain #############################
 @@||oneassist.in^
+@@||amazon.in^
 !
 !
 !######################## Airtel #######################################
