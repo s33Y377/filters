@@ -1,7 +1,7 @@
 !Title: personal-dns
 !Description: personal-optimized-filters
-!Version: V.2021.11.09 update some rules
-!TimeUpdated: 2021-11-09
+!Version: V.2021.11.10 update some rules
+!TimeUpdated: 2021-11-10
 !
 !
 !###################### WishListed Domain #############################
@@ -361,3 +361,6 @@ $cookie=/__utm[a-z]/
 !
 !
 !
+############## HTML Content Blocker #############
+! 2021-11-10 https://www.google.com
+www.google.com##.b2hzT.fbar
