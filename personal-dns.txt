@@ -149,7 +149,10 @@ $cookie=/__utm[a-z]/
 ||inshorts.*^
 ||aajtaklive.in^
 ||aajtak.*^
-||ndtv.com^
+#||ndtv.com^
+||republicworld.com^
+||abplive.com^
+||tv9.com^
 ||indianexpress.com^
 ||indiatvnews.com^
 !
