@@ -1,12 +1,13 @@
 !Title: personal-dns
 !Description: personal-optimized-filters
-!Version: V.2021.11.16 update some rules
-!TimeUpdated: 2021-11-16
+!Version: V.2021.11.18 update some rules
+!TimeUpdated: 2021-11-18
 !
 !
 !###################### WishListed Domain #############################
 @@||oneassist.in^
-@@||amazon.in^
+@@||amazon.in^ # Blocked bu 1 host pro domain
+@@||e.reddit.com^  # Blocked bu 1 host pro domain
 !
 !
 !######################## Airtel #######################################
