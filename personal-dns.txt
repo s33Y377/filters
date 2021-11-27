@@ -179,7 +179,6 @@ $removeparam=padding,domain=facebook.com
 $removeparam=ls_ref,domain=facebook.com
 $removeparam=action_history,domain=facebook.com
 $removeparam=/^(ref_?)?src=/,domain=twitter.com
-$removeparam=s,domain=twitter.com
 $removeparam=cn,domain=twitter.com
 $removeparam=ref_url,domain=twitter.com
 $removeparam=%24deep_link,domain=reddit.com
