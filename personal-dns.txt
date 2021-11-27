@@ -933,6 +933,7 @@ $cookie=/__utm[a-z]/
 ||cdn.taboola.com^
 ||cdn.optimizely.com^
 ||*.ngrok.io^
+||*apple.com
 !
 !
 !
