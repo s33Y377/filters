@@ -731,6 +731,9 @@ $cookie=/__utm[a-z]/
 !
 ########## Sub-Domains ###########
 !
+||datamixer-pa.googleapis.com^
+||infinitedata-pa.googleapis.com^
+||footprints-pa.googleapis.com^
 ||fonts.googleapis.com^
 #||ggpht.com^
 ||doubleclick.*
