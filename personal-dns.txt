@@ -6,7 +6,7 @@
 !
 !###################### WishListed Domain #############################
 @@||oneassist.in^
-@@||amazon.in^ # Blocked bu 1 host pro domain
+@@||amazon.in^ # Blocked by 1 host pro domain
 !
 !
 !
