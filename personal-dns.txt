@@ -1,7 +1,7 @@
 !Title: personal-dns
 !Description: personal-optimized-filters
-!Version: V.2021.12.11 update some rules
-!TimeUpdated: 2021-12-11
+!Version: V.2021.12.17 update some rules
+!TimeUpdated: 2021-12-17
 !
 !
 !###################### WishListed Domain #############################
@@ -82,7 +82,7 @@ $cookie=/__utm[a-z]/
 ||viber.com^
 ||wechat.com^
 ||spotify.com^
-||primevideo.com^
+#||primevideo.com^
 ||netflix.com^
 ||weibo.com^
 ||tinder.com^
