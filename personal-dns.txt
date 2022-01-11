@@ -1,7 +1,7 @@
 !Title: personal-dns
 !Description: personal-optimized-filters
-!Version: V.2022.01.02 update some rules
-!TimeUpdated: 2022-01-02
+!Version: V.2022.01.11 update some rules
+!TimeUpdated: 2022-01-11
 !
 !
 !###################### WishListed Domain #############################
@@ -164,11 +164,11 @@ $cookie=/__utm[a-z]/
 ||datamixer-pa.googleapis.com^
 ||infinitedata-pa.googleapis.com^
 ||footprints-pa.googleapis.com^
-||fonts.googleapis.com^
+#||fonts.googleapis.com^
 #||ggpht.com^
 ||doubleclick.*
 ||optimizely.*
-||fonts.googleapis.*
+#||fonts.googleapis.*
 ||*googlesyndication.com
 ||mxplay.*
 ||sharechat.*
