@@ -1,7 +1,7 @@
 !Title: personal-dns
 !Description: personal-optimized-filters
-!Version: V.2022.01.11 update some rules
-!TimeUpdated: 2022-01-11
+!Version: V.2022.01.23 update some rules
+!TimeUpdated: 2022-01-23
 !
 !
 !###################### WishListed Domain #############################
@@ -71,6 +71,7 @@ $cookie=/__utm[a-z]/
 #||linkedin.com^
 ||vk.com^
 ||pinterest.com^
+||tumblr.com^
 ||instagram.com^
 ||snapchat.com^
 #||discord.com^
@@ -379,13 +380,14 @@ www.google.com##.b2hzT.fbar
 ! Title: ClearURLs for uBo
 ! Homepage: https://github.com/DandelionSprout/adfilt/discussions/163
 ! Description: Want to use ClearURLs' tracking protection without installing another extension? This list is a (unofficial) version of the ClearURLs rules, designed for use in uBlock Origin and AdGuard
-! Last updated: 07/12/2021
-! Script last updated: 4/13/2021
+! Last updated: 18/01/2022
+! Script last updated: 2/1/2021
 ! Expires: 1 day
 ! Licence: https://github.com/DandelionSprout/adfilt/blob/master/LICENSE.md
 ! Note: This was based off of https://gist.github.com/rusty-snake/5cd83a87d680ecbd03e79a1a06758207, which is based off of https://github.com/ClearURLs/Rules. The maintainers of Adfilt (DandelionSprout and iam-py-test, and contributors) have made some modifications as to keep it up-to-date with the source and to fix issues
 ! IMPORTANT NOTE: Do not modify this file in pull requests. This file is auto-generated and therefore any direct edit to it will be undone. Instead, modifications must be made to https://github.com/DandelionSprout/adfilt/blob/master/ClearURLs%20for%20uBo/compile.py or to the upstream ClearURLs rules. If you experience an issue, please report it to https://github.com/DandelionSprout/adfilt/discussions/163, and we (the Adfilt maintainers and community) will look into it and either add an exclusion or report it to the ClearURLs team
 ! Important note about the purpose of this list: this list can not bypass tracker redirects through third-party domains. This can be done by strict-blocking said domain and using the ability to view params on the strict-block page to bypass it
+! The developers would like to thank https://github.com/rusty-snake for helping create this list
 
 $removeparam=/^p[fd]_rd_[a-z]*=/,domain=amazon.*
 $removeparam=qid,domain=amazon.*
@@ -447,7 +449,6 @@ $removeparam=s,domain=amazon.*
 ||amazon.*/s?$removeparam=dchild
 ||amazon.*/s?$removeparam=camp
 ||amazon.*/s?$removeparam=creative
-$removeparam=ved,domain=google.*
 $removeparam=/^bi[a-z]*=/,domain=google.*
 $removeparam=/^gfe_[a-z]*=/,domain=google.*
 $removeparam=ei,domain=google.*
@@ -721,6 +722,7 @@ $removeparam=impid,domain=taobao.com
 $removeparam=bftTag,domain=taobao.com
 $removeparam=bftRwd,domain=taobao.com
 $removeparam=spm,domain=taobao.com
+$removeparam=_u,domain=taobao.com
 $removeparam=price,domain=tmall.com
 $removeparam=sourceType,domain=tmall.com
 $removeparam=suid,domain=tmall.com
@@ -896,11 +898,48 @@ $removeparam=psf_variant,domain=change.org
 $removeparam=share_intent,domain=change.org
 $removeparam=tag,domain=ceneo.pl
 $removeparam=intcid,domain=wired.com
+$removeparam=pid,domain=arms-retcode.aliyuncs.com
+$removeparam=uid,domain=arms-retcode.aliyuncs.com
+$removeparam=tag,domain=arms-retcode.aliyuncs.com
+$removeparam=release,domain=arms-retcode.aliyuncs.com
+$removeparam=environment,domain=arms-retcode.aliyuncs.com
+$removeparam=sample,domain=arms-retcode.aliyuncs.com
+$removeparam=behavior,domain=arms-retcode.aliyuncs.com
+$removeparam=enableSPA,domain=arms-retcode.aliyuncs.com
+$removeparam=enableLinkTrace,domain=arms-retcode.aliyuncs.com
+$removeparam=page,domain=arms-retcode.aliyuncs.com
+$removeparam=begin,domain=arms-retcode.aliyuncs.com
+$removeparam=c2,domain=arms-retcode.aliyuncs.com
+$removeparam=c3,domain=arms-retcode.aliyuncs.com
+$removeparam=success,domain=arms-retcode.aliyuncs.com
+$removeparam=code,domain=arms-retcode.aliyuncs.com
+$removeparam=msg,domain=arms-retcode.aliyuncs.com
+$removeparam=api,domain=arms-retcode.aliyuncs.com
+$removeparam=traceId,domain=arms-retcode.aliyuncs.com
+$removeparam=pv_id,domain=arms-retcode.aliyuncs.com
+$removeparam=flag,domain=arms-retcode.aliyuncs.com
+$removeparam=sr,domain=arms-retcode.aliyuncs.com
+$removeparam=vp,domain=arms-retcode.aliyuncs.com
+$removeparam=ct,domain=arms-retcode.aliyuncs.com
+$removeparam=_v,domain=arms-retcode.aliyuncs.com
+$removeparam=sampling,domain=arms-retcode.aliyuncs.com
+$removeparam=dl,domain=arms-retcode.aliyuncs.com
+$removeparam=post_res,domain=arms-retcode.aliyuncs.com
+$removeparam=adid,domain=nikkei.com
+$removeparam=i_cid,domain=nikkei.com
+$removeparam=n_cid,domain=nikkei.com
+$removeparam=waad,domain=nikkei.com
+$removeparam=weibo_id,domain=weibo.*
+$removeparam=dt_dapp,domain=weibo.*
+$removeparam=context_referrer,domain=fiverr.com
+$removeparam=source,domain=fiverr.com
+$removeparam=ref_ctx_id,domain=fiverr.com
+$removeparam=funnel,domain=fiverr.com
 @@/^https?:\/\/([a-z0-9-]+\.)*?amazon(\.[a-z]{2,}){1,}\/gp\/.*?(redirector.html|cart\/ajax-update.html|video\/api\/)/$removeparam
 @@/^https?:\/\/([a-z0-9-]+\.)*?amazon(\.[a-z]{2,}){1,}\/(hz\/reviews-render\/ajax\/|message-us\?|s\?)/$removeparam
 @@||mail.google.com/mail/u/$removeparam
 @@/^https?:\/\/(docs|accounts)\.google(\.[a-z]{2,}){1,}/$removeparam
-@@||drive.google.com/videoplayback$removeparam
+@@/^https?:\/\/([a-z0-9-\.])*drive\.google\.com\/videoplayback/$removeparam
 @@/^https?:\/\/([a-z0-9-]+\.)*?google(\.[a-z]{2,}){1,}(\/upload)?\/drive\//$removeparam
 @@||news.google.com.*?hl=$removeparam
 @@||hangouts.google.com/webchat*zx=$removeparam
@@ -942,6 +981,8 @@ $removeparam=intcid,domain=wired.com
 @@||onet.pl/*?*utm_campaign=$removeparam
 @@||stripe.com/*?*referrer=$removeparam
 @@||lichess.org/login*referrer=$removeparam
+@@||like.co/api/like/likebutton/*?*referrer=$removeparam
+@@||button.like.co/in/*referrer=$removeparam
 @@||amazon-adsystem.*/v3/oor?$removeparam
 @@||youtube.com/signin?$removeparam
 @@/^https?:\/\/([a-z0-9-]+\.)*?facebook\.com\/.*?(plugins|ajax)\//$removeparam
@@ -956,3 +997,4 @@ $removeparam=intcid,domain=wired.com
 @@||comment-cdn.9gag.com/*comment-list.json?$removeparam
 @@$removeparam,domain=api.bilibili.com
 @@||marketscreener.com/search/?$removeparam
+
