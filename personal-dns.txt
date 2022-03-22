@@ -1,7 +1,7 @@
 !Title: personal-dns
 !Description: personal-optimized-filters
-!Version: V.2022.03.21 update some rules
-!TimeUpdated: 2022-03-21
+!Version: V.2022.03.22 update some rules
+!TimeUpdated: 2022-03-22
 !
 !
 !###################### WishListed Domain #############################
@@ -19,6 +19,7 @@
 !
 !########### $removeparam Tracking Parameters ##########################
 !
+$removeparam=ref,domain=9gag.com
 $removeparam=client
 $removeparam=source
 $removeparam=FORM
