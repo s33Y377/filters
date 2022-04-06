@@ -19,7 +19,7 @@
 !
 !########### $removeparam Tracking Parameters ##########################
 !
-$removeparam=ref,domain=9gag.com
+# $removeparam=ref,domain=9gag.com
 $removeparam=client
 $removeparam=source
 $removeparam=FORM
