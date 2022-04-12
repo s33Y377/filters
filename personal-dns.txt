@@ -1,10 +1,12 @@
 !Title: personal-dns
 !Description: personal-optimized-filters
-!Version: V.2022.04.06 update some rules
-!TimeUpdated: 2022-04-06
+!Version: V.2022.04.12 update some rules
+!TimeUpdated: 2022-04-12
 !
 !
 !###################### WishListed Domain #############################
+@@||olacabs.com^
+@@||olawebcdn.com^
 @@||oneassist.in^
 @@||amazon.in^ # Blocked by 1 host pro domain
 @@||*tradepub.com
