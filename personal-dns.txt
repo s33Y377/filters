@@ -1,7 +1,7 @@
 !Title: personal-dns
 !Description: personal-optimized-filters
-!Version: V.2022.04.22 update some rules
-!TimeUpdated: 2022-04-22
+!Version: V.2022.04.27 update some rules
+!TimeUpdated: 2022-04-27
 !
 !
 !###################### WishListed Domain #############################
@@ -383,8 +383,7 @@ www.google.com##.b2hzT.fbar
 !
 !
 !
-### source ### https://github.com/DandelionSprout/adfilt/blob/master/ClearURLs%20for%20uBo/clear_urls_uboified.txt
-! Title: ClearURLs for uBo
+### source ### https://github.com/DandelionSprout/adfilt/blob/master/ClearURLs%20for%20uBo/clear_urls_uboified.txt! Title: ClearURLs for uBo
 ! Homepage: https://github.com/DandelionSprout/adfilt/discussions/163
 ! Description: Want to use ClearURLs' tracking protection without installing another extension? This list is a (unofficial) version of the ClearURLs rules, designed for use in uBlock Origin and AdGuard
 ! Last updated: 26/03/2022
@@ -1035,13 +1034,14 @@ $removeparam=p,domain=billiger.de
 @@||comment-cdn.9gag.com/*comment-list.json?$removeparam
 @@$removeparam,domain=api.bilibili.com
 @@||marketscreener.com/search/?$removeparam
-
+!
 ! This is an allowlist added by the adflit maintainers
 @@||tix.axs.com^$removeparam=utm_campaign
 @@||tix.axs.com^$removeparam=utm_content
 @@||tix.axs.com^$removeparam=utm_medium
 @@||tix.axs.com^$removeparam=utm_source
 @@||tix.axs.com^$removeparam=utm_term
+!
 !
 !
 !
