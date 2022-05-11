@@ -2,6 +2,7 @@
 !Description: personal-optimized-filters
 !Version: V.2022.05.11 update some rules
 !TimeUpdated: 2022-05-11
+!filters: clear_urls_uboified, Adguard combined_disguised_trackers
 !
 !
 !###################### WishListed Domain #############################
@@ -1045,7 +1046,7 @@ $removeparam=p,domain=billiger.de
 !
 !
 !
-https://raw.githubusercontent.com/AdguardTeam/cname-trackers/master/combined_disguised_trackers.txt
+! https://raw.githubusercontent.com/AdguardTeam/cname-trackers/master/combined_disguised_trackers.txt
 ! Title: AdGuard CNAME disguised trackers list
 ! Description: The list of trackers that disguise the real trackers by using CNAME records.
 ! TimeUpdated: 2022-05-09T08:00:15+00:00
