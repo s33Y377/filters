@@ -6,11 +6,11 @@
 !
 !
 !###################### WishListed Domain #############################
-@@||olacabs.com^
-@@||olawebcdn.com^
+# @@||olacabs.com^ # Couldn't whitelist because of blocked userlocation googleapis
+# @@||olawebcdn.com^ # Couldn't whitelist because of blocked userlocation googleapis
 @@||oneassist.in^
 @@||amazon.in^ # Blocked by 1 host pro domain
-@@||*tradepub.com
+@@||*tradepub.com # Blocked by 1 host pro domain
 !
 !
 !
