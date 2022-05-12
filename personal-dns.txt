@@ -1,7 +1,7 @@
 !Title: personal-dns
 !Description: personal-optimized-filters
-!Version: V.2022.05.11 update some rules
-!TimeUpdated: 2022-05-11
+!Version: V.2022.05.12 update some rules
+!TimeUpdated: 2022-05-12
 !filters: clear_urls_uboified, Adguard combined_disguised_trackers
 !
 !
@@ -189,6 +189,7 @@ $cookie=/__utm[a-z]/
 ||encrypted-*.gstatic.com^
 ||yt.moatads.*^
 ||*fbcdn.*^
+||clarity.ms^$important # Clarity is a analytics tool that show how users are interacting with your website through session replays and heatmaps.
 !
 !
 ############ Youtube ads ########################
