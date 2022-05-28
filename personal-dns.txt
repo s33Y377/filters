@@ -1,7 +1,7 @@
 !Title: personal-dns
 !Description: personal-optimized-filters
-!Version: V.2022.05.12 update some rules
-!TimeUpdated: 2022-05-12
+!Version: V.2022.05.28 update some rules
+!TimeUpdated: 2022-05-28
 !filters: clear_urls_uboified, Adguard combined_disguised_trackers
 !
 !
@@ -219,6 +219,7 @@ $cookie=/__utm[a-z]/
 !
 ############ User Filters #################
 !
+||*tfbnw.net^
 ||data.mistat.intl.xiaomi.com^
 ||service.hotstar.com^
 ||bifrost-api.hotstar.com^
