@@ -89,7 +89,7 @@ $cookie=/__utm[a-z]/
 ||vimeo.com^
 ||viber.com^
 ||wechat.com^
-||spotify.com^
+#||spotify.com^
 #||primevideo.com^
 ||netflix.com^
 ||weibo.com^
