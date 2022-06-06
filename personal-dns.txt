@@ -1,7 +1,7 @@
 !Title: personal-dns
 !Description: personal-optimized-filters
-!Version: V.2022.06.04 update some rules
-!TimeUpdated: 2022-06-04
+!Version: V.2022.06.06 update some rules
+!TimeUpdated: 2022-06-06
 !filters: clear_urls_uboified, Adguard combined_disguised_trackers
 !
 !
@@ -219,6 +219,11 @@ $cookie=/__utm[a-z]/
 !
 ############ User Filters #################
 !
+||helpshift.com^
+||voilatile-pa.googleapis.com^
+||sockjs-us2.pusher.com^
+||install2view.com^
+||sockjs-us2.pusher.com^$important
 ||*tfbnw.net^
 ||data.mistat.intl.xiaomi.com^
 ||service.hotstar.com^
