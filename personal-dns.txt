@@ -1,7 +1,7 @@
 !Title: personal-dns
 !Description: personal-optimized-filters
-!Version: V.2022.06.06 update some rules
-!TimeUpdated: 2022-06-06
+!Version: V.2022.06.17 update some rules
+!TimeUpdated: 2022-06-17
 !filters: clear_urls_uboified, Adguard combined_disguised_trackers
 !
 !
@@ -1048,6 +1048,7 @@ $removeparam=p,domain=billiger.de
 @@||tix.axs.com^$removeparam=utm_medium
 @@||tix.axs.com^$removeparam=utm_source
 @@||tix.axs.com^$removeparam=utm_term
+!
 !
 !
 !
