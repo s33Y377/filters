@@ -9,7 +9,6 @@
 # @@||olacabs.com^ # Couldn't whitelist because of blocked userlocation googleapis
 # @@||olawebcdn.com^ # Couldn't whitelist because of blocked userlocation googleapis
 @@||oneassist.in^
-@@||amazon.in^ # Blocked by 1 host pro domain
 @@||*tradepub.com # Blocked by 1 host pro domain
 !
 !######################## Airtel #######################################
@@ -68,6 +67,20 @@ $cookie=/__utm[a-z]/
 @@||api.twitter.com^
 #||mobile.twitter.com^
 !
+!########## Amazon #########
+!
+@@||amazon.in^ # Blocked by 1 host pro domain
+||amazonclix.com^
+||amazonaax.com^
+!
+!########## Brave #########
+!
+||ads-serve.brave.com^
+!
+!########## Vimeo #########
+!
+||vimeo.com^
+||f.vimeocdn.com^
 !
 !########## Facebook #########
 !
@@ -101,7 +114,6 @@ $cookie=/__utm[a-z]/
 ||tumbler.com^
 ||tiktok.com^
 ||flickr.com^
-||vimeo.com^
 ||viber.com^
 ||wechat.com^
 #||spotify.com^
@@ -242,12 +254,15 @@ www.google.com##.b2hzT.fbar
 ||dsp-adcreative.mobshark.net^
 ||mobshark.net.cutestat.com^
 !
-############ xiaomi ########################
+############ Mobile Brands Domain ########################
 !
 ||sa.api.intl.miui.com^
 ||xiaomi.com^
 ||data.mistat.intl.xiaomi.com^
 ||miui.com^
+||open.oneplus.net^
+||*oneplus.*^
+||analytics.oneplus.cn^
 !
 ############ Apple ########################
 !
@@ -297,8 +312,6 @@ www.google.com##.b2hzT.fbar
 ############ User Filters #################
 !
 ||clarity.ms^$important # Clarity is a analytics tool that show how users are interacting with your website through session replays and heatmaps.
-||amazonclix.com^
-||amazonaax.com^
 ||helpshift.com^
 ||sockjs-us2.pusher.com^
 ||install2view.com^
@@ -317,9 +330,6 @@ www.google.com##.b2hzT.fbar
 ||browser.sentry-cdn.com^
 ||talentjobs.mailspear.com^
 ||metrics.mzstatic.com^
-||open.oneplus.net^
-||*oneplus.*^
-||analytics.oneplus.cn^
 ||s.glance-cdn.net^
 ||lightstep.medium.systems^
 ||d1y3vfophxf7ip.cloudfront.net^
@@ -369,10 +379,8 @@ www.google.com##.b2hzT.fbar
 ||sessions.bugsnag.com^
 ||incimages.com^
 ||sentry.io^
-||f.vimeocdn.com^
 ||disqus.com^
 ||blog.disqus.com^
-||ads-serve.brave.com^
 ||d3jaymjyiads5d.cloudfront.net^
 ||api.starhalo.mobi^
 ||v.starhalo.mobi^
@@ -1066,8 +1074,5 @@ $removeparam=p,domain=billiger.de
 @@||tix.axs.com^$removeparam=utm_medium
 @@||tix.axs.com^$removeparam=utm_source
 @@||tix.axs.com^$removeparam=utm_term
-!
-!
-!
 !
 !
