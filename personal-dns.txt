@@ -57,24 +57,35 @@ $removeparam=app
 #||bing.com^
 ||yahoo.com^
 ||yandex.com^
-#||google.*
 ||baidu.*
 !
 !########### Block all cookies from following Domain ################
 !
 ||medium.com^cookie
 ||zeenews.*^cookie
-||facebook.com^cookie
 ||towardsdatascience.com^cookie
 $cookie=/__utm[a-z]/
+!
+!########## Facebook #########
+!
+||facebook.com^cookie
+||facebook.*^
+||m.facebook.com^
+||web.facebook.com^
+||mqtt-mini.facebook.com^
+||graph.facebook.com^
+||adtools.facebook.com^
+||analytics.facebook.com^
+||edge-mqtt.facebook.com^
+||l.facebook.com^
+||ads.facebook.com^
 ||facebook.com^$third-party,cookie=c_user
+||*fbcdn.*^
 !
 !
 !########## Social network #########
 !
 #||9gag.com^
-||facebook.*^
-||m.facebook.com^
 #||twitter.com^
 #||linkedin.com^
 ||vk.com^
@@ -97,31 +108,27 @@ $cookie=/__utm[a-z]/
 ||tinder.com^
 ||foursquare.com^
 ||myspace.com^
+
+####### Sharechat ############
 ||sharechat.*
+||apis.sharechat.com^
+||cdn2.sharechat.com^
+||cdn.sharechat.com^
 !
 !
 !########## top level domain #########
 !
 ||windows.*
 ||twitch.*
-||photos.google.*
 #||microsoft.*
-#||googleapis.*
-#||gstatic.*
-||analytics.withgoogle.com^
 !
 !
 !######### Allowed Domain ##########
 !
-@@||inbox.google.com/sync/
-@@||api.twitter.com^
-#@@||mobile.twitter.com^
-@@||youtube-ui.l.google.com^
-##||android.clients.google.com^
 @@||subtitle.mxplay.com^
-#@@||myactivity.google.com/myactivity
-#@@||myaccount.google.com
 #||api.gfycat.com^
+@@||api.twitter.com^
+#||mobile.twitter.com^
 !
 !
 !######### others #########
@@ -137,11 +144,7 @@ $cookie=/__utm[a-z]/
 !
 ||htmedia.*^
 ||chartbeat.*^
-||adservice.google.*^
-||analytics-api.samsunghealthcn.*^
-||supportmetrics.apple.*^
 ||metric.mzstatic.*^
-||trackingshipment.apple.*^
 ||adconfig.wynk.*
 ||adserver.snapads.*
 ||yt.moatads.*^
@@ -152,7 +155,6 @@ $cookie=/__utm[a-z]/
 ||ads.phonepe.com^
 ||ads.yap.yahoo.com^
 ||ads.reddit.com^
-||ads.facebook.com^
 ||ads.tiktok.com^
 ||*.adserver.snapads.*
 !
@@ -181,7 +183,25 @@ $cookie=/__utm[a-z]/
 !
 ########## Google Domains ###########
 !
-##||play.googleapis.com^
+www.google.com##.b2hzT.fbar
+||googletagmanager.com^
+||apis.google.com^
+||books.google.com^
+||id.google.*
+||*mtalk.google.com^
+||googletagservices.com^
+||adservice.google.*^
+#||google.*
+||photos.google.*
+#||googleapis.*
+#||gstatic.*
+||analytics.withgoogle.com^
+@@||inbox.google.com/sync/
+@@||youtube-ui.l.google.com^
+#||android.clients.google.com^
+#||myactivity.google.com/myactivity
+#||myaccount.google.com
+#||play.googleapis.com^
 @@||ajax.googleapis.com^
 ||safebrowsing.googleapis.com^
 ||geomobileservices-pa.googleapis.com^
@@ -203,15 +223,36 @@ $cookie=/__utm[a-z]/
 ||js-agent.newrelic.*
 ||googleweblight.com^
 ||encrypted-*.gstatic.com^
-||*fbcdn.*^
-||clarity.ms^$important # Clarity is a analytics tool that show how users are interacting with your website through session replays and heatmaps.
+||google.com^$webrtc
 !
 !
 ############ Youtube ads ########################
 !
 !
 !
+############ Apple ########################
+||metrics.apple.com^
+||securemetrics.apple.com^
+||supportmetrics.apple.*^
+||trackingshipment.apple.*^
+#||*apple.com
+||trackingshipment.apple.com^
+||metrics.icloud.com^
+||supportmetrics.apple.com^
+!
+############ Samsung ########################
+!
+||bigdata.ssp.samsung.com^
+||samsungadhub.com^
+||nmetrics.samsung.com^
+||ad.samsungadhub.com^
+||analytics-api.samsunghealthcn.*^
+||analytics.samsungknox.com^
+||analytics-api.samsunghealthcn.com^
+||insights.samsung.com^
+!
 ############ hicloud ########################
+!
 ||logbak.hicloud.com^
 ||logservice1.hicloud.com^
 ||logservice.hicloud.com^
@@ -227,7 +268,6 @@ $cookie=/__utm[a-z]/
 !
 ############## webrtc ################
 !
-||google.com^$webrtc
 !
 ########### Whatsapp ##################
 !
@@ -238,6 +278,7 @@ $cookie=/__utm[a-z]/
 !
 ############ User Filters #################
 !
+||clarity.ms^$important # Clarity is a analytics tool that show how users are interacting with your website through session replays and heatmaps.
 ||amazonclix.com^
 ||amazonaax.com^
 ||helpshift.com^
@@ -258,42 +299,23 @@ $cookie=/__utm[a-z]/
 ||catbeardx.com^
 ||browser.sentry-cdn.com^
 ||talentjobs.mailspear.com^
-||metrics.apple.com^
-||securemetrics.apple.com^
-||bigdata.ssp.samsung.com^
-||samsungadhub.com^
-||nmetrics.samsung.com^
-||ad.samsungadhub.com^
-||adtools.facebook.com^
 ||sa.api.intl.miui.com^
-||analytics.samsungknox.com^
-||analytics-api.samsunghealthcn.com^
-||trackingshipment.apple.com^
-||metrics.icloud.com^
-||supportmetrics.apple.com^
 ||metrics.mzstatic.com^
-||insights.samsung.com^
 ||open.oneplus.net^
 ||*oneplus.*^
 ||analytics.oneplus.cn^
-||graph.facebook.com^
 ||s.glance-cdn.net^
 ||lightstep.medium.systems^
 ||d1y3vfophxf7ip.cloudfront.net^
 ||maxcdn-bootstrapcdn.com^
-||maxcdn.bootstrapcdn.com^
 ||branch.io^
 ||notify.bugsnag.com^
-||analytics.facebook.com^
 ||analytics.twitter.com^
 ||analytics.pointdrive.linkedin.com^
 ||extmaps-api.yandex.net^
 ||adsdk.yandex.ru^
 ||indusos.com^
 ||ozee.com^
-||apis.sharechat.com^
-||cdn2.sharechat.com^
-||cdn.sharechat.com^
 ||track.clickonik.com^
 ||3p.ampproject.net^
 ||d2r1yp2w7bby2u.cloudfront.net^
@@ -335,9 +357,7 @@ $cookie=/__utm[a-z]/
 ||mobshark.net.cutestat.com^
 ||onlineapi.youappi.com^
 ||api.easeutility.com^
-||mqtt-mini.facebook.com^
 ||sessions.bugsnag.com^
-||googletagmanager.com^
 ||incimages.com^
 ||sentry.io^
 ||f.vimeocdn.com^
@@ -345,51 +365,40 @@ $cookie=/__utm[a-z]/
 ||blog.disqus.com^
 ||ads-serve.brave.com^
 ||d3jaymjyiads5d.cloudfront.net^
-||edge-mqtt.facebook.com^
 ||api.starhalo.mobi^
 ||v.starhalo.mobi^
-||googletagservices.com^
 ||aresssl.agoop.net^
 ||j2apps.s.llnwi.net^
 ||vapi.apk.vidmate.net^
 ||graph.instagram.com^
-||l.facebook.com^
 ||reports.crashlytics.com^
-||apis.google.com^
 ||batch-offer-api.xendercdn.com^
 ||pxf-xender2.xenderbox.com^
 ||allot10.smnvc.com^
-||books.google.com^
 ||topdailylist.com^
 ||e.crashlytics.com^
 ||app.adjust.com^
 ||track.saygames.io^
 ||ecommerce.iap.unity3d.com^
-||web.facebook.com^
 ||scontent-bom1-2.xx.fbcdn.net^
 ||zee5.com^
 ||xiaomi.com^
 ||miui.com^
 ||fastclick.com^
 ||adsystem.com^
-||id.google.*
 ||livelogs.slike.in^
 ||pdisk.net^
 ||onetrust.com^
-||*mtalk.google.com^
 ||cdn.ampproject.org^
 ||kriply.com^
 ||cdn.taboola.com^
 ||cdn.optimizely.com^
 ||*.ngrok.io^
-#||*apple.com
 ||premiumtuber.com^
 !
 !
 !
 ############## HTML Content Blocker #############
-! 2021-11-10 https://www.google.com
-www.google.com##.b2hzT.fbar
 !
 !
 !
