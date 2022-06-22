@@ -12,14 +12,9 @@
 @@||amazon.in^ # Blocked by 1 host pro domain
 @@||*tradepub.com # Blocked by 1 host pro domain
 !
-!
-!
-!
-!
 !######################## Airtel #######################################
 ||airtelxstream.in^$domain=airtel.*
 #||airtel.in/dot*^$domain=airtel.*
-!
 !
 !########### $removeparam Tracking Parameters ##########################
 !
@@ -39,7 +34,7 @@ $removeparam=adset_name
 $removeparam=campaign_name
 $removeparam=placement
 $removeparam=site_source_name
-###### Twitter #############
+###### Twitter Params #############
 $removeparam=twclid
 $removeparam=hss_channel
 ###### Bing/Microsoft ################
@@ -65,6 +60,14 @@ $removeparam=app
 ||zeenews.*^cookie
 ||towardsdatascience.com^cookie
 $cookie=/__utm[a-z]/
+!
+!########## Twitter #########
+!
+||analytics.twitter.com^
+||ads-api.twitter.com^
+@@||api.twitter.com^
+#||mobile.twitter.com^
+!
 !
 !########## Facebook #########
 !
@@ -108,7 +111,7 @@ $cookie=/__utm[a-z]/
 ||tinder.com^
 ||foursquare.com^
 ||myspace.com^
-
+!
 ####### Sharechat ############
 ||sharechat.*
 ||apis.sharechat.com^
@@ -127,8 +130,6 @@ $cookie=/__utm[a-z]/
 !
 @@||subtitle.mxplay.com^
 #||api.gfycat.com^
-@@||api.twitter.com^
-#||mobile.twitter.com^
 !
 !
 !######### others #########
@@ -150,7 +151,6 @@ $cookie=/__utm[a-z]/
 ||yt.moatads.*^
 ||cleverads.vn^
 ||api.mcoreads.com^
-||ads-api.twitter.com^
 ||jioads.akamaized.net^
 ||ads.phonepe.com^
 ||ads.yap.yahoo.com^
@@ -179,11 +179,14 @@ $cookie=/__utm[a-z]/
 ||tv9.com^
 #||indianexpress.com^
 ||indiatvnews.com^
+||zee5.com^
 !
 !
 ########## Google Domains ###########
 !
 www.google.com##.b2hzT.fbar
+||3p.ampproject.net^
+||cdn.ampproject.org^
 ||googletagmanager.com^
 ||apis.google.com^
 ||books.google.com^
@@ -230,7 +233,24 @@ www.google.com##.b2hzT.fbar
 !
 !
 !
+!
+############ mobshark.net ########################
+!
+||bid.mobshark.net^
+||track.mobshark.net^
+||dsptrack.mobshark.net^
+||dsp-adcreative.mobshark.net^
+||mobshark.net.cutestat.com^
+!
+############ xiaomi ########################
+!
+||sa.api.intl.miui.com^
+||xiaomi.com^
+||data.mistat.intl.xiaomi.com^
+||miui.com^
+!
 ############ Apple ########################
+!
 ||metrics.apple.com^
 ||securemetrics.apple.com^
 ||supportmetrics.apple.*^
@@ -274,8 +294,6 @@ www.google.com##.b2hzT.fbar
 ||crashlogs.whatsapp.*^
 #||pps.whatsapp.net^
 !
-!
-!
 ############ User Filters #################
 !
 ||clarity.ms^$important # Clarity is a analytics tool that show how users are interacting with your website through session replays and heatmaps.
@@ -286,7 +304,6 @@ www.google.com##.b2hzT.fbar
 ||install2view.com^
 ||sockjs-us2.pusher.com^$important
 ||*tfbnw.net^
-||data.mistat.intl.xiaomi.com^
 ||service.hotstar.com^
 ||bifrost-api.hotstar.com^
 ||clientstream.launchdarkly.com^
@@ -299,7 +316,6 @@ www.google.com##.b2hzT.fbar
 ||catbeardx.com^
 ||browser.sentry-cdn.com^
 ||talentjobs.mailspear.com^
-||sa.api.intl.miui.com^
 ||metrics.mzstatic.com^
 ||open.oneplus.net^
 ||*oneplus.*^
@@ -310,14 +326,12 @@ www.google.com##.b2hzT.fbar
 ||maxcdn-bootstrapcdn.com^
 ||branch.io^
 ||notify.bugsnag.com^
-||analytics.twitter.com^
 ||analytics.pointdrive.linkedin.com^
 ||extmaps-api.yandex.net^
 ||adsdk.yandex.ru^
 ||indusos.com^
 ||ozee.com^
 ||track.clickonik.com^
-||3p.ampproject.net^
 ||d2r1yp2w7bby2u.cloudfront.net^
 ||d33wubrfki0l68.cloudfront.net^
 ||a.opmnstr.com^
@@ -350,11 +364,6 @@ www.google.com##.b2hzT.fbar
 ||gjapplog.ucweb.com^
 ||*appspot.com^
 ||img.vidmatefilm.org^
-||bid.mobshark.net^
-||track.mobshark.net^
-||dsptrack.mobshark.net^
-||dsp-adcreative.mobshark.net^
-||mobshark.net.cutestat.com^
 ||onlineapi.youappi.com^
 ||api.easeutility.com^
 ||sessions.bugsnag.com^
@@ -381,15 +390,11 @@ www.google.com##.b2hzT.fbar
 ||track.saygames.io^
 ||ecommerce.iap.unity3d.com^
 ||scontent-bom1-2.xx.fbcdn.net^
-||zee5.com^
-||xiaomi.com^
-||miui.com^
 ||fastclick.com^
 ||adsystem.com^
 ||livelogs.slike.in^
 ||pdisk.net^
 ||onetrust.com^
-||cdn.ampproject.org^
 ||kriply.com^
 ||cdn.taboola.com^
 ||cdn.optimizely.com^
@@ -1054,7 +1059,7 @@ $removeparam=p,domain=billiger.de
 @@||comment-cdn.9gag.com/*comment-list.json?$removeparam
 @@$removeparam,domain=api.bilibili.com
 @@||marketscreener.com/search/?$removeparam
-
+!
 ! This is an allowlist added by the adflit maintainers
 @@||tix.axs.com^$removeparam=utm_campaign
 @@||tix.axs.com^$removeparam=utm_content
