@@ -1,7 +1,7 @@
 !Title: personal-dns
 !Description: personal-optimized-filters
-!Version: V.2022.06.21 update some rules
-!TimeUpdated: 2022-06-21
+!Version: V.2022.06.22 update some rules
+!TimeUpdated: 2022-06-22
 !filters: clear_urls_uboified, Adguard combined_disguised_trackers
 !
 !
@@ -18,7 +18,7 @@
 !
 !######################## Airtel #######################################
 ||airtelxstream.in^$domain=airtel.*
-||airtel.in/dot*^$domain=airtel.*
+#||airtel.in/dot*^$domain=airtel.*
 !
 !
 !########### $removeparam Tracking Parameters ##########################
@@ -53,7 +53,7 @@ $removeparam=app
 !
 ############ Search Engine Block ####################################
 !
-||duckduckgo.com^
+#||duckduckgo.com^
 #||bing.com^
 ||yahoo.com^
 ||yandex.com^
@@ -72,6 +72,7 @@ $cookie=/__utm[a-z]/
 !
 !########## Social network #########
 !
+#||9gag.com^
 ||facebook.*^
 ||m.facebook.com^
 #||twitter.com^
@@ -96,6 +97,7 @@ $cookie=/__utm[a-z]/
 ||tinder.com^
 ||foursquare.com^
 ||myspace.com^
+||sharechat.*
 !
 !
 !########## top level domain #########
@@ -115,8 +117,6 @@ $cookie=/__utm[a-z]/
 @@||api.twitter.com^
 #@@||mobile.twitter.com^
 @@||youtube-ui.l.google.com^
-##||play.googleapis.com^
-@@||ajax.googleapis.com^
 ##||android.clients.google.com^
 @@||subtitle.mxplay.com^
 #@@||myactivity.google.com/myactivity
@@ -142,8 +142,19 @@ $cookie=/__utm[a-z]/
 ||supportmetrics.apple.*^
 ||metric.mzstatic.*^
 ||trackingshipment.apple.*^
-#||9gag.com^
 ||adconfig.wynk.*
+||adserver.snapads.*
+||yt.moatads.*^
+||cleverads.vn^
+||api.mcoreads.com^
+||ads-api.twitter.com^
+||jioads.akamaized.net^
+||ads.phonepe.com^
+||ads.yap.yahoo.com^
+||ads.reddit.com^
+||ads.facebook.com^
+||ads.tiktok.com^
+||*.adserver.snapads.*
 !
 !
 ########Annoying Content#########
@@ -168,8 +179,15 @@ $cookie=/__utm[a-z]/
 ||indiatvnews.com^
 !
 !
-########## Sub-Domains ###########
+########## Google Domains ###########
 !
+##||play.googleapis.com^
+@@||ajax.googleapis.com^
+||safebrowsing.googleapis.com^
+||geomobileservices-pa.googleapis.com^
+||update.googleapis.com^
+||userlocation.googleapis.com^
+||voilatile-pa.googleapis.com^
 ||datamixer-pa.googleapis.com^
 ||infinitedata-pa.googleapis.com^
 ||footprints-pa.googleapis.com^
@@ -179,14 +197,12 @@ $cookie=/__utm[a-z]/
 ||optimizely.*
 ||*googlesyndication.com
 ||mxplay.*
-||sharechat.*
 ||googleadservices.com/pagead/^$important
 ||googleadservices*^$important
 ||incoming.telemetry.mozilla.*
 ||js-agent.newrelic.*
 ||googleweblight.com^
 ||encrypted-*.gstatic.com^
-||yt.moatads.*^
 ||*fbcdn.*^
 ||clarity.ms^$important # Clarity is a analytics tool that show how users are interacting with your website through session replays and heatmaps.
 !
@@ -195,18 +211,22 @@ $cookie=/__utm[a-z]/
 !
 !
 !
+############ hicloud ########################
+||logbak.hicloud.com^
+||logservice1.hicloud.com^
+||logservice.hicloud.com^
+||*hicloud.com^
 !
 !
 ########### Snapchat ads and tracking ###########
 !
 ||sc-analytics.appspot.*
 ||app-analytics.snapchat.*
-||adserver.snapads.*
-||*.adserver.snapads.*
 ||tr.snapchat.*
 !
 !
 ############## webrtc ################
+!
 ||google.com^$webrtc
 !
 ########### Whatsapp ##################
@@ -218,11 +238,9 @@ $cookie=/__utm[a-z]/
 !
 ############ User Filters #################
 !
-||ads.google.com^
 ||amazonclix.com^
 ||amazonaax.com^
 ||helpshift.com^
-||voilatile-pa.googleapis.com^
 ||sockjs-us2.pusher.com^
 ||install2view.com^
 ||sockjs-us2.pusher.com^$important
@@ -240,8 +258,6 @@ $cookie=/__utm[a-z]/
 ||catbeardx.com^
 ||browser.sentry-cdn.com^
 ||talentjobs.mailspear.com^
-||userlocation.googleapis.com^
-||*hicloud.com^
 ||metrics.apple.com^
 ||securemetrics.apple.com^
 ||bigdata.ssp.samsung.com^
@@ -260,16 +276,10 @@ $cookie=/__utm[a-z]/
 ||open.oneplus.net^
 ||*oneplus.*^
 ||analytics.oneplus.cn^
-||logbak.hicloud.com^
-||logservice1.hicloud.com^
-||logservice.hicloud.com^
-||ads.reddit.com^
-||ads.facebook.com^
 ||graph.facebook.com^
 ||s.glance-cdn.net^
 ||lightstep.medium.systems^
 ||d1y3vfophxf7ip.cloudfront.net^
-||update.googleapis.com^
 ||maxcdn-bootstrapcdn.com^
 ||maxcdn.bootstrapcdn.com^
 ||branch.io^
@@ -277,8 +287,6 @@ $cookie=/__utm[a-z]/
 ||analytics.facebook.com^
 ||analytics.twitter.com^
 ||analytics.pointdrive.linkedin.com^
-||ads.yap.yahoo.com^
-||ads.tiktok.com^
 ||extmaps-api.yandex.net^
 ||adsdk.yandex.ru^
 ||indusos.com^
@@ -287,7 +295,6 @@ $cookie=/__utm[a-z]/
 ||cdn2.sharechat.com^
 ||cdn.sharechat.com^
 ||track.clickonik.com^
-||safebrowsing.googleapis.com^
 ||3p.ampproject.net^
 ||d2r1yp2w7bby2u.cloudfront.net^
 ||d33wubrfki0l68.cloudfront.net^
@@ -308,7 +315,6 @@ $cookie=/__utm[a-z]/
 ||vodhls-vh.akamaihd.net^
 ||ipv4only.arpa^
 ||launches.appsflyer.com^
-||ads.phonepe.com^
 ||securecd-smrt.com^
 ||ohrdsplu.com^
 ||rhxdsplm.com^
@@ -316,8 +322,6 @@ $cookie=/__utm[a-z]/
 ||in.appcenter.ms^
 ||watch.redd.it^
 ||boaphaps.net^
-||ads-api.twitter.com^
-||jioads.akamaized.net^
 ||logger.easeutility.com^
 ||mosite.in^
 ||insight.ucweb.com^
@@ -332,7 +336,6 @@ $cookie=/__utm[a-z]/
 ||onlineapi.youappi.com^
 ||api.easeutility.com^
 ||mqtt-mini.facebook.com^
-||geomobileservices-pa.googleapis.com^
 ||sessions.bugsnag.com^
 ||googletagmanager.com^
 ||incimages.com^
@@ -351,7 +354,6 @@ $cookie=/__utm[a-z]/
 ||vapi.apk.vidmate.net^
 ||graph.instagram.com^
 ||l.facebook.com^
-||api.mcoreads.com^
 ||reports.crashlytics.com^
 ||apis.google.com^
 ||batch-offer-api.xendercdn.com^
@@ -366,7 +368,6 @@ $cookie=/__utm[a-z]/
 ||web.facebook.com^
 ||scontent-bom1-2.xx.fbcdn.net^
 ||zee5.com^
-||cleverads.vn^
 ||xiaomi.com^
 ||miui.com^
 ||fastclick.com^
@@ -392,7 +393,7 @@ www.google.com##.b2hzT.fbar
 !
 !
 !
-### source ### https://github.com/DandelionSprout/adfilt/blob/master/ClearURLs%20for%20uBo/clear_urls_uboified.txt! Title: ClearURLs for uBo
+### source ### https://github.com/DandelionSprout/adfilt/blob/master/ClearURLs%20for%20uBo/clear_urls_uboified.txt
 ! Title: ClearURLs for uBo
 ! Homepage: https://github.com/DandelionSprout/adfilt/discussions/163
 ! Description: Want to use ClearURLs' tracking protection without installing another extension? This list is a (unofficial) version of the ClearURLs rules, designed for use in uBlock Origin and AdGuard
