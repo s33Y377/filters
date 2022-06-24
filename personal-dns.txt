@@ -1,7 +1,7 @@
 !Title: personal-dns
 !Description: personal-optimized-filters
-!Version: V.2022.06.23 update some rules
-!TimeUpdated: 2022-06-23
+!Version: V.2022.06.24 update some rules
+!TimeUpdated: 2022-06-24
 !filters: clear_urls_uboified, Adguard combined_disguised_trackers
 !
 !
@@ -47,7 +47,7 @@ $removeparam=app
 !
 ############ Search Engine Block ####################################
 !
-#||duckduckgo.com^
+||duckduckgo.com^
 #||bing.com^
 ||yahoo.com^
 ||yandex.com^
@@ -193,6 +193,7 @@ $cookie=/__utm[a-z]/
 #||indianexpress.com^
 ||indiatvnews.com^
 ||zee5.com^
+||loksatta.com^
 !
 !
 ########## Google Domains ###########
