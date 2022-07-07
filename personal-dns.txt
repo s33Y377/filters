@@ -78,6 +78,10 @@ $cookie=/__utm[a-z]/
 !########## Brave #########
 !
 ||ads-serve.brave.com^
+||variations.brave.com^
+||brave-core-ext.s3.brave.com^
+||p3a.brave.com^
+||safebrowsing.brave.com^
 !
 !########## Vimeo #########
 !
