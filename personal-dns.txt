@@ -10,7 +10,7 @@
 # @@||olawebcdn.com^ # Couldn't whitelist because of blocked userlocation googleapis
 @@||oneassist.in^
 @@||*tradepub.com^ # Blocked by 1 host pro domain
-@@||*kik-live.com^ # kik messenger live features
+@@||api.gateway.kik-live.com^ # kik messenger live features
 !
 !######################## Airtel #######################################
 ||airtelxstream.in^$domain=airtel.*
