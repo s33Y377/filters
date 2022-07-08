@@ -1,7 +1,7 @@
 !Title: personal-dns
 !Description: personal-optimized-filters
-!Version: V.2022.07.07 update some rules
-!TimeUpdated: 2022-07-07
+!Version: V.2022.07.08 update some rules
+!TimeUpdated: 2022-07-08
 !filters: clear_urls_uboified, Adguard combined_disguised_trackers
 !
 !
@@ -11,6 +11,9 @@
 @@||oneassist.in^
 @@||*tradepub.com^ # Blocked by 1 host pro domain
 @@||api.gateway.kik-live.com^ # kik messenger live features
+@@||platform.kik.com^
+@@||platform.cf.kik.com^
+@@||*kik-live.com^
 !
 !######################## Airtel #######################################
 ||airtelxstream.in^$domain=airtel.*
