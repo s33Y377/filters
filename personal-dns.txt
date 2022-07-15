@@ -1,7 +1,7 @@
 !Title: personal-dns
 !Description: personal-optimized-filters
-!Version: V.2022.07.08 update some rules
-!TimeUpdated: 2022-07-08
+!Version: V.2022.07.15 update some rules
+!TimeUpdated: 2022-07-15
 !filters: clear_urls_uboified, Adguard combined_disguised_trackers
 !
 !
@@ -21,6 +21,11 @@
 !
 !########### $removeparam Tracking Parameters ##########################
 !
+# Bored Pandas
+$removeparam=cexp_id
+$removeparam=cexp_var
+$removeparam=_f
+
 $removeparam=ref
 $removeparam=ck_subscriber_id,domain=learnopencv.com
 $removeparam=client
