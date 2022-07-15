@@ -21,7 +21,7 @@
 !
 !########### $removeparam Tracking Parameters ##########################
 !
-# Bored Pandas
+# boredpanda.com
 $removeparam=cexp_id
 $removeparam=cexp_var
 $removeparam=_f
