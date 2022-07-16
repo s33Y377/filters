@@ -1,7 +1,7 @@
 !Title: personal-dns
 !Description: personal-optimized-filters
-!Version: V.2022.07.15 update some rules
-!TimeUpdated: 2022-07-15
+!Version: V.2022.07.16 update some rules
+!TimeUpdated: 2022-07-16
 !filters: clear_urls_uboified, Adguard combined_disguised_trackers
 !
 !
@@ -14,6 +14,7 @@
 @@||platform.kik.com^
 @@||platform.cf.kik.com^
 @@||*kik-live.com^
+@@||spclient.wg.spotify.com^$app=com.spotify.music
 !
 !######################## Airtel #######################################
 ||airtelxstream.in^$domain=airtel.*
