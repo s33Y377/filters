@@ -1,7 +1,7 @@
 !Title: personal-dns
 !Description: personal-optimized-filters
-!Version: V.2022.07.16 update some rules
-!TimeUpdated: 2022-07-16
+!Version: V.2022.07.20 update some rules
+!TimeUpdated: 2022-07-20
 !filters: clear_urls_uboified, Adguard combined_disguised_trackers
 !
 !
@@ -53,6 +53,25 @@ $removeparam=cmpid
 $removeparam=agid
 $removeparam=adid
 $removeparam=app
+# privacytracking params
+$removeparam=__hsfp
+$removeparam=__hssc
+$removeparam=__hstc
+$removeparam=__s
+$removeparam=_hsenc
+$removeparam=_openstat
+$removeparam=hsCtaTracking
+$removeparam=mc_eid
+$removeparam=ml_subscriber
+$removeparam=ml_subscriber_hash
+$removeparam=msclkid
+$removeparam=oly_anon_id
+$removeparam=oly_enc_id
+$removeparam=rb_clickid
+$removeparam=s_cid
+$removeparam=vero_conv
+$removeparam=vero_id
+$removeparam=wickedid
 !
 !
 ############ Search Engine Block ####################################
