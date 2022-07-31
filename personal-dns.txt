@@ -131,6 +131,7 @@ $cookie=/__utm[a-z]/
 ||ads.facebook.com^
 ||facebook.com^$third-party,cookie=c_user
 ||*fbcdn.*^
+@@||platform.instagram.com^
 !
 !
 !########## Social network #########
