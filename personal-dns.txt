@@ -1,7 +1,7 @@
 !Title: personal-dns
 !Description: personal-optimized-filters
-!Version: V.2022.07.20 update some rules
-!TimeUpdated: 2022-07-20
+!Version: V.2022.07.31 update some rules
+!TimeUpdated: 2022-07-31
 !filters: clear_urls_uboified, Adguard combined_disguised_trackers
 !
 !
@@ -232,18 +232,17 @@ $cookie=/__utm[a-z]/
 ########## Google Domains ###########
 !
 www.google.com##.b2hzT.fbar
-||3p.ampproject.net^
+||ampproject.net^
 ||cdn.ampproject.org^
 ||googletagmanager.com^
 ||apis.google.com^
-||books.google.com^
+#||books.google.com^
 ||id.google.*
 ||*mtalk.google.com^
 ||googletagservices.com^
 ||adservice.google.*^
 #||google.*
 ||photos.google.*
-#||googleapis.*
 #||gstatic.*
 ||analytics.withgoogle.com^
 @@||inbox.google.com/sync/
@@ -255,9 +254,9 @@ www.google.com##.b2hzT.fbar
 @@||ajax.googleapis.com^
 ||safebrowsing.googleapis.com^
 ||geomobileservices-pa.googleapis.com^
-||update.googleapis.com^
 ||userlocation.googleapis.com^
-||voilatile-pa.googleapis.com^
+||update.googleapis.com^
+#||voilatile-pa.googleapis.com^
 ||datamixer-pa.googleapis.com^
 ||infinitedata-pa.googleapis.com^
 ||footprints-pa.googleapis.com^
