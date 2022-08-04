@@ -5,6 +5,15 @@
 !filters: clear_urls_uboified, Adguard combined_disguised_trackers
 !
 !
+!########## Country ###########
+!
+||*.ir^
+||*.th^
+||*.br^
+||*.mx^
+||*.cn^
+||*.ru^
+!
 !###################### WishListed Domain #############################
 # @@||olacabs.com^ # Couldn't whitelist because of blocked userlocation googleapis
 # @@||olawebcdn.com^ # Couldn't whitelist because of blocked userlocation googleapis
