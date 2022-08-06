@@ -1,7 +1,7 @@
 !Title: personal-dns
 !Description: personal-optimized-filters
-!Version: V.2022.08.01 update some rules
-!TimeUpdated: 2022-08-01
+!Version: V.2022.08.06 update some rules
+!TimeUpdated: 2022-08-06
 !filters: clear_urls_uboified, Adguard combined_disguised_trackers
 !
 !
@@ -394,8 +394,6 @@ www.google.com##.b2hzT.fbar
 ||fairchildlive.com^
 ||deadline.com^
 ||myaccount.pmc.com^
-||footwearnews.com^
-||hollywoodlife.com^
 ||sourcingjournal.com^
 ||robbreport.com^
 ||spy.com^
