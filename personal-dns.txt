@@ -1,7 +1,7 @@
 !Title: personal-dns
 !Description: personal-optimized-filters
-!Version: V.2022.08.06 update some rules
-!TimeUpdated: 2022-08-06
+!Version: V.2022.08.08 update some rules
+!TimeUpdated: 2022-08-08
 !filters: clear_urls_uboified, Adguard combined_disguised_trackers
 !
 !
@@ -10,7 +10,6 @@
 ||*.ir^
 ||*.th^
 ||*.br^
-||*.mx^
 ||*.cn^
 ||*.ru^
 !
