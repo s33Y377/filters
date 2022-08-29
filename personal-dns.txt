@@ -1,7 +1,7 @@
 !Title: personal-dns
 !Description: personal-optimized-filters
-!Version: V.2022.08.19 update some rules
-!TimeUpdated: 2022-08-19
+!Version: V.2022.08.29 update some rules
+!TimeUpdated: 2022-08-29
 !filters: ClearURLs for uBo, Block Outsider Intrusion into LAN
 !
 !
@@ -1140,6 +1140,8 @@ $removeparam=ceneo_spo
 @@||tix.axs.com^$removeparam=utm_term
 !
 !
+!
+# [uBlock Origin] Source: https://ublockorigin.github.io/uAssets/filters/lan-block.txt 
 [uBlock Origin]
 ! Title: Block Outsider Intrusion into LAN
 ! Description: Prevents public internet sites from digging into your local LAN files.
