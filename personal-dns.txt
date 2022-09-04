@@ -1,7 +1,7 @@
 !Title: personal-dns
 !Description: personal-optimized-filters
-!Version: V.2022.08.29 update some rules
-!TimeUpdated: 2022-08-29
+!Version: V.2022.09.04 update some rules
+!TimeUpdated: 2022-09-04
 !filters: ClearURLs for uBo, Block Outsider Intrusion into LAN
 !
 !
@@ -103,6 +103,8 @@ $cookie=/__utm[a-z]/
 ||analytics.twitter.com^
 ||ads-api.twitter.com^
 @@||api.twitter.com^
+||syndication.twitter.com^
+||cdn.syndication.twimg.com^
 #||mobile.twitter.com^
 !
 !########## Amazon #########
@@ -118,6 +120,7 @@ $cookie=/__utm[a-z]/
 ||brave-core-ext.s3.brave.com^
 ||p3a.brave.com^
 ||safebrowsing.brave.com^
+||etoro.com^
 !
 !########## Vimeo #########
 !
