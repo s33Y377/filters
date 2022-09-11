@@ -88,7 +88,7 @@ $removeparam=wickedid
 #||bing.com^
 #||yahoo.com^
 ||yandex.com^
-||baidu.*
+||baidu.com^
 !
 !########### Block all cookies from following Domain ################
 !
