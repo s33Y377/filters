@@ -1,7 +1,7 @@
 !Title: personal-dns
 !Description: personal-optimized-filters
-!Version: V.2022.09.11 update some rules
-!TimeUpdated: 2022-09-11
+!Version: V.2022.09.16 update some rules
+!TimeUpdated: 2022-09-16
 !filters: ClearURLs for uBo, Block Outsider Intrusion into LAN
 !
 !
@@ -84,11 +84,12 @@ $removeparam=wickedid
 !
 ############ Search Engine Block ####################################
 !
-||duckduckgo.com^
 #||bing.com^
 #||yahoo.com^
+||duckduckgo.com^
 ||yandex.com^
 ||baidu.com^
+||startpage.com^
 !
 !########### Block all cookies from following Domain ################
 !
