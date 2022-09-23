@@ -1,7 +1,7 @@
 !Title: personal-dns
 !Description: personal-optimized-filters
-!Version: V.2022.09.16 update some rules
-!TimeUpdated: 2022-09-16
+!Version: V.2022.09.23 update some rules
+!TimeUpdated: 2022-09-23
 !filters: ClearURLs for uBo, Block Outsider Intrusion into LAN
 !
 !
@@ -360,6 +360,7 @@ www.google.com##.b2hzT.fbar
 !
 ############ User Filters #################
 !
+||connect.in^ # redirect sites to official pages
 ||clarity.ms^$important # Clarity is a analytics tool that show how users are interacting with your website through session replays and heatmaps.
 ||helpshift.com^
 ||sockjs-us2.pusher.com^
