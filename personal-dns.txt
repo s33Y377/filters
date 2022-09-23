@@ -14,23 +14,26 @@
 ||*.ru^
 !
 !###################### WishListed Domain #############################
-# @@||olacabs.com^ # Couldn't whitelist because of blocked userlocation googleapis
-# @@||olawebcdn.com^ # Couldn't whitelist because of blocked userlocation googleapis
+#@@||olacabs.com^ # Couldn't whitelist because of blocked userlocation googleapis
+#@@||olawebcdn.com^ # Couldn't whitelist because of blocked userlocation googleapis
 @@||oneassist.in^
 @@||tradepub.com^$important # Blocked by 1 host pro domain
+@@||spclient.wg.spotify.com^$app=com.spotify.music
+!
+!
+!###################### kik app Domain #############################
 #@@||api.gateway.kik-live.com^ # kik messenger live features
 #@@||platform.kik.com^
 #@@||platform.cf.kik.com^
 #@@||*kik-live.com^
-@@||spclient.wg.spotify.com^$app=com.spotify.music
+!
 !
 !######################## Airtel #######################################
 ||airtelxstream.in^$domain=airtel.*
 #||airtel.in/dot*^$domain=airtel.*
 !
-!########### $removeparam Tracking Parameters ##########################
 !
-# boredpanda.com
+!########### $removeparam Tracking Parameters ##########################
 $removeparam=cexp_id
 $removeparam=cexp_var
 $removeparam=_f
@@ -83,7 +86,6 @@ $removeparam=wickedid
 !
 !
 ############ Search Engine Block ####################################
-!
 #||bing.com^
 #||yahoo.com^
 ||duckduckgo.com^
@@ -91,8 +93,8 @@ $removeparam=wickedid
 ||baidu.com^
 ||startpage.com^
 !
-!########### Block all cookies from following Domain ################
 !
+!########### Block all cookies from following Domain ################
 ||baidu.com^cookie
 ||medium.com^cookie
 ||zeenews.*^cookie
@@ -100,14 +102,16 @@ $removeparam=wickedid
 ||facebook.com^$cookie
 $cookie=/__utm[a-z]/
 !
+!
 !########## Twitter #########
+!
+#||mobile.twitter.com^
+@@||api.twitter.com^
 !
 ||analytics.twitter.com^
 ||ads-api.twitter.com^
-@@||api.twitter.com^
 ||syndication.twitter.com^
 ||cdn.syndication.twimg.com^
-#||mobile.twitter.com^
 !
 !########## Amazon #########
 !
@@ -124,13 +128,13 @@ $cookie=/__utm[a-z]/
 ||safebrowsing.brave.com^
 ||etoro.com^
 !
-!########## Vimeo #########
 !
+!########## Vimeo #########
 ||vimeo.com^
 ||f.vimeocdn.com^
 !
-!########## Facebook #########
 !
+!########## Facebook #########
 ||facebook.com^cookie
 ||facebook.*^
 ||m.facebook.com^
@@ -147,13 +151,14 @@ $cookie=/__utm[a-z]/
 !
 !
 !########## Social network #########
-!
 #||9gag.com^
 #||twitter.com^
 #||spotify.com^
 #||primevideo.com^
 #||discord.com^
 #||linkedin.com^
+!
+||kik.com
 ||wechat.com^
 ||weibo.com^
 ||vk.com^
@@ -171,6 +176,8 @@ $cookie=/__utm[a-z]/
 ||tinder.com^
 ||foursquare.com^
 ||myspace.com^
+||twitch.tv^
+!
 !
 ####### Sharechat ############
 ||sharechat.*
@@ -180,9 +187,7 @@ $cookie=/__utm[a-z]/
 !
 !
 !########## top level domain #########
-!
 #||windows.*
-||twitch.*
 #||microsoft.*
 !
 !
@@ -193,7 +198,6 @@ $cookie=/__utm[a-z]/
 !
 !
 !######### others #########
-!
 ||v.fwmrm.net^
 ||api.privacy-center.*
 ||sdk.privacy-center.*
@@ -202,7 +206,6 @@ $cookie=/__utm[a-z]/
 !
 !
 !#########Ads & Analytics Domains#################
-!
 ||htmedia.*^
 ||chartbeat.*^
 ||metric.mzstatic.*^
@@ -229,54 +232,54 @@ $cookie=/__utm[a-z]/
 !
 !
 #########News Sites################
-!
+#||indianexpress.com^
+#||ndtv.com^
 ||inshorts.*^
 ||aajtaklive.in^
 ||aajtak.*^
-#||ndtv.com^
 ||republicworld.com^
 ||abplive.com^
 ||tv9.com^
-#||indianexpress.com^
 ||indiatvnews.com^
 ||zee5.com^
 ||loksatta.com^
 !
 !
 ########## Google Domains ###########
-!
-www.google.com##.b2hzT.fbar
-||ampproject.net^
-||cdn.ampproject.org^
-||googletagmanager.com^
-||apis.google.com^
 #||books.google.com^
-||id.google.*
-||*mtalk.google.com^
-||googletagservices.com^
-||adservice.google.*^
 #||google.*
-||photos.google.*
 #||gstatic.*
-||analytics.withgoogle.com^
-@@||inbox.google.com/sync/
-@@||youtube-ui.l.google.com^
-@@||s.youtube.com^$important
 #||android.clients.google.com^
 #||myactivity.google.com/myactivity
 #||myaccount.google.com
 #||play.googleapis.com^
+#||voilatile-pa.googleapis.com^
+#||fonts.googleapis.com^
+#||ggpht.com^
+!
+@@||inbox.google.com/sync/
+@@||youtube-ui.l.google.com^
+@@||s.youtube.com^$important
 @@||ajax.googleapis.com^
+!
+||google.com##.b2hzT.fbar
+||ampproject.net^
+||cdn.ampproject.org^
+||googletagmanager.com^
+||apis.google.com^
+||id.google.*
+||*mtalk.google.com^
+||googletagservices.com^
+||adservice.google.*^
+||photos.google.*
+||analytics.withgoogle.com^
 ||safebrowsing.googleapis.com^
 ||geomobileservices-pa.googleapis.com^
 ||userlocation.googleapis.com^
 ||update.googleapis.com^
-#||voilatile-pa.googleapis.com^
 ||datamixer-pa.googleapis.com^
 ||infinitedata-pa.googleapis.com^
 ||footprints-pa.googleapis.com^
-#||fonts.googleapis.com^
-#||ggpht.com^
 ||doubleclick.*
 ||optimizely.*
 ||*googlesyndication.com
@@ -296,7 +299,6 @@ www.google.com##.b2hzT.fbar
 !
 !
 ############ mobshark.net ########################
-!
 ||bid.mobshark.net^
 ||track.mobshark.net^
 ||dsptrack.mobshark.net^
@@ -304,7 +306,6 @@ www.google.com##.b2hzT.fbar
 ||mobshark.net.cutestat.com^
 !
 ############ Mobile Brands Domain ########################
-!
 ||sa.api.intl.miui.com^
 ||xiaomi.com^
 ||data.mistat.intl.xiaomi.com^
@@ -335,8 +336,8 @@ www.google.com##.b2hzT.fbar
 ||analytics-api.samsunghealthcn.com^
 ||insights.samsung.com^
 !
-############ hicloud ########################
 !
+############ hicloud ########################
 ||logbak.hicloud.com^
 ||logservice1.hicloud.com^
 ||logservice.hicloud.com^
@@ -344,7 +345,6 @@ www.google.com##.b2hzT.fbar
 !
 !
 ########### Snapchat ads and tracking ###########
-!
 ||sc-analytics.appspot.*
 ||app-analytics.snapchat.*
 ||tr.snapchat.*
@@ -354,12 +354,11 @@ www.google.com##.b2hzT.fbar
 !
 !
 ########### Whatsapp ##################
-!
 ||crashlogs.whatsapp.*^
 #||pps.whatsapp.net^
 !
-############ User Filters #################
 !
+############ User Filters #################
 ||connect.in^ # redirect sites to official pages
 ||clarity.ms^$important # Clarity is a analytics tool that show how users are interacting with your website through session replays and heatmaps.
 ||helpshift.com^
@@ -460,7 +459,6 @@ www.google.com##.b2hzT.fbar
 !
 !
 ############## HTML Content Blocker #############
-!
 !
 !
 ### source ### https://github.com/DandelionSprout/adfilt/blob/master/ClearURLs%20for%20uBo/clear_urls_uboified.txt
