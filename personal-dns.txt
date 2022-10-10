@@ -1,7 +1,7 @@
 !Title: personal-dns
 !Description: personal-optimized-filters
-!Version: V.2022.09.23 update some rules
-!TimeUpdated: 2022-09-23
+!Version: V.2022.10.10 update some rules
+!TimeUpdated: 2022-10-10
 !filters: ClearURLs for uBo, Block Outsider Intrusion into LAN
 !
 !
@@ -64,6 +64,9 @@ $removeparam=cmpid
 $removeparam=agid
 $removeparam=adid
 $removeparam=app
+$removeparam=ocid
+$removeparam=cvid
+!
 # privacytracking params
 $removeparam=__hsfp
 $removeparam=__hssc
@@ -83,6 +86,11 @@ $removeparam=s_cid
 $removeparam=vero_conv
 $removeparam=vero_id
 $removeparam=wickedid
+!
+!
+## Vanced Youtube ########
+#||sponsor.ajay.app^
+!
 !
 !
 ############ Search Engine Block ####################################
@@ -247,7 +255,6 @@ $cookie=/__utm[a-z]/
 !
 ########## Google Domains ###########
 #||books.google.com^
-#||google.*
 #||gstatic.*
 #||android.clients.google.com^
 #||myactivity.google.com/myactivity
