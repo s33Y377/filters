@@ -366,6 +366,7 @@ $cookie=/__utm[a-z]/
 !
 !
 ############ User Filters #################
+||cdn.branch.io^
 ||connect.in^ # redirect sites to official pages
 ||clarity.ms^$important # Clarity is a analytics tool that show how users are interacting with your website through session replays and heatmaps.
 ||helpshift.com^
