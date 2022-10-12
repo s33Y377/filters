@@ -165,12 +165,12 @@ $cookie=/__utm[a-z]/
 #||primevideo.com^
 #||discord.com^
 #||linkedin.com^
+#||pinterest.com^
 !
 ||kik.com
 ||wechat.com^
 ||weibo.com^
 ||vk.com^
-||pinterest.com^
 ||tumblr.com^
 ||instagram.com^
 ||snapchat.com^
