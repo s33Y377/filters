@@ -269,7 +269,7 @@ $cookie=/__utm[a-z]/
 @@||s.youtube.com^$important
 @@||ajax.googleapis.com^
 !
-||*googlesyndication.com
+#||*googlesyndication.com
 ||googleadservices.com/pagead/^$important
 ||googleadservices*^$important
 ||googletagmanager.com^
@@ -277,6 +277,26 @@ $cookie=/__utm[a-z]/
 ||adservice.google.*^
 ||*mtalk.google.com^
 !
+||geomobileservices-pa.googleapis.com^
+||update.googleapis.com^
+||datamixer-pa.googleapis.com^
+||infinitedata-pa.googleapis.com^
+||footprints-pa.googleapis.com^
+||apis.google.com^
+||userlocation.googleapis.com^
+||google.com##.b2hzT.fbar
+||ampproject.net^
+||cdn.ampproject.org^
+||id.google.*
+||photos.google.*
+||analytics.withgoogle.com^
+||safebrowsing.googleapis.com^
+||doubleclick.*
+||optimizely.*
+||js-agent.newrelic.*
+||googleweblight.com^
+||encrypted-*.gstatic.com^
+||google.com^$webrtc
 !
 ############ Youtube ads ########################
 !
