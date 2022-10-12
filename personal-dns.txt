@@ -274,12 +274,12 @@ $cookie=/__utm[a-z]/
 #||datamixer-pa.googleapis.com^
 #||infinitedata-pa.googleapis.com^
 #||footprints-pa.googleapis.com^
+#||apis.google.com^
 ||userlocation.googleapis.com^
 ||google.com##.b2hzT.fbar
 ||ampproject.net^
 ||cdn.ampproject.org^
 ||googletagmanager.com^
-||apis.google.com^
 ||id.google.*
 ||*mtalk.google.com^
 ||googletagservices.com^
