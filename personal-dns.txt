@@ -277,14 +277,14 @@ $cookie=/__utm[a-z]/
 ||googleweblight.com^
 ||adservice.google.*^
 !
-||*mtalk.google.com^
-||googletagmanager.com^
-||googletagservices.com^
-||photos.google.*
-||id.google.*
-||doubleclick.*
 !
+||*mtalk.google.com^
 ######################### find my device doesn't work ####################
+#||googletagmanager.com^
+#||googletagservices.com^
+#||photos.google.*
+#||id.google.*
+#||doubleclick.*
 #||encrypted-*.gstatic.com^
 #||*googlesyndication.com
 #||geomobileservices-pa.googleapis.com^
