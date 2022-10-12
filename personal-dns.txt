@@ -254,7 +254,28 @@ $cookie=/__utm[a-z]/
 !
 !
 ########## Google Domains ###########
-
+#||books.google.com^
+#||gstatic.*
+#||android.clients.google.com^
+#||myactivity.google.com/myactivity
+#||myaccount.google.com
+#||play.googleapis.com^
+#||voilatile-pa.googleapis.com^
+#||fonts.googleapis.com^
+#||ggpht.com^
+!
+@@||inbox.google.com/sync/
+@@||youtube-ui.l.google.com^
+@@||s.youtube.com^$important
+@@||ajax.googleapis.com^
+!
+||*googlesyndication.com
+||googleadservices.com/pagead/^$important
+||googleadservices*^$important
+||googletagmanager.com^
+||googletagservices.com^
+||adservice.google.*^
+||*mtalk.google.com^
 !
 !
 ############ Youtube ads ########################
