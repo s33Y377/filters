@@ -269,6 +269,13 @@ $cookie=/__utm[a-z]/
 @@||s.youtube.com^$important
 @@||ajax.googleapis.com^
 !
+||geomobileservices-pa.googleapis.com^
+||update.googleapis.com^
+#||datamixer-pa.googleapis.com^
+#||infinitedata-pa.googleapis.com^
+#||footprints-pa.googleapis.com^
+!
+||userlocation.googleapis.com^
 ||google.com##.b2hzT.fbar
 ||ampproject.net^
 ||cdn.ampproject.org^
@@ -281,12 +288,6 @@ $cookie=/__utm[a-z]/
 ||photos.google.*
 ||analytics.withgoogle.com^
 ||safebrowsing.googleapis.com^
-||geomobileservices-pa.googleapis.com^
-||userlocation.googleapis.com^
-||update.googleapis.com^
-||datamixer-pa.googleapis.com^
-||infinitedata-pa.googleapis.com^
-||footprints-pa.googleapis.com^
 ||doubleclick.*
 ||optimizely.*
 ||*googlesyndication.com
