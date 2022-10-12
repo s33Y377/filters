@@ -277,6 +277,9 @@ $cookie=/__utm[a-z]/
 ||googleweblight.com^
 ||adservice.google.*^
 !
+############################ Tried Domain ###############################
+!
+######################### find my device doesn't work ####################
 #||*mtalk.google.com^
 #||googletagmanager.com^
 #||googletagservices.com^
