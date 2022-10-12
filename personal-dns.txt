@@ -277,28 +277,25 @@ $cookie=/__utm[a-z]/
 ||googleweblight.com^
 ||adservice.google.*^
 !
-############################ Tried Domain ###############################
+||*mtalk.google.com^
+||googletagmanager.com^
+||googletagservices.com^
+||photos.google.*
+||id.google.*
+||doubleclick.*
 !
 ######################### find my device doesn't work ####################
-#||*mtalk.google.com^
-#||googletagmanager.com^
-#||googletagservices.com^
-#||photos.google.*
 #||encrypted-*.gstatic.com^
 #||*googlesyndication.com
-#||userlocation.googleapis.com^
 #||geomobileservices-pa.googleapis.com^
 #||update.googleapis.com^
 #||datamixer-pa.googleapis.com^
 #||infinitedata-pa.googleapis.com^
 #||footprints-pa.googleapis.com^
 #||apis.google.com^
-#||id.google.*
 #||analytics.withgoogle.com^
-#||doubleclick.*
 #||optimizely.*
 #||js-agent.newrelic.*
-#||google.com^$webrtc
 !
 !
 ############ Youtube ads ########################
