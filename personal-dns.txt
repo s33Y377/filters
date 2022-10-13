@@ -1,7 +1,7 @@
 !Title: personal-dns
 !Description: personal-optimized-filters
-!Version: V.2022.10.12 update some rules
-!TimeUpdated: 2022-10-12
+!Version: V.2022.10.13 update some rules
+!TimeUpdated: 2022-10-13
 !filters: ClearURLs for uBo, Block Outsider Intrusion into LAN
 !
 !
@@ -278,11 +278,10 @@ $cookie=/__utm[a-z]/
 ||adservice.google.*^
 !
 !
-||*mtalk.google.com^
 ######################### find my device doesn't work ####################
+#||*mtalk.google.com^
 #||googletagmanager.com^
 #||googletagservices.com^
-#||photos.google.*
 #||id.google.*
 #||doubleclick.*
 #||encrypted-*.gstatic.com^
