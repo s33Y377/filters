@@ -18,8 +18,8 @@
 #@@||olawebcdn.com^ # Couldn't whitelist because of blocked userlocation googleapis
 @@||oneassist.in^
 @@||tradepub.com^$important # Blocked by 1 host pro domain
-@@||spclient.wg.spotify.com^$app=com.spotify.music
-@@||spclient.wg.spotify.com^$app=com.spotify.lite
+@@||spclient.wg.spotify.com^$app=com.spotify.music,important
+@@||spclient.wg.spotify.com^$app=com.spotify.lite,important
 !
 !
 !###################### kik app Domain #############################
