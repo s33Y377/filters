@@ -1,7 +1,7 @@
 !Title: personal-dns
 !Description: personal-optimized-filters
-!Version: V.2022.10.13 update some rules
-!TimeUpdated: 2022-10-13
+!Version: V.2022.10.29 update some rules
+!TimeUpdated: 2022-10-29
 !filters: ClearURLs for uBo, Block Outsider Intrusion into LAN
 !
 !
@@ -19,6 +19,7 @@
 @@||oneassist.in^
 @@||tradepub.com^$important # Blocked by 1 host pro domain
 @@||spclient.wg.spotify.com^$app=com.spotify.music
+@@||spclient.wg.spotify.com^$app=com.spotify.lite
 !
 !
 !###################### kik app Domain #############################
