@@ -4,6 +4,10 @@
 !TimeUpdated: 2022-11-11
 !filters: ClearURLs for uBo, Block Outsider Intrusion into LAN
 !
+!
+######################### Test Filter #########################
+||*^$header=x-clinet-data # remove x-clinet-data value
+!
 !########## Country ###########
 ||*.br^
 ||*.cn^
