@@ -1,12 +1,12 @@
 !Title: personal-dns
 !Description: personal-optimized-filters
-!Version: V.2022.11.11 update some rules
-!TimeUpdated: 2022-11-11
+!Version: V.2022.11.12 update some rules
+!TimeUpdated: 2022-11-12
 !filters: ClearURLs for uBo, Block Outsider Intrusion into LAN
 !
 !
 ######################### Test Filter #########################
-||*^$header=x-clinet-data # remove x-clinet-data value
+||*^$header=x-clinet-data # remove x-client-data value
 !
 !########## Country ###########
 ||*.br^
