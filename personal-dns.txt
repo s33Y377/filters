@@ -6,7 +6,7 @@
 !
 !
 ######################### Test Filter #########################
-||*^$header=x-clinet-data # remove x-client-data value
+||*^$header=x-client-data # remove x-client-data value
 !
 !########## Country ###########
 ||*.br^
