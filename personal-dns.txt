@@ -1,7 +1,7 @@
 !Title: personal-dns
 !Description: personal-optimized-filters
-!Version: V.2022.11.12 update some rules
-!TimeUpdated: 2022-11-12
+!Version: V.2022.11.15 update some rules
+!TimeUpdated: 2022-11-15
 !filters: ClearURLs for uBo, Block Outsider Intrusion into LAN
 !
 !
@@ -152,8 +152,10 @@ $cookie=/__utm[a-z]/
 !
 !########## Facebook #########
 !
+#||*cdninstagram.com^
+#||graph.instagram.com^
+#||instagram.com^
 ||*akamaihd.net^
-||*cdninstagram.com^
 ||*fbcdn.*^
 ||*tfbnw.net^
 ||ads.facebook.com^
@@ -180,7 +182,6 @@ $cookie=/__utm[a-z]/
 #||twitter.com^
 ||flickr.com^
 ||foursquare.com^
-||instagram.com^
 ||kik.com
 ||myspace.com^
 ||netflix.com^
@@ -451,7 +452,6 @@ $cookie=/__utm[a-z]/
 ||fairchildlive.com^
 ||fastclick.com^
 ||gjapplog.ucweb.com^
-||graph.instagram.com^
 ||helpshift.com^
 ||img.vidmatefilm.org^
 ||in.appcenter.ms^
