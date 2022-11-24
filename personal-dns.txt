@@ -157,7 +157,7 @@ $cookie=/__utm[a-z]/
 #||*cdninstagram.com^
 #||graph.instagram.com^
 #||instagram.com^
-#||*fbcdn.*^
+||*fbcdn.*^
 ||*akamaihd.net^
 ||*tfbnw.net^
 ||ads.facebook.com^
