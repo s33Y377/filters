@@ -1,7 +1,7 @@
 !Title: personal-dns
 !Description: personal-optimized-filters
-!Version: V.2022.12.12 update some rules
-!TimeUpdated: 2022-12-12
+!Version: V.2022.12.23 update some rules
+!TimeUpdated: 2022-12-23
 !filters: ClearURLs for uBo, Block Outsider Intrusion into LAN
 !
 !
@@ -131,6 +131,7 @@ $cookie=/__utm[a-z]/
 ||analytics.twitter.com^
 ||cdn.syndication.twimg.com^
 ||syndication.twitter.com^
+||*ads-twitter.com^
 !
 !########## Amazon #########
 !
