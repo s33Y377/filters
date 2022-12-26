@@ -161,8 +161,8 @@ $cookie=/__utm[a-z]/
 #||*cdninstagram.com^
 #||graph.instagram.com^
 #||instagram.com^
+#||*fbcdn.*^
 ||*akamaihd.net^
-#||*fbcdn.*^$stealth
 ||*tfbnw.net^
 ||ads.facebook.com^
 ||adtools.facebook.com^
