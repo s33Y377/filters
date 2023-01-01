@@ -162,20 +162,21 @@ $cookie=/__utm[a-z]/
 #||graph.instagram.com^
 #||instagram.com^
 #||*fbcdn.*^
+#||edge-mqtt.facebook.com^
+#||mqtt-mini.facebook.com^
+#||facebook.*^
+#||web.facebook.com^
 ||*akamaihd.net^
 ||*tfbnw.net^
 ||ads.facebook.com^
 ||adtools.facebook.com^
 ||analytics.facebook.com^
-||edge-mqtt.facebook.com^
-||facebook.*^
 ||facebook.com^$third-party,cookie=c_user
 ||facebook.com^cookie
 ||graph.facebook.com^
 ||l.facebook.com^
 ||m.facebook.com^
-||mqtt-mini.facebook.com^
-||web.facebook.com^
+
 !
 !########## Social network #########
 !
