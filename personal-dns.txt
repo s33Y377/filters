@@ -1,7 +1,7 @@
 !Title: personal-dns
 !Description: personal-optimized-filters
-!Version: V.2022.12.26 update some rules
-!TimeUpdated: 2022-12-26
+!Version: V.2023.01.01 update some rules
+!TimeUpdated: 2023-01-01
 !filters: ClearURLs for uBo, Block Outsider Intrusion into LAN
 !
 !
@@ -162,10 +162,10 @@ $cookie=/__utm[a-z]/
 #||graph.instagram.com^
 #||instagram.com^
 #||*fbcdn.*^
-#||edge-mqtt.facebook.com^
-#||mqtt-mini.facebook.com^
-#||facebook.*^
-#||web.facebook.com^
+||edge-mqtt.facebook.com^
+||mqtt-mini.facebook.com^
+||facebook.*^
+||web.facebook.com^
 ||*akamaihd.net^
 ||*tfbnw.net^
 ||ads.facebook.com^
