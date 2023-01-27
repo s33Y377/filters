@@ -209,6 +209,13 @@ $cookie=/__utm[a-z]/
 #||cdn2.sharechat.com^
 #||sharechat.*
 !
+########### Snapchat ads and tracking ###########
+!
+#||snapchat.com^
+||app-analytics.snapchat.*
+||sc-analytics.appspot.*
+||tr.snapchat.*
+!
 !########## Microsoft #########
 !
 #||microsoft.*
@@ -400,13 +407,6 @@ $cookie=/__utm[a-z]/
 ||logbak.hicloud.com^
 ||logservice.hicloud.com^
 ||logservice1.hicloud.com^
-!
-########### Snapchat ads and tracking ###########
-!
-#||snapchat.com^
-||app-analytics.snapchat.*
-||sc-analytics.appspot.*
-||tr.snapchat.*
 !
 ############## webrtc ################
 !
