@@ -1,7 +1,7 @@
 !Title: personal-dns
 !Description: personal-optimized-filters
-!Version: V.2023.01.25 update some rules
-!TimeUpdated: 2023-01-25
+!Version: V.2023.01.27 update some rules
+!TimeUpdated: 2023-01-27
 !filters: ClearURLs for uBo, Block Outsider Intrusion into LAN
 !
 !
@@ -193,7 +193,6 @@ $cookie=/__utm[a-z]/
 ||myspace.com^
 ||netflix.com^
 ||patreon.com^
-||snapchat.com^
 ||tiktok.com^
 ||tinder.com^
 ||tumblr.com^
@@ -205,10 +204,10 @@ $cookie=/__utm[a-z]/
 !
 ####### Sharechat ############
 !
-||apis.sharechat.com^
-||cdn.sharechat.com^
-||cdn2.sharechat.com^
-||sharechat.*
+#||apis.sharechat.com^
+#||cdn.sharechat.com^
+#||cdn2.sharechat.com^
+#||sharechat.*
 !
 !########## Microsoft #########
 !
@@ -404,6 +403,7 @@ $cookie=/__utm[a-z]/
 !
 ########### Snapchat ads and tracking ###########
 !
+#||snapchat.com^
 ||app-analytics.snapchat.*
 ||sc-analytics.appspot.*
 ||tr.snapchat.*
