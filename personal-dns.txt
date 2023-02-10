@@ -1,11 +1,12 @@
 !Title: personal-dns
 !Description: personal-optimized-filters
-!Version: V.2023.01.27 update some rules
-!TimeUpdated: 2023-01-27
+!Version: V.2023.02.10 update some rules
+!TimeUpdated: 2023-02-10
 !filters: ClearURLs for uBo, Block Outsider Intrusion into LAN
 !
 !
 ######################### Test Filter #########################
+!
 ||*^$header=x-client-data # remove x-client-data value
 ||*^$header=X-Forwarded-For
 ||*^$header=x-Real-IP
@@ -127,11 +128,11 @@ $cookie=/__utm[a-z]/
 !
 #||mobile.twitter.com^
 @@||api.twitter.com^
+||*ads-twitter.com^
 ||ads-api.twitter.com^
 ||analytics.twitter.com^
 ||cdn.syndication.twimg.com^
 ||syndication.twitter.com^
-||*ads-twitter.com^
 !
 !########## Amazon #########
 !
@@ -286,6 +287,7 @@ $cookie=/__utm[a-z]/
 !
 #||indianexpress.com^
 #||ndtv.com^
+#||zee5.com^
 ||aajtak.*^
 ||aajtaklive.in^
 ||abplive.com^
@@ -294,7 +296,6 @@ $cookie=/__utm[a-z]/
 ||loksatta.com^
 ||republicworld.com^
 ||tv9.com^
-||zee5.com^
 !
 ########## Google Domains ###########
 !
@@ -5092,24 +5093,24 @@ $removeparam=glbnav,domain=hallmark.com|hallmarkchannel.com|hallmarkchannelwines
 ||puma.com^$removeparam=amp
 
 ! https://github.com/DandelionSprout/adfilt/discussions/163#discussioncomment-4182667
-$removeparam=src_medium,document
-$removeparam=src_source,document
 $removeparam=src_campaign,document
-$removeparam=src_term,document
 $removeparam=src_content
 $removeparam=src_custom
+$removeparam=src_medium,document
+$removeparam=src_source,document
+$removeparam=src_term,document
+||bbc.*^$removeparam=at_bbc_team
 ||bbc.*^$removeparam=at_campaign
 ||bbc.*^$removeparam=at_campaign_type
-||bbc.*^$removeparam=at_type
-||bbc.*^$removeparam=at_identifier
-||bbc.*^$removeparam=at_format
 ||bbc.*^$removeparam=at_creation
-||bbc.*^$removeparam=at_variant
-||bbc.*^$removeparam=at_link_type
-||bbc.*^$removeparam=at_bbc_team
-||bbc.*^$removeparam=at_ptr_name
+||bbc.*^$removeparam=at_format
+||bbc.*^$removeparam=at_identifier
 ||bbc.*^$removeparam=at_link_id
 ||bbc.*^$removeparam=at_link_origin
+||bbc.*^$removeparam=at_link_type
+||bbc.*^$removeparam=at_ptr_name
+||bbc.*^$removeparam=at_type
+||bbc.*^$removeparam=at_variant
 
 ! https://github.com/DandelionSprout/adfilt/discussions/163#discussioncomment-4131326
 ||linkedin.com^$removeparam=updateEntityUrn
