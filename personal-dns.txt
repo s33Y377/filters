@@ -1,7 +1,7 @@
 !Title: personal-dns
 !Description: personal-optimized-filters
-!Version: V.2023.04.02 update some rules
-!TimeUpdated: 2023-04-02
+!Version: V.2023.04.20 update some rules
+!TimeUpdated: 2023-04-20
 !filters: ClearURLs for uBo, Block Outsider Intrusion into LAN
 !
 !
@@ -170,16 +170,24 @@ $cookie=/__utm[a-z]/
 ||ads.facebook.com^
 ||adtools.facebook.com^
 ||analytics.facebook.com^
+||api.facebook.com
+||b-www.facebook.com
 ||edge-mqtt.facebook.com^
 ||facebook.*^
 ||facebook.com^$third-party,cookie=c_user
 ||facebook.com^cookie
+||fb.com
+||fb.me
+||gateway.facebook.com
 ||graph.facebook.com^
 ||l.facebook.com^
+||lithium.facebook.com
+||lookaside.facebook.com
 ||m.facebook.com^
 ||mqtt-mini.facebook.com^
 ||web.facebook.com^
-
+!
+!
 !
 !########## Social network #########
 !
@@ -197,13 +205,32 @@ $cookie=/__utm[a-z]/
 ||netflix.com^
 ||patreon.com^
 ||tiktok.com^
-||tinder.com^
 ||tumblr.com^
-||twitch.tv^
 ||viber.com^
 ||vk.com^
 ||wechat.com^
 ||weibo.com^
+||gotinder.com
+||tindersparks.com
+!
+!
+####### Twitch ############
+!
+||twitch.tv^
+||ext-twitch.tv
+||jtvnw.net
+||ttvnw.net
+||twitch.map.fastly.net
+||twitch.tv
+||twitchcdn.net
+||twitchsvc.net
+!
+!
+####### Tinder ############
+!
+||tinder.com^
+||gotinder.com
+||tindersparks.com
 !
 ####### Sharechat ############
 !
@@ -216,8 +243,18 @@ $cookie=/__utm[a-z]/
 !
 #||snapchat.com^
 ||app-analytics.snapchat.*
+||feelinsonice-hrd.appspot.com
+||feelinsonice.appspot.com
 ||sc-analytics.appspot.*
+||sc-analytics.appspot.com
+||sc-cdn.net
+||sc-gw.com
+||sc-jpl.com
+||sc-prod.net
+||snap-dev.net
+||snapads.com
 ||tr.snapchat.*
+!
 !
 !########## Microsoft #########
 !
