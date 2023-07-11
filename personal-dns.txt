@@ -47,7 +47,6 @@
 !
 !########### $removeparam Tracking Parameters ##########################
 !
-$removeparam=FORM
 $removeparam=_f
 $removeparam=cexp_id
 $removeparam=cexp_var
@@ -86,6 +85,8 @@ $removeparam=ocid
 !
 # privacytracking params
 !
+$removeparam=FORM
+$removeparam=PC
 $removeparam=__hsfp
 $removeparam=__hssc
 $removeparam=__hstc
@@ -115,7 +116,7 @@ $removeparam=wickedid
 #||bing.com^
 #||yahoo.com^
 ||baidu.com^
-||duckduckgo.com^
+#||duckduckgo.com^
 ||startpage.com^
 ||yandex.com^
 !
@@ -347,7 +348,6 @@ $cookie=/__utm[a-z]/
 !
 #||android.clients.google.com^
 #||books.google.com^
-#||fonts.googleapis.com^
 #||ggpht.com^
 #||gstatic.*
 #||myaccount.google.com
@@ -355,17 +355,18 @@ $cookie=/__utm[a-z]/
 #||play.googleapis.com^
 #||voilatile-pa.googleapis.com^
 @@||ajax.googleapis.com^
+@@||fonts.googleapis.com^
 @@||inbox.google.com/sync/
 @@||s.youtube.com^$important
 @@||youtube-ui.l.google.com^
 ||adservice.google.*^
 ||ampproject.net^
+||analytics.google.com^
 ||cdn.ampproject.org^
 ||googleadservices*^$important
 ||googleadservices.com/pagead/^$important
 ||googleweblight.com^
 ||safebrowsing.googleapis.com^
-||analytics.google.com^
 !
 ######################### find my device doesn't work ####################
 !
