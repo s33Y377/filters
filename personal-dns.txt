@@ -356,7 +356,7 @@ $cookie=/__utm[a-z]/
 #||voilatile-pa.googleapis.com^
 @@||fonts.gstatic.com^$important
 @@||ajax.googleapis.com^
-@@||fonts.googleapis.com^$important
+#@@||fonts.googleapis.com^$important
 @@||inbox.google.com/sync/
 @@||s.youtube.com^$important
 @@||youtube-ui.l.google.com^
