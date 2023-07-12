@@ -354,6 +354,7 @@ $cookie=/__utm[a-z]/
 #||myactivity.google.com/myactivity
 #||play.googleapis.com^
 #||voilatile-pa.googleapis.com^
+@@||fonts.gstatic.com^$important
 @@||ajax.googleapis.com^
 @@||fonts.googleapis.com^$important
 @@||inbox.google.com/sync/
