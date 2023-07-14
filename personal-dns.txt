@@ -1,7 +1,7 @@
 !Title: personal-dns
 !Description: personal-optimized-filters
-!Version: V.2023.07.13 update some rules
-!TimeUpdated: 2023-07-13
+!Version: V.2023.07.14 update some rules
+!TimeUpdated: 2023-07-14
 !filters: ClearURLs for uBo, Block Outsider Intrusion into LAN
 !
 !
@@ -32,6 +32,7 @@
 @@||bajajfinserv.in
 @@||appspot.com^
 @@||videos.porndig.com^
+@@||wikipedia.org^$domain=en.m.wikipedia.org,important
 !
 !###################### kik app Domain #############################
 !
