@@ -1,7 +1,7 @@
 !Title: personal-dns
 !Description: personal-optimized-filters
-!Version: V.2023.07.14 update some rules
-!TimeUpdated: 2023-07-14
+!Version: V.2023.08.05 update some rules
+!TimeUpdated: 2023-08-05
 !filters: ClearURLs for uBo, Block Outsider Intrusion into LAN
 !
 !
@@ -144,14 +144,14 @@ $cookie=/__utm[a-z]/
 !########## Amazon #########
 !
 @@||amazon.in^ # Blocked by 1 host pro domain
+||adtago.s3.amazonaws.com^
+||advertising-api-eu.amazon.com
+||advice-ads.s3.amazonaws.com^
 ||amazonaax.com^
 ||amazonclix.com^
 ||data.alexa.com
 ||device-metrics-us-2.amazon.com
 ||device-metrics-us.amazon.com
-||advice-ads.s3.amazonaws.com^
-||adtago.s3.amazonaws.com^
-||advertising-api-eu.amazon.com
 !
 !########## Brave #########
 !
@@ -208,36 +208,36 @@ $cookie=/__utm[a-z]/
 ||discord.com^
 ||flickr.com^
 ||foursquare.com^
+||gotinder.com
 ||kik.com
 ||myspace.com^
 ||netflix.com^
 ||patreon.com^
 ||tiktok.com^
+||tindersparks.com
 ||tumblr.com^
 ||viber.com^
 ||vk.com^
 ||wechat.com^
 ||weibo.com^
-||gotinder.com
-||tindersparks.com
 !
 !
 ####### Twitch ############
 !
-||twitch.tv^
 ||ext-twitch.tv
 ||jtvnw.net
 ||ttvnw.net
 ||twitch.map.fastly.net
 ||twitch.tv
+||twitch.tv^
 ||twitchcdn.net
 ||twitchsvc.net
 !
 !
 ####### Tinder ############
 !
-||tinder.com^
 ||gotinder.com
+||tinder.com^
 ||tindersparks.com
 !
 ####### Sharechat ############
@@ -319,10 +319,10 @@ $cookie=/__utm[a-z]/
 ||cleverads.vn^
 ||htmedia.*^
 ||jioads.akamaized.net^
-||metric.mzstatic.*^
-||yt.moatads.*^
 ||log.fc.yahoo.com^
+||metric.mzstatic.*^
 ||widgets.pinterest.com^
+||yt.moatads.*^
 !
 ########Annoying Content#########
 !
@@ -597,7 +597,8 @@ $cookie=/__utm[a-z]/
 !
 !
 ############## HTML Content Blocker #############
-### source ### https://github.com/DandelionSprout/adfilt/blob/master/ClearURLs%20for%20uBo/clear_urls_uboified.txt
+### source 
+### https://github.com/DandelionSprout/adfilt/blob/master/ClearURLs%20for%20uBo/clear_urls_uboified.txt
 ! Title: ClearURLs for uBo (unofficial)
 ! Homepage: https://github.com/DandelionSprout/adfilt/discussions/163
 ! Description: Want to use ClearURLs' tracking protection without installing another extension? This list is a (unofficial) version of the ClearURLs rules, designed for use in uBlock Origin and AdGuard. This ONLY includes the URL parameter removal functionality from ClearURLs, and not the other functions.
@@ -1365,7 +1366,7 @@ $removeparam=twclid
 ! Title: Block Outsider Intrusion into LAN
 ! Description: Prevents public internet sites from digging into your local LAN files.
 ! Expires: 29 days
-! Last modified: Tue, 04 Apr 2023 11:12:53 +0000
+! Last modified: Fri, 04 Aug 2023 15:24:51 +0000
 ! Requested here: https://github.com/uBlockOrigin/uAssets/issues/4318
 ! Revived for: https://github.com/uBlockOrigin/uBlock-issues/issues/1070
 ! Homepage: https://github.com/uBlockOrigin/uAssets
@@ -1401,7 +1402,7 @@ $removeparam=twclid
 ! ——— localhost
 ! https://en.wikipedia.org/wiki/Localhost
 !
-/^\w+:\/\/127\.(?:(?:[1-9]?\d|1\d\d|2(?:[0-4]\d|5[0-5]))\.){2}(?:[1-9]?\d|1\d\d|2(?:[0-4]\d|5[0-5]))[:/]/$3p,domain=~localhost|~127.0.0.1|~[::1]|~0.0.0.0|~[::]|~local
+/^\w+:\/\/127\.(?:(?:[1-9]?\d|1\d\d|2(?:[0-4]\d|5[0-5]))\.){2}(?:[1-9]?\d|1\d\d|2(?:[0-4]\d|5[0-5]))[:/]/$3p,domain=~0.0.0.0|~127.0.0.1|~[::1]|~[::]|~intel.cn|~intel.co.id|~intel.co.jp|~intel.co.kr|~intel.com|~intel.com.br|~intel.com.tw|~intel.de|~intel.fr|~intel.la|~intel.vn|~local|~localhost
 ||[::1]^$3p,domain=~localhost|~127.0.0.1|~[::1]|~0.0.0.0|~[::]|~local
 ||localhost^$3p,domain=~localhost|~127.0.0.1|~[::1]|~0.0.0.0|~[::]|~local
 !
@@ -1455,6 +1456,9 @@ $removeparam=twclid
 ||tplinkwifi.net^$3p,domain=~localhost|~127.0.0.1|~[::1]|~0.0.0.0|~[::]|~local
 ||web.setup^$3p,domain=~localhost|~127.0.0.1|~[::1]|~0.0.0.0|~[::]|~local
 ||web.setup.home^$3p,domain=~localhost|~127.0.0.1|~[::1]|~0.0.0.0|~[::]|~local
+!
+! https://github.com/uBlockOrigin/uAssets/issues/19005
+@@||127.0.0.1^$xhr,domain=battlelog.battlefield.com
 !
 ! ——— END
 !
