@@ -358,7 +358,7 @@ $cookie=/__utm[a-z]/
 #||myactivity.google.com/myactivity
 #||play.googleapis.com^
 #||voilatile-pa.googleapis.com^
-@@||google.com/uviewer$domain=google.com
+#@@||google.com/uviewer$domain=google.com
 @@||ajax.googleapis.com^
 @@||fonts.googleapis.com^$important
 @@||fonts.gstatic.com^$important
