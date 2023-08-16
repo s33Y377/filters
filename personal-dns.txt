@@ -1,7 +1,7 @@
 !Title: personal-dns
 !Description: personal-optimized-filters
-!Version: V.2023.08.15 update some rules
-!TimeUpdated: 2023-08-15
+!Version: V.2023.08.16 update some rules
+!TimeUpdated: 2023-08-16
 !filters: ClearURLs for uBo, Block Outsider Intrusion into LAN
 !
 !
@@ -17,7 +17,7 @@
 ||*.br^
 ||*.cn^
 ||*.ir^
-||*.ru^
+#||*.ru^
 ||*.th^
 ||*.tw^
 !
