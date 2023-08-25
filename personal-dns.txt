@@ -170,7 +170,7 @@ $cookie=/__utm[a-z]/
 !
 !########## Facebook #########
 !
-#||*cdninstagram.com^
+#||*cdn.instagram.com^
 #||*fbcdn.*^
 #||graph.instagram.com^
 #||instagram.com^
