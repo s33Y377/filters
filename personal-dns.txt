@@ -15,9 +15,7 @@
 !
 !####################### JS Blocking ################################
 !
-||*.ads.js$script
-||pagead.js$script
-||adblock.js$script
+!
 !
 !########## Country ###########
 ||*.br^
