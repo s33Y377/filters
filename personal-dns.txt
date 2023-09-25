@@ -32,7 +32,7 @@
 #@@||wikipedia.org^$domain=en.m.wikipedia.org,important
 @@||appspot.com^
 @@||bajajfinserv.in
-@@||github.com/uzao/cromite/$important,app=org.cromite.cromite
+@@||github.com/uazo/cromite/$important,app=org.cromite.cromite
 @@||oneassist.in^
 @@||spclient.wg.spotify.com^$app=com.spotify.lite,important
 @@||spclient.wg.spotify.com^$app=com.spotify.music,important
