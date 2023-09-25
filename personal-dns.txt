@@ -1,7 +1,7 @@
 !Title: personal-dns
 !Description: personal-optimized-filters
-!Version: V.2023.09.17 update some rules
-!TimeUpdated: 2023-09-17
+!Version: V.2023.09.25 update some rules
+!TimeUpdated: 2023-09-25
 !filters: ClearURLs for uBo, Block Outsider Intrusion into LAN
 !
 !
@@ -29,14 +29,15 @@
 !
 #@@||olacabs.com^ # Couldn't whitelist because of blocked userlocation googleapis
 #@@||olawebcdn.com^ # Couldn't whitelist because of blocked userlocation googleapis
+#@@||wikipedia.org^$domain=en.m.wikipedia.org,important
+@@||appspot.com^
+@@||bajajfinserv.in
+@@||github.com/uzao/cromite/$important,app=org.cromite.cromite
 @@||oneassist.in^
 @@||spclient.wg.spotify.com^$app=com.spotify.lite,important
 @@||spclient.wg.spotify.com^$app=com.spotify.music,important
 @@||tradepub.com^$important # Blocked by 1 host pro domain
-@@||bajajfinserv.in
-@@||appspot.com^
 @@||videos.porndig.com^
-#@@||wikipedia.org^$domain=en.m.wikipedia.org,important
 !
 !###################### kik app Domain #############################
 !
