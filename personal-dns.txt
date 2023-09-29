@@ -577,7 +577,6 @@ $cookie=/__utm[a-z]/
 ||vodhls-vh.akamaihd.net^
 ||watch.redd.it^
 ||yandex.ru^
-||d3ward.github.io/toolz/js/adblock.js$script,1p
 !
 !
 !
@@ -1377,7 +1376,7 @@ $removeparam=twclid
 ! Title: Block Outsider Intrusion into LAN
 ! Description: Prevents public internet sites from digging into your local LAN files.
 ! Expires: 29 days
-! Last modified: Tue, 12 Sep 2023 06:13:44 +0000
+! Last modified: Thu, 21 Sep 2023 05:35:20 +0000
 ! Requested here: https://github.com/uBlockOrigin/uAssets/issues/4318
 ! Revived for: https://github.com/uBlockOrigin/uBlock-issues/issues/1070
 ! Homepage: https://github.com/uBlockOrigin/uAssets
@@ -1441,6 +1440,7 @@ $removeparam=twclid
 ||bthomehub.home^$3p,domain=~localhost|~127.0.0.1|~[::1]|~0.0.0.0|~[::]|~local
 ||congstar.box^$3p,domain=~localhost|~127.0.0.1|~[::1]|~0.0.0.0|~[::]|~local
 ||connect.box^$3p,domain=~localhost|~127.0.0.1|~[::1]|~0.0.0.0|~[::]|~local
+||console.gl-inet.com^$3p,domain=~localhost|~127.0.0.1|~[::1]|~0.0.0.0|~[::]|~local
 ||easy.box^$3p,domain=~localhost|~127.0.0.1|~[::1]|~0.0.0.0|~[::]|~local
 ||etxr^$3p,domain=~localhost|~127.0.0.1|~[::1]|~0.0.0.0|~[::]|~local
 ||fritz.box^$3p,domain=~localhost|~127.0.0.1|~[::1]|~0.0.0.0|~[::]|~local
