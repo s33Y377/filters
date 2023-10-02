@@ -454,6 +454,7 @@ $cookie=/__utm[a-z]/
 ||insights.samsung.com^
 ||nmetrics.samsung.com^
 ||samsungadhub.com^
+||vas.samsungapps.com^
 !
 ############ Huawei ########################
 !
