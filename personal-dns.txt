@@ -63,8 +63,8 @@ $removeparam=client
 $removeparam=ref
 $removeparam=source
 $removeparam=uc_param_str
-$removeparam=utm_*
 $removeparam=uclick_id # Uber engineering
+$removeparam=utm_*
 !
 ####### FB ###############
 !
@@ -357,30 +357,30 @@ $cookie=/__utm[a-z]/
 !
 ########## Google Domains ###########
 !
+#@@||google.com/uviewer$domain=google.com
 #||android.clients.google.com^
 #||books.google.com^
+#||fonts.gstatic.com^$important
 #||ggpht.com^
 #||gstatic.*
 #||myaccount.google.com
 #||myactivity.google.com/myactivity
 #||play.googleapis.com^
 #||voilatile-pa.googleapis.com^
-#@@||google.com/uviewer$domain=google.com
 @@||ajax.googleapis.com^
-@@||fonts.gstatic.com^$important
+@@||fonts.googleapis.com^$domain=developer.android.com
 @@||inbox.google.com/sync/
 @@||s.youtube.com^$important
 @@||youtube-ui.l.google.com^
-||fonts.googleapis.com^$important
 ||adservice.google.*^
 ||ampproject.net^
 ||analytics.google.com^
 ||cdn.ampproject.org^
+||fonts.googleapis.com^$important
 ||googleadservices*^$important
 ||googleadservices.com/pagead/^$important
 ||googleweblight.com^
 ||safebrowsing.googleapis.com^
-@@||fonts.googleapis.com^$domain=developer.android.com
 !
 ######################### find my device doesn't work ####################
 !
@@ -484,8 +484,8 @@ $cookie=/__utm[a-z]/
 ############ User Filters #################
 !
 #||*appspot.com^
-||*.tch.quora.com^
 ||*.ngrok.io^
+||*.tch.quora.com^
 ||a.opmnstr.com^
 ||aaid.umeng.com^
 ||adsdk.yandex.ru^
