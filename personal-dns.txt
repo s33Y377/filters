@@ -380,6 +380,7 @@ $cookie=/__utm[a-z]/
 ||googleadservices.com/pagead/^$important
 ||googleweblight.com^
 ||safebrowsing.googleapis.com^
+||fonts.googleapis.com^$domain=developer.android.com
 !
 ######################### find my device doesn't work ####################
 !
