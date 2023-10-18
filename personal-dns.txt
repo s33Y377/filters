@@ -483,6 +483,7 @@ $cookie=/__utm[a-z]/
 ############ User Filters #################
 !
 #||*appspot.com^
+||*.tch.quora.com^
 ||*.ngrok.io^
 ||a.opmnstr.com^
 ||aaid.umeng.com^
