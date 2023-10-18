@@ -1,7 +1,7 @@
 ! Title: personal-dns
 ! Description: personal-optimized-filters
-! Version: V.2023.10.02 update some rules
-! TimeUpdated: 2023-10-02
+! Version: V.2023.10.18 update some rules
+! TimeUpdated: 2023-10-18
 ! Homepage: https://github.com/s33Y377/filters
 ! filters: ClearURLs for uBo, Block Outsider Intrusion into LAN
 !
@@ -367,11 +367,11 @@ $cookie=/__utm[a-z]/
 #||voilatile-pa.googleapis.com^
 #@@||google.com/uviewer$domain=google.com
 @@||ajax.googleapis.com^
-@@||fonts.googleapis.com^$important
 @@||fonts.gstatic.com^$important
 @@||inbox.google.com/sync/
 @@||s.youtube.com^$important
 @@||youtube-ui.l.google.com^
+||fonts.googleapis.com^$important
 ||adservice.google.*^
 ||ampproject.net^
 ||analytics.google.com^
