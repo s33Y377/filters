@@ -368,7 +368,7 @@ $cookie=/__utm[a-z]/
 #||play.googleapis.com^
 #||voilatile-pa.googleapis.com^
 @@||ajax.googleapis.com^
-@@||fonts.googleapis.com^$domain=developer.android.com
+@@||fonts.googleapis.com^
 @@||inbox.google.com/sync/
 @@||s.youtube.com^$important
 @@||youtube-ui.l.google.com^
