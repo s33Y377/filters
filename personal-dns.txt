@@ -481,11 +481,15 @@ $cookie=/__utm[a-z]/
 #||pps.whatsapp.net^
 ||crashlogs.whatsapp.*^
 !
+########### Quora ##################
+!
+||*.tch.quora.com^
+
+!
 ############ User Filters #################
 !
 #||*appspot.com^
 ||*.ngrok.io^
-||*.tch.quora.com^
 ||a.opmnstr.com^
 ||aaid.umeng.com^
 ||adsdk.yandex.ru^
