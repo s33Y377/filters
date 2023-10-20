@@ -1,7 +1,7 @@
 ! Title: personal-dns
 ! Description: personal-optimized-filters
-! Version: V.2023.10.18 update some rules
-! TimeUpdated: 2023-10-18
+! Version: V.2023.10.21 update some rules
+! TimeUpdated: 2023-10-21
 ! Homepage: https://github.com/s33Y377/filters
 ! filters: ClearURLs for uBo, Block Outsider Intrusion into LAN
 !
@@ -123,10 +123,10 @@ $removeparam=wickedid
 ############ Search Engine Block ####################################
 !
 #||bing.com^
-#||duckduckgo.com^
-#||yahoo.com^
-||baidu.com^
+||baidu.com^$important
+||duckduckgo.com^$important
 ||startpage.com^
+||yahoo.com^$important
 ||yandex.com^
 !
 !########### Block all cookies from following Domain ################
@@ -144,7 +144,7 @@ $cookie=/__utm[a-z]/
 @@||api.twitter.com^
 ||*ads-twitter.com^
 ||ads-api.twitter.com^
-||analytics.twitter.com^
+||analytics.twitter.com^$important
 ||cdn.syndication.twimg.com^
 ||syndication.twitter.com^
 !
@@ -217,13 +217,12 @@ $cookie=/__utm[a-z]/
 ||discord.com^
 ||flickr.com^
 ||foursquare.com^
-||gotinder.com
-||kik.com
+||gotinder.com^
+||kik.com^
 ||myspace.com^
 ||netflix.com^
 ||patreon.com^
-||tiktok.com^
-||tindersparks.com
+||tiktok.com^$important
 ||tumblr.com^
 ||viber.com^
 ||vk.com^
@@ -317,10 +316,12 @@ $cookie=/__utm[a-z]/
 !#########Ads & Analytics Domains#################
 !
 ||*.adserver.snapads.*
+||*analytics.yahoo.com^$important
+||analytics.tiktok.com^$important
 ||adconfig.wynk.*
 ||ads.phonepe.com^
-||ads.reddit.com^
-||ads.tiktok.com^
+||ads.reddit.com^$important
+||ads.tiktok.com^$important
 ||ads.yap.yahoo.com^
 ||adserver.snapads.*
 ||api.mcoreads.com^
@@ -484,11 +485,21 @@ $cookie=/__utm[a-z]/
 ########### Quora ##################
 !
 ||*.tch.quora.com^
-
+!
+########### MX Player ##################
+!
+@@||mxaserver.mxplay.com^$important
+@@||mxplay.com^
+@@||mxplay.com^$important,app=com.mxtech.videoplayer.pro
+@@||qqcdntest.mxplay.com^
+||evt.mxplay.com^$important
+||juspay.in^$important,app=com.mxtech.videoplayer.pro
+||mxlive.mxplay.com^$important
+||mxplay.*
 !
 ############ User Filters #################
 !
-#||*appspot.com^
+||*appspot.com^
 ||*.ngrok.io^
 ||a.opmnstr.com^
 ||aaid.umeng.com^
@@ -547,7 +558,6 @@ $cookie=/__utm[a-z]/
 ||maxcdn-bootstrapcdn.com^
 ||metrics.mzstatic.com^
 ||mosite.in^
-||mxplay.*
 ||mxshorts.akamaized.net^
 ||myaccount.pmc.com^
 ||notify.bugsnag.com^
