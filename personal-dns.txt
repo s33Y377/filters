@@ -1,7 +1,7 @@
 ! Title: personal-dns
 ! Description: personal-optimized-filters
-! Version: V.2023.10.25 update some rules
-! TimeUpdated: 2023-10-25
+! Version: V.2023.10.27 update some rules
+! TimeUpdated: 2023-10-27
 ! Homepage: https://github.com/s33Y377/filters
 ! filters: ClearURLs for uBo, Block Outsider Intrusion into LAN
 !
@@ -306,7 +306,6 @@ $cookie=/__utm[a-z]/
 !######### Allowed Domain ##########
 !
 #||api.gfycat.com^
-@@||subtitle.mxplay.com^
 !
 !######### others #########
 !
@@ -491,10 +490,11 @@ $cookie=/__utm[a-z]/
 !
 ########### MX Player ##################
 !
-@@||mxaserver.mxplay.com^$important
-@@||mxplay.com^
-@@||mxplay.com^$important,app=com.mxtech.videoplayer.pro
-@@||qqcdntest.mxplay.com^
+@@||subtitle.mxplay.com^
+#@@||mxaserver.mxplay.com^$important
+#@@||mxplay.com^
+#@@||mxplay.com^$important,app=com.mxtech.videoplayer.pro
+#@@||qqcdntest.mxplay.com^
 ||evt.mxplay.com^$important
 ||juspay.in^$important,app=com.mxtech.videoplayer.pro
 ||mxlive.mxplay.com^$important
