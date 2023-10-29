@@ -1,7 +1,7 @@
 ! Title: personal-dns
 ! Description: personal-optimized-filters
-! Version: V.2023.10.27 update some rules
-! TimeUpdated: 2023-10-27
+! Version: V.2023.10.29 update some rules
+! TimeUpdated: 2023-10-29
 ! Homepage: https://github.com/s33Y377/filters
 ! filters: ClearURLs for uBo, Block Outsider Intrusion into LAN
 !
@@ -65,6 +65,7 @@ $removeparam=source
 $removeparam=uc_param_str
 $removeparam=uclick_id # Uber engineering
 $removeparam=utm_*
+$removeparam=/utm_.*/
 !
 ####### FB ###############
 !
