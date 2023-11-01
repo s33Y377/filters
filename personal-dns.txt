@@ -33,7 +33,7 @@
 #@@||olawebcdn.com^ # Couldn't whitelist because of blocked userlocation googleapis
 #@@||wikipedia.org^$domain=en.m.wikipedia.org,important
 @@||appspot.com^
-@@||bajajfinserv.in
+@@||bajajfinserv.in^
 @@||github.com/uazo/cromite/$important,app=org.cromite.cromite
 @@||oneassist.in^
 @@||spclient.wg.spotify.com^$app=com.spotify.lite,important
