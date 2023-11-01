@@ -1,7 +1,7 @@
 ! Title: personal-dns
 ! Description: personal-optimized-filters
-! Version: V.2023.10.29 update some rules
-! TimeUpdated: 2023-10-29
+! Version: V.2023.11.01 update some rules
+! TimeUpdated: 2023-11-01
 ! Homepage: https://github.com/s33Y377/filters
 ! filters: ClearURLs for uBo, Block Outsider Intrusion into LAN
 !
@@ -133,11 +133,12 @@ $removeparam=wickedid
 !########### Block all cookies from following Domain ################
 !
 $cookie=/__utm[a-z]/
-||baidu.com^cookie
+||baidu.com^$cookie
 ||facebook.com^$cookie
-||medium.com^cookie
+||medium.com^$cookie
 ||towardsdatascience.com^cookie
-||zeenews.*^cookie
+||zeenews.*^$cookie
+||youtube.com^$cookie
 !
 !########## Twitter #########
 !
