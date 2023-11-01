@@ -348,12 +348,12 @@ $cookie=/__utm[a-z]/
 !
 #########News Sites################
 !
-#||indianexpress.com^
 #||ndtv.com^
 #||zee5.com^
 ||aajtak.*^
 ||aajtaklive.in^
 ||abplive.com^
+||indianexpress.com^
 ||indiatvnews.com^
 ||inshorts.*^
 ||loksatta.com^
