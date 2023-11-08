@@ -3,7 +3,7 @@
 ! Version: V.2023.11.08 update some rules
 ! TimeUpdated: 2023-11-08
 ! Homepage: https://github.com/s33Y377/filters
-! filters: ClearURLs for uBo, Block Outsider Intrusion into LAN
+! filters: ClearURLs for uBo, Block Outsider Intrusion into LANs
 !
 !
 !
