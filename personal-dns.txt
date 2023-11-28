@@ -1,7 +1,7 @@
 ! Title: personal-dns
 ! Description: personal-optimized-filters
-! Version: V.2023.11.08 update some rules
-! TimeUpdated: 2023-11-08
+! Version: V.2023.11.28
+! TimeUpdated: 2023-11-28
 ! Homepage: https://github.com/s33Y377/filters
 ! filters: ClearURLs for uBo, Block Outsider Intrusion into LANs
 !
@@ -19,7 +19,7 @@
 !
 !########## Country ###########
 !
-@@||*.cf^$important
+||*.cf^
 ||*.br^
 ||*.cn^
 ||*.ir^
@@ -431,6 +431,9 @@ $cookie=/__utm[a-z]/
 ||tracking.miui.com
 ||tracking.rus.miui.com
 ||xiaomi.com^
+||heytapmobile.com^
+||heytapdl.com^
+||allawnos.com^
 !
 ############ Apple ########################
 !
