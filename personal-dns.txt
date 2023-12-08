@@ -211,6 +211,7 @@ $cookie=/__utm[a-z]/
 !########## Social network #########
 !
 #||9gag.com^
+#||netflix.com^
 #||linkedin.com^
 #||pinterest.com^
 #||primevideo.com^
@@ -223,7 +224,6 @@ $cookie=/__utm[a-z]/
 ||gotinder.com^
 ||kik.com^
 ||myspace.com^
-||netflix.com^
 ||patreon.com^
 ||tiktok.com^$important
 ||tiktokv.com^$important
