@@ -1535,6 +1535,14 @@ $removeparam=si,domain=youtube.com|youtu.be
 !####################### Block third party fonts ################################
 # https://github.com/yokoffing/filterlists/blob/main/block_third_party_fonts.txt
 !
+[Adblock Plus 2.0]
+! Title: 🔍 Block third party fonts
+! Description: Block most third-party fonts
+! Homepage: https://github.com/yokoffing/filterlists
+! Expires: 4 days (update frequency)
+! Version: 11 November 2023
+! Syntax: AdBlock
+
 !!! ALLOWLIST
 @@||ajax.googleapis.com/ajax/libs/webfont/$script,domain=bootsnipp.com|regexpal.com|typepad.com
 @@||googleapis.com/ajax/libs/webfont/$domain=typepad.com
@@ -1624,6 +1632,27 @@ $removeparam=si,domain=youtube.com|youtu.be
 ! Privacy Essentials, anti-allowlist:
 @@||gstaticadssl.*.google.com^$font,badfilter
 ! @@||use.typekit.net^$font,badfilter
+
+!!! UNUSED
+! Causes too many false positives:
+!*$font,3p
+!/fonts/*.ttf$font,3p
+!||maxcdn.bootstrapcdn.com/font-awesome/$3p
+!||maxcdn.bootstrapcdn.com^*/fonts/
+
+! Used for icons on many sites:
+!@@/fontawesome-$font,3p,domain=fontawesome.com
+!@@/wp-$font,domain=arstechnica.com|themindfulnessclinic.ca
+!@@||cdnjs.cloudflare.com/ajax/libs/font-awesome^$domain=9anime.to
+!@@||fontawesome.com^
+!/font-awesome^$3p
+!/fontawesome-$font,3p
+!/fontawesome-webfont
+!/wp-$font,3p
+!||cdnjs.cloudflare.com/ajax/libs/font-awesome^$3p
+!||fontawesome.com^$3p
+!||wp.com^*/fonts/$3p
+!
 !
 !
 !
