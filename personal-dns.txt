@@ -1,9 +1,9 @@
 ! Title: personal-dns
 ! Description: personal-optimized-filters
-! Version: V.2023.12.08
-! Last modified: 2023-12-08
+! Version: V.2023.12.10
+! Last modified: 2023-12-10
 ! Homepage: https://github.com/s33Y377/filters
-! filters: ClearURLs for uBo, Block Outsider Intrusion into LANs
+! filters: ClearURLs for uBo, Block Outsider Intrusion into LANs, Block third party fonts
 !
 !
 !
@@ -12,9 +12,6 @@
 ||*^$header=x-client-data # remove x-client-data value
 ||*^$header=X-Forwarded-For
 ||*^$header=x-Real-IP
-!
-!####################### JS Blocking ################################
-!
 !
 !
 !########## Country ###########
@@ -1530,6 +1527,103 @@ $removeparam=si,domain=youtube.com|youtu.be
 !
 !
 !
+!
+!
+!
+!
+!
+!####################### Block third party fonts ################################
+# https://github.com/yokoffing/filterlists/blob/main/block_third_party_fonts.txt
+!
+!!! ALLOWLIST
+@@||ajax.googleapis.com/ajax/libs/webfont/$script,domain=bootsnipp.com|regexpal.com|typepad.com
+@@||googleapis.com/ajax/libs/webfont/$domain=typepad.com
+! @@||cloudfront.net^$font,domain=noip.com|phabricator.services.mozilla.com|securelist.com|status.proton.me
+@@||fast.fonts.net/jsapi/$script
+@@||fonts.googleapis.com$domain=google.com|blog.google|blogger.com|chromium.org|gaggle.fun|googlesource.com|grow.google|reedsy.com|reliaslearning.com|socialworkers.org|googleapps.com|vocabulary.com|web.dev|youtube.com
+@@||fonts.gstatic.com$domain=about.google|ai.google|bloble.io|blog.google|blogger.com|chrome.com|chromium.org|dexscreener.com|google.com|domains.google|googlesource.com|grow.google|material.io|reedsy.com|reliaslearning.com|safety.google|socialworkers.org|toolbox.googleapps.com|vocabulary.com|web.dev|youtube.com
+@@||googleusercontent.com/static/fonts/$domain=tudocelular.com
+@@||myfonts.net$domain=myfonts.com
+@@||typekit.com$font
+@@||typekit.net$script,font
+
+! Icon Packs
+@@/-icon
+@@/-icons
+@@/family=Material+Icons
+@@/glyphicons
+@@/icomoon
+@@/icon
+@@/icons
+@@/materialicons
+@@/materialsymbols
+@@/materialsymbolsoutlined
+@@/wp-content/themes$font
+@@/wp-content/uploads/fusion-icons
+@@family=Material+Icons
+@@family=Material+Symbols
+@@Material+Icons
+!@@||fonts.googleapis.com/css?family=Material+Icons
+!@@||fonts.googleapis.com/icon?family=Material+Icons
+!@@||fonts.gstatic.com/s/materialicons
+
+! Privacy-friendly drop-in replacement for Google Fonts
+! [1] https://fonts.coollabs.io/
+@@||cdn.coollabs.io/fonts^
+
+!!! DENYLIST
+/cdn-cgi/pe/bag2?*googleapis.com*webfont.js
+/csp/fonts^$3p
+||alluremedia.com.au^$font,3p
+||amazonaws.com^$font,3p
+||bootstrapcdn.com/bootstrap/$font,3p
+||cloud.typography.com^$3p
+||cloud.webtype.com^$font,3p
+! ||cloudfront.net^$font,3p
+||disquscdn.com/next/assets/font/$3p
+||edgefonts.net^$3p
+||fast.fonts.com^$3p
+||fast.fonts.net^$3p
+! ||fastly.net^$font,3p
+||fontdeck.com^$3p
+||fonts.advance.net^$3p
+||fonts.bauernet.me^
+||fonts.condenast.com^$script,3p
+||fonts.googleapis.com^ 
+||fonts.gotraffic.net^$script
+||fonts.gstatic.com^$3p
+||fonts.nymag.com^$script,3p
+||fonts.shopifycdn.com^$3p
+||fonts.smdg.ca^$3p
+||fonts.staticworld.net^$3p
+||fonts.timeinc.net^
+||fonts.ub-assets.com^$3p
+||fonts.voxmedia.com^$3p
+||gannett-cdn.com^*/fonts/$font,3p
+||gannettdigital.com^*/fonts/$font,3p
+||gfonts.jifo.co^
+||google.com/swg/$font,3p
+||googleapis.com/ajax/libs/webfont/$3p
+||googleusercontent.com/static/fonts/$3p
+||gotraffic.net^$font
+||kinja-static.com/assets/fonts/$font,3p
+||myfontastic.com^$3p
+||myfonts.net^$3p
+||netdna-cdn.com^*/webfonts/
+||netdna.bootstrapcdn.com^*/fonts/$3p
+||qmerce.com/assets/$font
+||rackcdn.com/fonts/$font,3p
+||typefront.com^$3p
+||typesquare.com^$font,3p
+||use.fonticons.com^$3p
+||vidible.tv/prod/fonts/$font
+||webfont.fontplus.jp^$3p
+||webfonts.creativecloud.com^$3p
+||webfonts.sakura.ne.jp^$font
+
+! Privacy Essentials, anti-allowlist:
+@@||gstaticadssl.*.google.com^$font,badfilter
+! @@||use.typekit.net^$font,badfilter
 !
 !
 !
