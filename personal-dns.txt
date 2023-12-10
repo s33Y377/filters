@@ -347,13 +347,13 @@ $cookie=/__utm[a-z]/
 !
 #||ndtv.com^
 #||zee5.com^
+#||indianexpress.com^
+#||loksatta.com^
 ||aajtak.*^
 ||aajtaklive.in^
 ||abplive.com^
-||indianexpress.com^
 ||indiatvnews.com^
 ||inshorts.*^
-||loksatta.com^
 ||republicworld.com^
 ||tv9.com^
 !
