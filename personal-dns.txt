@@ -29,7 +29,7 @@
 #@@||olacabs.com^ # Couldn't whitelist because of blocked userlocation googleapis
 #@@||olawebcdn.com^ # Couldn't whitelist because of blocked userlocation googleapis
 #@@||wikipedia.org^$domain=en.m.wikipedia.org,important
-@@||appspot.com^
+||appspot.com^
 @@||bajajfinserv.in^
 @@||github.com/uazo/cromite/$important,app=org.cromite.cromite
 @@||oneassist.in^
@@ -370,7 +370,7 @@ $cookie=/__utm[a-z]/
 #||play.googleapis.com^
 #||voilatile-pa.googleapis.com^
 @@||ajax.googleapis.com^
-@@||fonts.googleapis.com^
+#||fonts.googleapis.com^
 @@||inbox.google.com/sync/
 @@||s.youtube.com^$important
 @@||youtube-ui.l.google.com^
