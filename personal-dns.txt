@@ -1,7 +1,7 @@
 ! Title: personal-dns
 ! Description: personal-optimized-filters
-! Version: V.2023.12.10
-! Last modified: 2023-12-10
+! Version: V.2023.12.28
+! Last modified: 2023-12-28
 ! Homepage: https://github.com/s33Y377/filters
 ! filters: ClearURLs for uBo, Block Outsider Intrusion into LANs, Block third party fonts
 !
@@ -462,6 +462,7 @@ $cookie=/__utm[a-z]/
 ||nmetrics.samsung.com^
 ||samsungadhub.com^
 ||vas.samsungapps.com^
+||samsungnewsapi.picks.my^
 !
 ############ Huawei ########################
 !
