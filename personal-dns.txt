@@ -638,8 +638,8 @@ $cookie=/__utm[a-z]/
 ! Title: ClearURLs for uBo (unofficial)
 ! Homepage: https://github.com/DandelionSprout/adfilt/discussions/163
 ! Description: Want to use ClearURLs' tracking protection without installing another extension? This list is a (unofficial) version of the ClearURLs rules, designed for use in uBlock Origin and AdGuard. This ONLY includes the URL parameter removal functionality from ClearURLs, and not the other functions.
-! Last updated: 07/11/2023
-! Script last updated: 7/11/2023
+! Last updated: 06/12/2023
+! Script last updated: 5/12/2023
 ! Expires: 1 day
 ! Licence: https://github.com/DandelionSprout/adfilt/blob/master/LICENSE.md
 ! Warning: This list may break websites, and contains many problematic rules. Worse, it may even prevent other filterlists from working. There is not much the Adfilt maintainers can do, as this list is just the ClearURLs rules converted into a uBo/AdGuard filterlist. Use with caution.
@@ -813,6 +813,7 @@ $removeparam=si,domain=youtube.com|youtu.be
 ||reddit.com^$removeparam=ref_campaign
 ||reddit.com^$removeparam=ref_source
 ||reddit.com^$removeparam=%243p
+||reddit.com^$removeparam=rdt
 ||reddit.com^$removeparam=/^\x243p=/
 ||reddit.com^$removeparam=%24original_url
 ||reddit.com^$removeparam=/^\x24original_url=/
@@ -823,7 +824,6 @@ $removeparam=si,domain=youtube.com|youtu.be
 ||techcrunch.com^$removeparam=ncid
 ||techcrunch.com^$removeparam=sr
 ||techcrunch.com^$removeparam=sr_share
-||bing.*^$removeparam=cvid
 ||bing.*^$removeparam=form
 ||bing.*^$removeparam=sk
 ||bing.*^$removeparam=sp
@@ -1333,6 +1333,7 @@ $removeparam=si,domain=youtube.com|youtu.be
 @@||onet.pl/*?*utm_campaign=$removeparam
 @@||stripe.com/*?*referrer=$removeparam
 @@||lichess.org/login*referrer=$removeparam
+@@||microsoft.com/*research/redirect$removeparam
 @@||like.co/api/like/likebutton/*?*referrer=$removeparam
 @@||button.like.co/in/*referrer=$removeparam
 @@||www.mma.go.kr^$removeparam
@@ -1403,8 +1404,9 @@ $removeparam=si,domain=youtube.com|youtu.be
 !
 # [uBlock Origin] Source: https://ublockorigin.github.io/uAssets/filters/lan-block.txt
 [uBlock Origin]
+[uBlock Origin]
 ! Title: Block Outsider Intrusion into LAN
-! Last modified: Thu, 26 Oct 2023 16:54:58 +0000
+! Last modified: Mon, 20 Nov 2023 06:46:28 +0000
 ! Expires: 29 days
 ! Description: Prevents public internet sites from digging into your local LAN files.
 ! Requested here: https://github.com/uBlockOrigin/uAssets/issues/4318
@@ -1505,6 +1507,9 @@ $removeparam=si,domain=youtube.com|youtu.be
 !
 ! https://github.com/uBlockOrigin/uAssets/issues/19005
 @@||127.0.0.1^$xhr,domain=battlelog.battlefield.com
+!
+! https://github.com/uBlockOrigin/uAssets/pull/20768
+@@||127.0.0.1^$3p,domain=musicbrainz.org
 !
 ! ——— END
 !
