@@ -1,7 +1,7 @@
 ! Title: personal-dns
 ! Description: personal-optimized-filters
-! Version: V.2023.12.28
-! Last modified: 2023-12-28
+! Version: V.2023.01.14
+! Last modified: 2023-01-14
 ! Homepage: https://github.com/s33Y377/filters
 ! filters: ClearURLs for uBo, Block Outsider Intrusion into LANs, Block third party fonts
 !
@@ -29,7 +29,6 @@
 #@@||olacabs.com^ # Couldn't whitelist because of blocked userlocation googleapis
 #@@||olawebcdn.com^ # Couldn't whitelist because of blocked userlocation googleapis
 #@@||wikipedia.org^$domain=en.m.wikipedia.org,important
-||appspot.com^
 @@||bajajfinserv.in^
 @@||github.com/uazo/cromite/$important,app=org.cromite.cromite
 @@||oneassist.in^
@@ -506,7 +505,7 @@ $cookie=/__utm[a-z]/
 ############ User Filters #################
 !
 ||*.ngrok.io^
-||*appspot.com^
+||*appspot.com^$important
 ||*dbankcloud.*^
 ||a.opmnstr.com^
 ||aaid.umeng.com^
@@ -638,12 +637,13 @@ $cookie=/__utm[a-z]/
 ! Title: ClearURLs for uBo (unofficial)
 ! Homepage: https://github.com/DandelionSprout/adfilt/discussions/163
 ! Description: Want to use ClearURLs' tracking protection without installing another extension? This list is a (unofficial) version of the ClearURLs rules, designed for use in uBlock Origin and AdGuard. This ONLY includes the URL parameter removal functionality from ClearURLs, and not the other functions.
-! Last updated: 06/12/2023
-! Script last updated: 5/12/2023
+! Last updated: 08/01/2024
+! Script last updated: 8/1/2024
 ! Expires: 1 day
 ! Licence: https://github.com/DandelionSprout/adfilt/blob/master/LICENSE.md
 ! Warning: This list may break websites, and contains many problematic rules. Worse, it may even prevent other filterlists from working. There is not much the Adfilt maintainers can do, as this list is just the ClearURLs rules converted into a uBo/AdGuard filterlist. Use with caution.
 ! Note: This was based off of https://gist.github.com/rusty-snake/5cd83a87d680ecbd03e79a1a06758207, which is based off of https://github.com/ClearURLs/Rules. The maintainers of Adfilt (DandelionSprout and iam-py-test, and contributors) have made some modifications as to keep it up-to-date with the source and to fix issues.
+! Note: Please do not use this list in Brave Shields, as it may not work properly (https://github.com/DandelionSprout/adfilt/issues/986)
 ! IMPORTANT NOTE: Do not modify this file in pull requests. This file is auto-generated and therefore any direct edit to it will be undone. Instead, modifications must be made to https://github.com/DandelionSprout/adfilt/blob/master/ClearURLs%20for%20uBo/compile.py or to the upstream ClearURLs rules. If you experience an issue, please report it to https://github.com/DandelionSprout/adfilt/discussions/163, and we (the Adfilt maintainers and community) will look into it and either add an exclusion or report it to the ClearURLs team.
 ! Important note about the purpose of this list: this list can not bypass tracker redirects through third-party domains. This can be done by strict-blocking said domain and using the ability to view params on the strict-block page to bypass it.
 ! The Adfilt maintainers would like to thank https://github.com/rusty-snake for helping create this Python script
@@ -1373,6 +1373,7 @@ $removeparam=si,domain=youtube.com|youtu.be
 @@||track.sendle.com/tracking$removeparam=ref
 !
 !
+!
 !!
 !
 !!
@@ -1404,9 +1405,8 @@ $removeparam=si,domain=youtube.com|youtu.be
 !
 # [uBlock Origin] Source: https://ublockorigin.github.io/uAssets/filters/lan-block.txt
 [uBlock Origin]
-[uBlock Origin]
 ! Title: Block Outsider Intrusion into LAN
-! Last modified: Mon, 20 Nov 2023 06:46:28 +0000
+! Last modified: Sun, 07 Jan 2024 07:30:05 +0000
 ! Expires: 29 days
 ! Description: Prevents public internet sites from digging into your local LAN files.
 ! Requested here: https://github.com/uBlockOrigin/uAssets/issues/4318
@@ -1475,6 +1475,7 @@ $removeparam=si,domain=youtube.com|youtu.be
 ||console.gl-inet.com^$3p,domain=~localhost|~127.0.0.1|~[::1]|~0.0.0.0|~[::]|~local
 ||easy.box^$3p,domain=~localhost|~127.0.0.1|~[::1]|~0.0.0.0|~[::]|~local
 ||etxr^$3p,domain=~localhost|~127.0.0.1|~[::1]|~0.0.0.0|~[::]|~local
+||fire.walla^$3p,domain=~localhost|~127.0.0.1|~[::1]|~0.0.0.0|~[::]|~local
 ||fritz.box^$3p,domain=~localhost|~127.0.0.1|~[::1]|~0.0.0.0|~[::]|~local
 ||fritz.nas^$3p,domain=~localhost|~127.0.0.1|~[::1]|~0.0.0.0|~[::]|~local
 ||fritz.repeater^$3p,domain=~localhost|~127.0.0.1|~[::1]|~0.0.0.0|~[::]|~local
@@ -1538,6 +1539,7 @@ $removeparam=si,domain=youtube.com|youtu.be
 !
 !
 !
+!
 !####################### Block third party fonts ################################
 # https://github.com/yokoffing/filterlists/blob/main/block_third_party_fonts.txt
 !
@@ -1546,7 +1548,7 @@ $removeparam=si,domain=youtube.com|youtu.be
 ! Description: Block most third-party fonts
 ! Homepage: https://github.com/yokoffing/filterlists
 ! Expires: 4 days (update frequency)
-! Version: 11 November 2023
+! Version: 2 January 2024
 ! Syntax: AdBlock
 
 !!! ALLOWLIST
@@ -1554,7 +1556,7 @@ $removeparam=si,domain=youtube.com|youtu.be
 @@||googleapis.com/ajax/libs/webfont/$domain=typepad.com
 ! @@||cloudfront.net^$font,domain=noip.com|phabricator.services.mozilla.com|securelist.com|status.proton.me
 @@||fast.fonts.net/jsapi/$script
-@@||fonts.googleapis.com$domain=google.com|blog.google|blogger.com|chromium.org|gaggle.fun|googlesource.com|grow.google|reedsy.com|reliaslearning.com|socialworkers.org|googleapps.com|vocabulary.com|web.dev|youtube.com
+@@||fonts.googleapis.com$domain=abc.xyz|google.com|blog.google|blogger.com|chromium.org|gaggle.fun|googlesource.com|grow.google|reedsy.com|reliaslearning.com|socialworkers.org|googleapps.com|vocabulary.com|web.dev|youtube.com
 @@||fonts.gstatic.com$domain=about.google|ai.google|bloble.io|blog.google|blogger.com|chrome.com|chromium.org|dexscreener.com|google.com|domains.google|googlesource.com|grow.google|material.io|reedsy.com|reliaslearning.com|safety.google|socialworkers.org|toolbox.googleapps.com|vocabulary.com|web.dev|youtube.com
 @@||googleusercontent.com/static/fonts/$domain=tudocelular.com
 @@||myfonts.net$domain=myfonts.com
