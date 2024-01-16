@@ -35,6 +35,7 @@
 @@||spclient.wg.spotify.com^$app=com.spotify.lite,important
 @@||spclient.wg.spotify.com^$app=com.spotify.music,important
 @@||tradepub.com^$important # Blocked by 1 host pro domain
+@@||m.recipes.timesofindia.com^$important
 @@||videos.porndig.com^
 !
 !###################### kik app Domain #############################
