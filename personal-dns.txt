@@ -1,7 +1,7 @@
 ! Title: personal-dns
 ! Description: personal-optimized-filters
-! Version: V.2023.01.14
-! Last modified: 2023-01-14
+! Version: V.2023.02.06
+! Last modified: 2023-02-06
 ! Homepage: https://github.com/s33Y377/filters
 ! filters: ClearURLs for uBo, Block Outsider Intrusion into LANs, Block third party fonts
 !
@@ -24,6 +24,8 @@
 ||*.tw^
 !
 !
+###################### App BLockings #####################################
+||spotify.com^$important,app=com.samsung.android.honeyboard
 !###################### WishListed Domain #############################
 !
 #@@||olacabs.com^ # Couldn't whitelist because of blocked userlocation googleapis
@@ -638,7 +640,7 @@ $cookie=/__utm[a-z]/
 ! Title: ClearURLs for uBo (unofficial)
 ! Homepage: https://github.com/DandelionSprout/adfilt/discussions/163
 ! Description: Want to use ClearURLs' tracking protection without installing another extension? This list is a (unofficial) version of the ClearURLs rules, designed for use in uBlock Origin and AdGuard. This ONLY includes the URL parameter removal functionality from ClearURLs, and not the other functions.
-! Last updated: 08/01/2024
+! Last updated: 29/01/2024
 ! Script last updated: 8/1/2024
 ! Expires: 1 day
 ! Licence: https://github.com/DandelionSprout/adfilt/blob/master/LICENSE.md
@@ -808,6 +810,11 @@ $removeparam=si,domain=youtube.com|youtu.be
 ||twitter.com^$removeparam=cn
 ||twitter.com^$removeparam=ref_url
 ||twitter.com^$removeparam=t
+||x.com^$removeparam=/^(ref_?)?src=/
+||x.com^$removeparam=s
+||x.com^$removeparam=cn
+||x.com^$removeparam=ref_url
+||x.com^$removeparam=t
 ||reddit.com^$removeparam=%24deep_link
 ||reddit.com^$removeparam=/^\x24deep_link=/
 ||reddit.com^$removeparam=correlation_id
@@ -1289,6 +1296,11 @@ $removeparam=si,domain=youtube.com|youtu.be
 ||airbnb.*^$removeparam=source
 ||airbnb.*^$removeparam=source_impression_id
 ||kahoot.it^$removeparam=refer_method
+||goodreads.com^$removeparam=from_search
+||goodreads.com^$removeparam=from_srp
+||goodreads.com^$removeparam=qid
+||goodreads.com^$removeparam=rank
+||goodreads.com^$removeparam=ac
 @@/^https?:\/\/([a-z0-9-]+\.)*?amazon(\.[a-z]{2,}){1,}\/gp\/.*?(redirector.html|cart\/ajax-update.html|video\/api\/)/$removeparam
 @@/^https?:\/\/([a-z0-9-]+\.)*?amazon(\.[a-z]{2,}){1,}\/(hz\/reviews-render\/ajax\/|message-us\?|s\?)/$removeparam
 @@||mail.google.com/mail/u/$removeparam
@@ -1341,7 +1353,7 @@ $removeparam=si,domain=youtube.com|youtu.be
 @@||github.com^$removeparam
 @@||billiger.de/*mc=$removeparam
 @@||youtrack.cloud^$removeparam
-@@^https?:/cu.bankid.com$removeparam
+@@||cu.bankid.com^$removeparam
 @@||amazon-adsystem.*/v3/oor?$removeparam
 @@||youtube.com/signin?$removeparam
 @@/^https?:\/\/([a-z0-9-]+\.)*?facebook\.com\/.*?(plugins|ajax)\//$removeparam
@@ -1351,6 +1363,7 @@ $removeparam=si,domain=youtube.com|youtu.be
 @@||facebook.com/privacy/specific_audience_selector_dialog/$removeparam
 @@||facebook.com/photo/download/$removeparam
 @@||twitter.com/i/redirect$removeparam
+@@||x.com/i/redirect$removeparam
 @@||bing.*/WS/redirect/$removeparam
 @@||indeed.com/rc/clk$removeparam
 @@||mozilla.org/api$removeparam
@@ -1407,21 +1420,13 @@ $removeparam=si,domain=youtube.com|youtu.be
 # [uBlock Origin] Source: https://ublockorigin.github.io/uAssets/filters/lan-block.txt
 [uBlock Origin]
 ! Title: Block Outsider Intrusion into LAN
-! Last modified: Sun, 07 Jan 2024 07:30:05 +0000
+! Last modified: Thu, 18 Jan 2024 08:46:04 +0000
 ! Expires: 29 days
 ! Description: Prevents public internet sites from digging into your local LAN files.
 ! Requested here: https://github.com/uBlockOrigin/uAssets/issues/4318
 ! Revived for: https://github.com/uBlockOrigin/uBlock-issues/issues/1070
 ! Homepage: https://github.com/uBlockOrigin/uAssets
 ! License: https://github.com/uBlockOrigin/uAssets/blob/master/LICENSE
-!
-! Tools:
-! http://gamon.webfactional.com/regexnumericrangegenerator/
-! http://www.analyticsmarket.com/freetools/ipregex (generates invalid range - above 255)
-! https://en.wikipedia.org/wiki/IPv6_address#Literal_IPv6_addresses_in_network_resource_identifiers
-! http://www.gestioip.net/cgi-bin/subnet_calculator.cgi
-! https://wicg.github.io/private-network-access/
-! ———
 !
 ! ——— LAN
 ! https://en.wikipedia.org/wiki/Private_network
@@ -1445,7 +1450,7 @@ $removeparam=si,domain=youtube.com|youtu.be
 ! ——— localhost
 ! https://en.wikipedia.org/wiki/Localhost
 !
-/^\w+:\/\/127\.(?:(?:[1-9]?\d|1\d\d|2(?:[0-4]\d|5[0-5]))\.){2}(?:[1-9]?\d|1\d\d|2(?:[0-4]\d|5[0-5]))[:/]/$3p,domain=~0.0.0.0|~127.0.0.1|~[::1]|~[::]|~intel.cn|~intel.co.id|~intel.co.jp|~intel.co.kr|~intel.com|~intel.com.br|~intel.com.tw|~intel.de|~intel.fr|~intel.la|~intel.vn|~local|~localhost
+/^\w+:\/\/127\.(?:(?:[1-9]?\d|1\d\d|2(?:[0-4]\d|5[0-5]))\.){2}(?:[1-9]?\d|1\d\d|2(?:[0-4]\d|5[0-5]))[:/]/$3p,domain=~0.0.0.0|~127.0.0.1|~[::1]|~[::]|~intel.cn|~intel.co.id|~intel.co.jp|~intel.co.kr|~intel.com|~intel.com.br|~intel.com.tw|~intel.de|~intel.fr|~intel.la|~intel.vn|~local|~localhost|~mega.nz
 ||[::1]^$3p,domain=~localhost|~127.0.0.1|~[::1]|~0.0.0.0|~[::]|~local
 ||localhost^$3p,domain=~localhost|~127.0.0.1|~[::1]|~0.0.0.0|~[::]|~local
 !
@@ -1549,7 +1554,7 @@ $removeparam=si,domain=youtube.com|youtu.be
 ! Description: Block most third-party fonts
 ! Homepage: https://github.com/yokoffing/filterlists
 ! Expires: 4 days (update frequency)
-! Version: 2 January 2024
+! Version: 19 January 2024
 ! Syntax: AdBlock
 
 !!! ALLOWLIST
@@ -1605,6 +1610,7 @@ $removeparam=si,domain=youtube.com|youtu.be
 ||fontdeck.com^$3p
 ||fonts.advance.net^$3p
 ||fonts.bauernet.me^
+||fonts.cdnfonts.com^$3p
 ||fonts.condenast.com^$script,3p
 ||fonts.googleapis.com^ 
 ||fonts.gotraffic.net^$script
