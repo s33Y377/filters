@@ -1,7 +1,7 @@
 ! Title: personal-dns
 ! Description: personal-optimized-filters
-! Version: V.2023.02.06
-! Last modified: 2023-02-06
+! Version: V.2023.02.16
+! Last modified: 2023-02-16
 ! Homepage: https://github.com/s33Y377/filters
 ! filters: ClearURLs for uBo, Block Outsider Intrusion into LANs, Block third party fonts
 !
@@ -39,6 +39,7 @@
 @@||tradepub.com^$important # Blocked by 1 host pro domain
 @@||m.recipes.timesofindia.com^$important
 @@||videos.porndig.com^
+@@||edge-chat.instagram.com^
 !
 !###################### kik app Domain #############################
 !
@@ -123,10 +124,10 @@ $removeparam=wickedid
 ############ Search Engine Block ####################################
 !
 #||bing.com^
+#||duckduckgo.com^$important
+#||yahoo.com^$important
 ||baidu.com^$important
-||duckduckgo.com^$important
 ||startpage.com^
-||yahoo.com^$important
 ||yandex.com^
 !
 !########### Block all cookies from following Domain ################
