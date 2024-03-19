@@ -32,15 +32,15 @@
 #@@||olawebcdn.com^ # Couldn't whitelist because of blocked userlocation googleapis
 #@@||wikipedia.org^$domain=en.m.wikipedia.org,important
 @@||bajajfinserv.in^
+@@||edge-chat.instagram.com^
 @@||github.com/uazo/cromite/$important,app=org.cromite.cromite
+@@||m.recipes.timesofindia.com^$important
 @@||oneassist.in^
+@@||snowflake.com^$domain=snowflake.com,important
 @@||spclient.wg.spotify.com^$app=com.spotify.lite,important
 @@||spclient.wg.spotify.com^$app=com.spotify.music,important
 @@||tradepub.com^$important # Blocked by 1 host pro domain
-@@||m.recipes.timesofindia.com^$important
 @@||videos.porndig.com^
-@@||edge-chat.instagram.com^
-@@||snowflake.com^$domain=snowflake.com,important
 !
 !###################### kik app Domain #############################
 !
@@ -56,6 +56,7 @@
 !
 !########### $removeparam Tracking Parameters ##########################
 !
+$removeparam=/utm_.*/
 $removeparam=_f
 $removeparam=cexp_id
 $removeparam=cexp_var
@@ -66,7 +67,6 @@ $removeparam=source
 $removeparam=uc_param_str
 $removeparam=uclick_id # Uber engineering
 $removeparam=utm_*
-$removeparam=/utm_.*/
 !
 ####### FB ###############
 !
@@ -96,14 +96,13 @@ $removeparam=ocid
 !
 # privacytracking params
 !
-$removeparam=FORM
-$removeparam=PC
 $removeparam=__hsfp
 $removeparam=__hssc
 $removeparam=__hstc
 $removeparam=__s
 $removeparam=_hsenc
 $removeparam=_openstat
+$removeparam=FORM
 $removeparam=hsCtaTracking
 $removeparam=mc_eid
 $removeparam=ml_subscriber
@@ -111,6 +110,7 @@ $removeparam=ml_subscriber_hash
 $removeparam=msclkid
 $removeparam=oly_anon_id
 $removeparam=oly_enc_id
+$removeparam=PC
 $removeparam=rb_clickid
 $removeparam=s_cid
 $removeparam=vero_conv
@@ -133,13 +133,13 @@ $removeparam=wickedid
 !
 !########### Block all cookies from following Domain ################
 !
+#||youtube.com^$cookie
 $cookie=/__utm[a-z]/
 ||baidu.com^$cookie
 ||facebook.com^$cookie
 ||medium.com^$cookie
 ||towardsdatascience.com^cookie
 ||zeenews.*^$cookie
-#||youtube.com^$cookie
 !
 !########## Twitter #########
 !
@@ -212,9 +212,8 @@ $cookie=/__utm[a-z]/
 !########## Social network #########
 !
 #||9gag.com^
-#||netflix.com^
 #||linkedin.com^
-#||pinterest.com^
+#||netflix.com^
 #||primevideo.com^
 #||spotify.com^
 #||twitter.com^
@@ -226,6 +225,7 @@ $cookie=/__utm[a-z]/
 ||kik.com^
 ||myspace.com^
 ||patreon.com^
+||pinterest.com^
 ||tiktok.com^$important
 ||tiktokv.com^$important
 ||tumblr.com^
@@ -349,10 +349,10 @@ $cookie=/__utm[a-z]/
 !
 #########News Sites################
 !
-#||ndtv.com^
-#||zee5.com^
 #||indianexpress.com^
 #||loksatta.com^
+#||ndtv.com^
+#||zee5.com^
 ||aajtak.*^
 ||aajtaklive.in^
 ||abplive.com^
@@ -366,6 +366,7 @@ $cookie=/__utm[a-z]/
 #@@||google.com/uviewer$domain=google.com
 #||android.clients.google.com^
 #||books.google.com^
+#||fonts.googleapis.com^
 #||fonts.gstatic.com^$important
 #||ggpht.com^
 #||gstatic.*
@@ -374,7 +375,6 @@ $cookie=/__utm[a-z]/
 #||play.googleapis.com^
 #||voilatile-pa.googleapis.com^
 @@||ajax.googleapis.com^
-#||fonts.googleapis.com^
 @@||inbox.google.com/sync/
 @@||s.youtube.com^$important
 @@||youtube-ui.l.google.com^
@@ -418,12 +418,15 @@ $cookie=/__utm[a-z]/
 ############ Mobile Brands Domain ########################
 !
 ||*oneplus.*^
+||allawnos.com^
 ||analytics.oneplus.cn^
 ||data.mistat.india.xiaomi.com
 ||data.mistat.intl.xiaomi.com
 ||data.mistat.intl.xiaomi.com^
 ||data.mistat.rus.xiaomi.com
 ||data.mistat.xiaomi.com
+||heytapdl.com^
+||heytapmobile.com^
 ||miui.com^
 ||open.oneplus.net^
 ||sa.api.intl.miui.com^
@@ -432,9 +435,6 @@ $cookie=/__utm[a-z]/
 ||tracking.miui.com
 ||tracking.rus.miui.com
 ||xiaomi.com^
-||heytapmobile.com^
-||heytapdl.com^
-||allawnos.com^
 !
 ############ Apple ########################
 !
@@ -465,8 +465,8 @@ $cookie=/__utm[a-z]/
 ||insights.samsung.com^
 ||nmetrics.samsung.com^
 ||samsungadhub.com^
-||vas.samsungapps.com^
 ||samsungnewsapi.picks.my^
+||vas.samsungapps.com^
 !
 ############ Huawei ########################
 !
@@ -497,11 +497,11 @@ $cookie=/__utm[a-z]/
 !
 ########### MX Player ##################
 !
-@@||subtitle.mxplay.com^
 #@@||mxaserver.mxplay.com^$important
 #@@||mxplay.com^
 #@@||mxplay.com^$important,app=com.mxtech.videoplayer.pro
 #@@||qqcdntest.mxplay.com^
+@@||subtitle.mxplay.com^
 ||evt.mxplay.com^$important
 ||juspay.in^$important,app=com.mxtech.videoplayer.pro
 ||mxlive.mxplay.com^$important
@@ -509,6 +509,7 @@ $cookie=/__utm[a-z]/
 !
 ############ User Filters #################
 !
+#||trafficmanager.net^
 ||*.ngrok.io^
 ||*appspot.com^$important
 ||*dbankcloud.*^
@@ -600,7 +601,6 @@ $cookie=/__utm[a-z]/
 ||track.clickonik.com^
 ||track.saygames.io^
 ||trafficbiz.xyz^
-#||trafficmanager.net^
 ||ursegreatm.fun^
 ||v.starhalo.mobi^
 ||vapi.apk.vidmate.net^
@@ -642,8 +642,8 @@ $cookie=/__utm[a-z]/
 ! Title: ClearURLs for uBo (unofficial)
 ! Homepage: https://github.com/DandelionSprout/adfilt/discussions/163
 ! Description: Want to use ClearURLs' tracking protection without installing another extension? This list is a (unofficial) version of the ClearURLs rules, designed for use in uBlock Origin and AdGuard. This ONLY includes the URL parameter removal functionality from ClearURLs, and not the other functions.
-! Last updated: 29/01/2024
-! Script last updated: 8/1/2024
+! Last updated: 13/03/2024
+! Script last updated: 29/2/2024
 ! Expires: 1 day
 ! Licence: https://github.com/DandelionSprout/adfilt/blob/master/LICENSE.md
 ! Warning: This list may break websites, and contains many problematic rules. Worse, it may even prevent other filterlists from working. There is not much the Adfilt maintainers can do, as this list is just the ClearURLs rules converted into a uBo/AdGuard filterlist. Use with caution.
@@ -1303,9 +1303,13 @@ $removeparam=si,domain=youtube.com|youtu.be
 ||goodreads.com^$removeparam=qid
 ||goodreads.com^$removeparam=rank
 ||goodreads.com^$removeparam=ac
+||sohu.com^$removeparam=pvid
+||sohu.com^$removeparam=scm
 @@/^https?:\/\/([a-z0-9-]+\.)*?amazon(\.[a-z]{2,}){1,}\/gp\/.*?(redirector.html|cart\/ajax-update.html|video\/api\/)/$removeparam
 @@/^https?:\/\/([a-z0-9-]+\.)*?amazon(\.[a-z]{2,}){1,}\/(hz\/reviews-render\/ajax\/|message-us\?|s\?)/$removeparam
 @@||mail.google.com/mail/u/$removeparam
+@@||accounts.google.com/o/oauth2/$removeparam
+@@||accounts.google.com/signin/oauth/$removeparam
 @@/^https?:\/\/(docs|accounts)\.google(\.[a-z]{2,}){1,}/$removeparam
 @@/^https?:\/\/([a-z0-9-\.])*(chat|drive)\.google\.com\/videoplayback/$removeparam
 @@/^https?:\/\/([a-z0-9-]+\.)*?google(\.[a-z]{2,}){1,}(\/upload)?\/drive\//$removeparam
@@ -1317,6 +1321,7 @@ $removeparam=si,domain=youtube.com|youtu.be
 @@||matrix.org/_matrix/$removeparam
 @@/^https?:\/\/([a-z0-9-]+\.)*?(cloudflare\.com|prismic\.io|tangerine\.ca|gitlab\.com)/$removeparam
 @@||myaccount.google.*^$removeparam
+@@||accounts.google.*^$removeparam
 @@/^https?:\/\/([a-z0-9-]+\.)*?gcsip\.(com|nl)[^?]*\?.*?&?ref_?=./$removeparam
 @@/^https?:\/\/[^/]+/[^/]+/[^/]+\/-\/refs\/switch[^?]*\?.*?&?ref_?=./$removeparam
 @@/^https?:\/\/bugtracker\.[^/]*\/[^?]+\?.*?&?ref_?=[^/?&]*/$removeparam
@@ -1387,6 +1392,8 @@ $removeparam=si,domain=youtube.com|youtu.be
 @@||webapps.sftc.org/captcha/captcha.dll$removeparam
 ! https://github.com/ClearURLs/Rules/issues/46
 @@||track.sendle.com/tracking$removeparam=ref
+! https://github.com/DandelionSprout/adfilt/issues/1012
+@@||google.com^$xmlhttprequest,removeparam=ei
 !
 !
 !
@@ -1422,7 +1429,7 @@ $removeparam=si,domain=youtube.com|youtu.be
 # [uBlock Origin] Source: https://ublockorigin.github.io/uAssets/filters/lan-block.txt
 [uBlock Origin]
 ! Title: Block Outsider Intrusion into LAN
-! Last modified: Thu, 18 Jan 2024 08:46:04 +0000
+! Last modified: Sun, 25 Feb 2024 07:53:57 +0000
 ! Expires: 29 days
 ! Description: Prevents public internet sites from digging into your local LAN files.
 ! Requested here: https://github.com/uBlockOrigin/uAssets/issues/4318
@@ -1478,9 +1485,11 @@ $removeparam=si,domain=youtube.com|youtu.be
 ||aterm.me^$3p,domain=~localhost|~127.0.0.1|~[::1]|~0.0.0.0|~[::]|~local
 ||bthub.home^$3p,domain=~localhost|~127.0.0.1|~[::1]|~0.0.0.0|~[::]|~local
 ||bthomehub.home^$3p,domain=~localhost|~127.0.0.1|~[::1]|~0.0.0.0|~[::]|~local
+||cloudmesh.net^$3p,domain=~localhost|~127.0.0.1|~[::1]|~0.0.0.0|~[::]|~local
 ||congstar.box^$3p,domain=~localhost|~127.0.0.1|~[::1]|~0.0.0.0|~[::]|~local
 ||connect.box^$3p,domain=~localhost|~127.0.0.1|~[::1]|~0.0.0.0|~[::]|~local
 ||console.gl-inet.com^$3p,domain=~localhost|~127.0.0.1|~[::1]|~0.0.0.0|~[::]|~local
+||dishy.starlink.com^$3p,domain=~localhost|~127.0.0.1|~[::1]|~0.0.0.0|~[::]|~local
 ||easy.box^$3p,domain=~localhost|~127.0.0.1|~[::1]|~0.0.0.0|~[::]|~local
 ||etxr^$3p,domain=~localhost|~127.0.0.1|~[::1]|~0.0.0.0|~[::]|~local
 ||fire.walla^$3p,domain=~localhost|~127.0.0.1|~[::1]|~0.0.0.0|~[::]|~local
@@ -1494,6 +1503,7 @@ $removeparam=si,domain=youtube.com|youtu.be
 ||huaweimobilewifi.com^$3p,domain=~localhost|~127.0.0.1|~[::1]|~0.0.0.0|~[::]|~local
 ||localbattle.net^$3p,domain=~localhost|~127.0.0.1|~[::1]|~0.0.0.0|~[::]|~local
 ||myfritz.box^$3p,domain=~localhost|~127.0.0.1|~[::1]|~0.0.0.0|~[::]|~local
+||mygateway^$3p,domain=~localhost|~127.0.0.1|~[::1]|~0.0.0.0|~[::]|~local
 ||mobile.hotspot^$3p,domain=~localhost|~127.0.0.1|~[::1]|~0.0.0.0|~[::]|~local
 ||ntt.setup^$3p,domain=~localhost|~127.0.0.1|~[::1]|~0.0.0.0|~[::]|~local
 ||pi.hole^$3p,domain=~localhost|~127.0.0.1|~[::1]|~0.0.0.0|~[::]|~local
@@ -1505,6 +1515,7 @@ $removeparam=si,domain=youtube.com|youtu.be
 ||samsung.router^$3p,domain=~localhost|~127.0.0.1|~[::1]|~0.0.0.0|~[::]|~local
 ||speedport.ip^$3p,domain=~localhost|~127.0.0.1|~[::1]|~0.0.0.0|~[::]|~local
 ||steamloopback.host^$3p,domain=~localhost|~127.0.0.1|~[::1]|~0.0.0.0|~[::]|~local
+||telstra.gateway^$3p,domain=~localhost|~127.0.0.1|~[::1]|~0.0.0.0|~[::]|~local
 ||tplinkap.net^$3p,domain=~localhost|~127.0.0.1|~[::1]|~0.0.0.0|~[::]|~local
 ||tplinkeap.net^$3p,domain=~localhost|~127.0.0.1|~[::1]|~0.0.0.0|~[::]|~local
 ||tplinkmodem.net^$3p,domain=~localhost|~127.0.0.1|~[::1]|~0.0.0.0|~[::]|~local
@@ -1519,6 +1530,9 @@ $removeparam=si,domain=youtube.com|youtu.be
 !
 ! https://github.com/uBlockOrigin/uAssets/pull/20768
 @@||127.0.0.1^$3p,domain=musicbrainz.org
+!
+! https://github.com/uBlockOrigin/uAssets/pull/22475
+@@||127.0.0.1^$domain=client.foldingathome.org
 !
 ! ——— END
 !
@@ -1553,10 +1567,10 @@ $removeparam=si,domain=youtube.com|youtu.be
 !
 [Adblock Plus 2.0]
 ! Title: 🔍 Block third party fonts
-! Description: Block most third-party fonts
+! Description: Block most third-party fonts. Allows for Material Icons and WOFF fonts in order to not break sites.
 ! Homepage: https://github.com/yokoffing/filterlists
 ! Expires: 4 days (update frequency)
-! Version: 19 January 2024
+! Version: 17 March 2024b
 ! Syntax: AdBlock
 
 !!! ALLOWLIST
@@ -1564,8 +1578,8 @@ $removeparam=si,domain=youtube.com|youtu.be
 @@||googleapis.com/ajax/libs/webfont/$domain=typepad.com
 ! @@||cloudfront.net^$font,domain=noip.com|phabricator.services.mozilla.com|securelist.com|status.proton.me
 @@||fast.fonts.net/jsapi/$script
-@@||fonts.googleapis.com$domain=abc.xyz|google.com|blog.google|blogger.com|chromium.org|gaggle.fun|googlesource.com|grow.google|reedsy.com|reliaslearning.com|socialworkers.org|googleapps.com|vocabulary.com|web.dev|youtube.com
-@@||fonts.gstatic.com$domain=about.google|ai.google|bloble.io|blog.google|blogger.com|chrome.com|chromium.org|dexscreener.com|google.com|domains.google|googlesource.com|grow.google|material.io|reedsy.com|reliaslearning.com|safety.google|socialworkers.org|toolbox.googleapps.com|vocabulary.com|web.dev|youtube.com
+@@||fonts.googleapis.com$domain=abc.xyz|google.com|blog.google|blogger.com|chromium.org|fmoviesz.to|gaggle.fun|googlesource.com|grow.google|groq.com|myeducator.com|reedsy.com|reliaslearning.com|socialworkers.org|googleapps.com|vocabulary.com|web.dev|youtube.com
+@@||fonts.gstatic.com$domain=about.google|ai.google|bloble.io|blog.google|blogger.com|cenreader.com|chrome.com|chromium.org|dexscreener.com|google.com|domains.google|googlesource.com|grow.google|groq.com|material.io|myeducator.com|reedsy.com|reliaslearning.com|safety.google|socialworkers.org|toolbox.googleapps.com|vocabulary.com|web.dev|youtube.com
 @@||googleusercontent.com/static/fonts/$domain=tudocelular.com
 @@||myfonts.net$domain=myfonts.com
 @@||typekit.com$font
@@ -1587,6 +1601,8 @@ $removeparam=si,domain=youtube.com|youtu.be
 @@family=Material+Icons
 @@family=Material+Symbols
 @@Material+Icons
+@@/font-awesome
+@@||fontawesome.com^
 !@@||fonts.googleapis.com/css?family=Material+Icons
 !@@||fonts.googleapis.com/icon?family=Material+Icons
 !@@||fonts.gstatic.com/s/materialicons
@@ -1594,6 +1610,7 @@ $removeparam=si,domain=youtube.com|youtu.be
 ! Privacy-friendly drop-in replacement for Google Fonts
 ! [1] https://fonts.coollabs.io/
 @@||cdn.coollabs.io/fonts^
+@@||api.fonts.coollabs.io^
 
 !!! DENYLIST
 /cdn-cgi/pe/bag2?*googleapis.com*webfont.js
@@ -1603,12 +1620,10 @@ $removeparam=si,domain=youtube.com|youtu.be
 ||bootstrapcdn.com/bootstrap/$font,3p
 ||cloud.typography.com^$3p
 ||cloud.webtype.com^$font,3p
-! ||cloudfront.net^$font,3p
 ||disquscdn.com/next/assets/font/$3p
 ||edgefonts.net^$3p
 ||fast.fonts.com^$3p
 ||fast.fonts.net^$3p
-! ||fastly.net^$font,3p
 ||fontdeck.com^$3p
 ||fonts.advance.net^$3p
 ||fonts.bauernet.me^
@@ -1651,20 +1666,13 @@ $removeparam=si,domain=youtube.com|youtu.be
 ! @@||use.typekit.net^$font,badfilter
 
 !!! UNUSED
-! Causes too many false positives:
-!*$font,3p
+! Breaks too many sites:
+!||cloudfront.net^$font,3p
+!||fastly.net^$font,3p
+!$font,3p
 !/fonts/*.ttf$font,3p
 !||maxcdn.bootstrapcdn.com/font-awesome/$3p
 !||maxcdn.bootstrapcdn.com^*/fonts/
-
-! Used for icons on many sites:
-!@@/fontawesome-$font,3p,domain=fontawesome.com
-!@@/wp-$font,domain=arstechnica.com|themindfulnessclinic.ca
-!@@||cdnjs.cloudflare.com/ajax/libs/font-awesome^$domain=9anime.to
-!@@||fontawesome.com^
-!/font-awesome^$3p
-!/fontawesome-$font,3p
-!/fontawesome-webfont
 !/wp-$font,3p
 !||cdnjs.cloudflare.com/ajax/libs/font-awesome^$3p
 !||fontawesome.com^$3p
