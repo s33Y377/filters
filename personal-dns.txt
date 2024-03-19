@@ -1,7 +1,7 @@
 ! Title: personal-dns
 ! Description: personal-optimized-filters
-! Version: V.2023.02.16
-! Last modified: 2023-02-16
+! Version: V.2024.03.19
+! Last modified: 2024-03-19
 ! Homepage: https://github.com/s33Y377/filters
 ! filters: ClearURLs for uBo, Block Outsider Intrusion into LANs, Block third party fonts
 !
@@ -40,6 +40,7 @@
 @@||m.recipes.timesofindia.com^$important
 @@||videos.porndig.com^
 @@||edge-chat.instagram.com^
+@@||snowflake.com^$domain=snowflake.com,important
 !
 !###################### kik app Domain #############################
 !
