@@ -378,6 +378,7 @@ $cookie=/__utm[a-z]/
 @@||inbox.google.com/sync/
 @@||s.youtube.com^$important
 @@||youtube-ui.l.google.com^
+@@||fonts.gstatic.com^$domain=fonts.googleapis.com,important
 ||adservice.google.*^
 ||ampproject.net^
 ||analytics.google.com^
