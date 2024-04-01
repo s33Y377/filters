@@ -1,7 +1,7 @@
 ! Title: personal-dns
 ! Description: personal-optimized-filters
-! Version: V.2024.03.19
-! Last modified: 2024-03-19
+! Version: V.2024.04.02
+! Last modified: 2024-04-02
 ! Homepage: https://github.com/s33Y377/filters
 ! filters: ClearURLs for uBo, Block Outsider Intrusion into LANs, Block third party fonts
 !
@@ -33,6 +33,7 @@
 #@@||wikipedia.org^$domain=en.m.wikipedia.org,important
 @@||bajajfinserv.in^
 @@||edge-chat.instagram.com^
+@@||email.mg-d0.substack.com^
 @@||github.com/uazo/cromite/$important,app=org.cromite.cromite
 @@||m.recipes.timesofindia.com^$important
 @@||oneassist.in^
