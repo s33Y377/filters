@@ -1,7 +1,7 @@
 ! Title: personal-dns
 ! Description: personal-optimized-filters
-! Version: V.2024.04.02
-! Last modified: 2024-04-02
+! Version: V.2024.04.16
+! Last modified: 2024-04-16
 ! Homepage: https://github.com/s33Y377/filters
 ! filters: ClearURLs for uBo, Block Outsider Intrusion into LANs, Block third party fonts
 !
@@ -28,9 +28,6 @@
 ||spotify.com^$important,app=com.samsung.android.honeyboard
 !###################### WishListed Domain #############################
 !
-#@@||olacabs.com^ # Couldn't whitelist because of blocked userlocation googleapis
-#@@||olawebcdn.com^ # Couldn't whitelist because of blocked userlocation googleapis
-#@@||wikipedia.org^$domain=en.m.wikipedia.org,important
 @@||bajajfinserv.in^
 @@||edge-chat.instagram.com^
 @@||email.mg-d0.substack.com^
@@ -645,7 +642,7 @@ $cookie=/__utm[a-z]/
 ! Title: ClearURLs for uBo (unofficial)
 ! Homepage: https://github.com/DandelionSprout/adfilt/discussions/163
 ! Description: Want to use ClearURLs' tracking protection without installing another extension? This list is a (unofficial) version of the ClearURLs rules, designed for use in uBlock Origin and AdGuard. This ONLY includes the URL parameter removal functionality from ClearURLs, and not the other functions.
-! Last updated: 13/03/2024
+! Last updated: 28/03/2024
 ! Script last updated: 29/2/2024
 ! Expires: 1 day
 ! Licence: https://github.com/DandelionSprout/adfilt/blob/master/LICENSE.md
@@ -686,6 +683,10 @@ $cookie=/__utm[a-z]/
 ||amazon.*^$removeparam=camp
 ||amazon.*^$removeparam=creative
 ||amazon.*^$removeparam=content-id
+||amazon.*^$removeparam=dib
+||amazon.*^$removeparam=dib_tag
+||msn.com^$removeparam=cvid
+||msn.com^$removeparam=ocid
 ||amazon.*/s?$removeparam=/^p[fd]_rd_[a-z]*=/
 ||amazon.*/s?$removeparam=qid
 ||amazon.*/s?$removeparam=/^srs?=/
@@ -811,6 +812,7 @@ $removeparam=si,domain=youtube.com|youtu.be
 ||facebook.com^$removeparam=tracking
 ||facebook.com^$removeparam=referral_code
 ||facebook.com^$removeparam=referral_story_type
+||facebook.com^$removeparam=mibextid
 ||twitter.com^$removeparam=/^(ref_?)?src=/
 ||twitter.com^$removeparam=cn
 ||twitter.com^$removeparam=ref_url
@@ -920,6 +922,7 @@ $removeparam=si,domain=youtube.com|youtu.be
 ||linkedin.com/learning$removeparam=u
 ||spiegel.de^$removeparam=b
 ||instagram.com^$removeparam=igshid
+||instagram.com^$removeparam=igsh
 ||lazada.com.my^$removeparam=ad_src
 ||lazada.com.my^$removeparam=did
 ||lazada.com.my^$removeparam=pa
@@ -1579,8 +1582,7 @@ $removeparam=si,domain=youtube.com|youtu.be
 !!! ALLOWLIST
 @@||ajax.googleapis.com/ajax/libs/webfont/$script,domain=bootsnipp.com|regexpal.com|typepad.com
 @@||googleapis.com/ajax/libs/webfont/$domain=typepad.com
-! 
-@@||cloudfront.net^$font,domain=noip.com|phabricator.services.mozilla.com|securelist.com|status.proton.me
+! @@||cloudfront.net^$font,domain=noip.com|phabricator.services.mozilla.com|securelist.com|status.proton.me
 @@||fast.fonts.net/jsapi/$script
 @@||fonts.googleapis.com$domain=abc.xyz|google.com|blog.google|blogger.com|chromium.org|freetaxusa.com|fmoviesz.to|gaggle.fun|googlesource.com|grow.google|groq.com|myeducator.com|reedsy.com|reliaslearning.com|socialworkers.org|googleapps.com|vocabulary.com|web.dev|youtube.com
 @@||fonts.gstatic.com$domain=about.google|ai.google|bloble.io|blog.google|blogger.com|cenreader.com|chrome.com|chromium.org|dexscreener.com|google.com|domains.google|googlesource.com|grow.google|groq.com|material.io|myeducator.com|reedsy.com|reliaslearning.com|safety.google|socialworkers.org|toolbox.googleapps.com|vocabulary.com|web.dev|youtube.com
