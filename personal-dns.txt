@@ -25,7 +25,9 @@
 !
 !
 ###################### App BLockings #####################################
+!
 ||spotify.com^$important,app=com.samsung.android.honeyboard
+!
 !###################### WishListed Domain #############################
 !
 @@||bajajfinserv.in^
