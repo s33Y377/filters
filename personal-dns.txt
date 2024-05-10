@@ -1,7 +1,7 @@
 ! Title: personal-dns
 ! Description: personal-optimized-filters
-! Version: V.2024.05.05
-! Last modified: 2024-05-05
+! Version: V.2024.05.10
+! Last modified: 2024-05-10
 ! Homepage: https://github.com/s33Y377/filters
 ! filters: ClearURLs for uBo, Block Outsider Intrusion into LANs, Block third party fonts
 !
@@ -40,8 +40,8 @@
 @@||spclient.wg.spotify.com^$app=com.spotify.lite,important
 @@||spclient.wg.spotify.com^$app=com.spotify.music,important
 @@||tradepub.com^$important # Blocked by 1 host pro domain
-@@||videos.porndig.com^
 @@||video-downloads.googleusercontent.com^$domain=video-downloads.googleusercontent.com,important,app=idm.internet.download.manager.plus
+@@||videos.porndig.com^
 !
 !###################### kik app Domain #############################
 !
@@ -213,6 +213,7 @@ $cookie=/__utm[a-z]/
 !########## Social network #########
 !
 #||9gag.com^
+#||discord.com^
 #||linkedin.com^
 #||netflix.com^
 #||pinterest.com^
@@ -220,7 +221,6 @@ $cookie=/__utm[a-z]/
 #||spotify.com^
 #||twitter.com^
 ||byteoversea.com^$important
-||discord.com^
 ||flickr.com^
 ||foursquare.com^
 ||gotinder.com^
@@ -376,10 +376,10 @@ $cookie=/__utm[a-z]/
 #||play.googleapis.com^
 #||voilatile-pa.googleapis.com^
 @@||ajax.googleapis.com^
+@@||fonts.gstatic.com^$domain=fonts.googleapis.com,important
 @@||inbox.google.com/sync/
 @@||s.youtube.com^$important
 @@||youtube-ui.l.google.com^
-@@||fonts.gstatic.com^$domain=fonts.googleapis.com,important
 ||adservice.google.*^
 ||ampproject.net^
 ||analytics.google.com^
@@ -419,16 +419,19 @@ $cookie=/__utm[a-z]/
 !
 ############ Mobile Brands Domain ########################
 !
-||*oneplus.*^
+#||*oneplus.*^
 ||allawnos.com^
 ||analytics.oneplus.cn^
+||heytapdl.com^
+||heytapmobile.com^
+!
+!
+#||xiaomi.com^
 ||data.mistat.india.xiaomi.com
 ||data.mistat.intl.xiaomi.com
 ||data.mistat.intl.xiaomi.com^
 ||data.mistat.rus.xiaomi.com
 ||data.mistat.xiaomi.com
-||heytapdl.com^
-||heytapmobile.com^
 ||miui.com^
 ||open.oneplus.net^
 ||sa.api.intl.miui.com^
@@ -436,7 +439,6 @@ $cookie=/__utm[a-z]/
 ||tracking.intl.miui.com
 ||tracking.miui.com
 ||tracking.rus.miui.com
-||xiaomi.com^
 !
 ############ Apple ########################
 !
