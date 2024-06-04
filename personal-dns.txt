@@ -41,6 +41,7 @@
 @@||spclient.wg.spotify.com^$app=com.spotify.music,important
 @@||tradepub.com^$important # Blocked by 1 host pro domain
 @@||video-downloads.googleusercontent.com^$domain=video-downloads.googleusercontent.com,important,app=idm.internet.download.manager.plus
+@@||gvt1.com^$important,app=com.android.vending
 @@||videos.porndig.com^
 !
 !###################### kik app Domain #############################
