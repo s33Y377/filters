@@ -1,7 +1,7 @@
 ! Title: personal-dns
 ! Description: personal-optimized-filters
-! Version: V.2024.06.04
-! Last modified: 2024-06-04
+! Version: V.2024.06.08
+! Last modified: 2024-06-08
 ! Homepage: https://github.com/s33Y377/filters
 ! filters: ClearURLs for uBo, Block Outsider Intrusion into LANs, Block third party fonts
 !
@@ -41,7 +41,7 @@
 @@||spclient.wg.spotify.com^$app=com.spotify.music,important
 @@||tradepub.com^$important # Blocked by 1 host pro domain
 @@||video-downloads.googleusercontent.com^$domain=video-downloads.googleusercontent.com,important,app=idm.internet.download.manager.plus
-@@||gvt1.com^$important,app=com.android.vending
+#@@||gvt1.com^$important,app=com.android.vending
 @@||videos.porndig.com^
 !
 !###################### kik app Domain #############################
