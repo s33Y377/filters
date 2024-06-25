@@ -24,10 +24,6 @@
 ||*.tw^
 !
 !
-##################### bit.ly #####################################
-!
-||bit.ly/winexchdcjune$important
-!
 ###################### App BLockings #####################################
 !
 ||spotify.com^$important,app=com.samsung.android.honeyboard
@@ -143,6 +139,7 @@ $removeparam=wickedid
 $cookie=/__utm[a-z]/
 ||baidu.com^$cookie
 ||facebook.com^$cookie
+||instagram.com^$cookie
 ||medium.com^$cookie
 ||towardsdatascience.com^cookie
 ||zeenews.*^$cookie
@@ -259,7 +256,7 @@ $cookie=/__utm[a-z]/
 ||tinder.com^
 ||tindersparks.com
 !
-####### Sharechat ############
+########################### Sharechat ################################
 !
 #||apis.sharechat.com^
 #||cdn.sharechat.com^
@@ -389,6 +386,7 @@ $cookie=/__utm[a-z]/
 ||ampproject.net^
 ||analytics.google.com^
 ||cdn.ampproject.org^
+||*crashlytics.com
 ||fonts.googleapis.com^$third-party
 ||googleadservices*^$important
 ||googleadservices.com/pagead/^$important
@@ -427,8 +425,9 @@ $cookie=/__utm[a-z]/
 #||*oneplus.*^
 ||allawnos.com^
 ||analytics.oneplus.cn^
-||heytapdl.com^
-||heytapmobile.com^
+||*heytapdl.com^
+||*heytapmobile.com^
+||*oppomobile.com^
 !
 !
 #||miui.com^
@@ -651,8 +650,8 @@ $cookie=/__utm[a-z]/
 ! Title: ClearURLs for uBo (unofficial)
 ! Homepage: https://github.com/DandelionSprout/adfilt/discussions/163
 ! Description: Want to use ClearURLs' tracking protection without installing another extension? This list is a (unofficial) version of the ClearURLs rules, designed for use in uBlock Origin and AdGuard. This ONLY includes the URL parameter removal functionality from ClearURLs, and not the other functions.
-! Last updated: 28/03/2024
-! Script last updated: 29/2/2024
+! Last updated: 25/06/2024
+! Script last updated: 25/6/2024
 ! Expires: 1 day
 ! Licence: https://github.com/DandelionSprout/adfilt/blob/master/LICENSE.md
 ! Warning: This list may break websites, and contains many problematic rules. Worse, it may even prevent other filterlists from working. There is not much the Adfilt maintainers can do, as this list is just the ClearURLs rules converted into a uBo/AdGuard filterlist. Use with caution.
@@ -821,6 +820,15 @@ $removeparam=si,domain=youtube.com|youtu.be
 ||facebook.com^$removeparam=tracking
 ||facebook.com^$removeparam=referral_code
 ||facebook.com^$removeparam=referral_story_type
+||facebook.com^$removeparam=eav
+||facebook.com^$removeparam=sfnsn
+||facebook.com^$removeparam=idorvanity
+||facebook.com^$removeparam=wtsid
+||facebook.com^$removeparam=rdc
+||facebook.com^$removeparam=rdr
+||facebook.com^$removeparam=paipv
+||facebook.com^$removeparam=_nc_x
+||facebook.com^$removeparam=_rdr
 ||facebook.com^$removeparam=mibextid
 ||twitter.com^$removeparam=/^(ref_?)?src=/
 ||twitter.com^$removeparam=cn
@@ -837,7 +845,6 @@ $removeparam=si,domain=youtube.com|youtu.be
 ||reddit.com^$removeparam=ref_campaign
 ||reddit.com^$removeparam=ref_source
 ||reddit.com^$removeparam=%243p
-||reddit.com^$removeparam=rdt
 ||reddit.com^$removeparam=/^\x243p=/
 ||reddit.com^$removeparam=%24original_url
 ||reddit.com^$removeparam=/^\x24original_url=/
@@ -932,13 +939,6 @@ $removeparam=si,domain=youtube.com|youtu.be
 ||spiegel.de^$removeparam=b
 ||instagram.com^$removeparam=igshid
 ||instagram.com^$removeparam=igsh
-||lazada.com.my^$removeparam=ad_src
-||lazada.com.my^$removeparam=did
-||lazada.com.my^$removeparam=pa
-||lazada.com.my^$removeparam=mp
-||lazada.com.my^$removeparam=impsrc
-||lazada.com.my^$removeparam=cid
-||lazada.com.my^$removeparam=pos
 ||boredpanda.com^$removeparam=h
 ||bahn.de^$removeparam=/^dbkanal_[0-9]{3}=/
 ||disq.us^$removeparam=cuid
@@ -1320,6 +1320,24 @@ $removeparam=si,domain=youtube.com|youtu.be
 ||goodreads.com^$removeparam=ac
 ||sohu.com^$removeparam=pvid
 ||sohu.com^$removeparam=scm
+||shopee.(com|co.th)^$removeparam=publish_id
+||shopee.(com|co.th)^$removeparam=sp_atk
+||shopee.(com|co.th)^$removeparam=xptdk
+||lazada.(com|co.th|co.id|com.my|com.ph|sg|vn)^$removeparam=clickTrackInfo
+||lazada.(com|co.th|co.id|com.my|com.ph|sg|vn)^$removeparam=abid
+||lazada.(com|co.th|co.id|com.my|com.ph|sg|vn)^$removeparam=pvid
+||lazada.(com|co.th|co.id|com.my|com.ph|sg|vn)^$removeparam=ad_src
+||lazada.(com|co.th|co.id|com.my|com.ph|sg|vn)^$removeparam=spm
+||lazada.(com|co.th|co.id|com.my|com.ph|sg|vn)^$removeparam=src
+||lazada.(com|co.th|co.id|com.my|com.ph|sg|vn)^$removeparam=from
+||lazada.(com|co.th|co.id|com.my|com.ph|sg|vn)^$removeparam=scm
+||lazada.(com|co.th|co.id|com.my|com.ph|sg|vn)^$removeparam=pa
+||lazada.(com|co.th|co.id|com.my|com.ph|sg|vn)^$removeparam=pid_pvid
+||lazada.(com|co.th|co.id|com.my|com.ph|sg|vn)^$removeparam=did
+||lazada.(com|co.th|co.id|com.my|com.ph|sg|vn)^$removeparam=mp
+||lazada.(com|co.th|co.id|com.my|com.ph|sg|vn)^$removeparam=cid
+||lazada.(com|co.th|co.id|com.my|com.ph|sg|vn)^$removeparam=impsrc
+||lazada.(com|co.th|co.id|com.my|com.ph|sg|vn)^$removeparam=pos
 @@/^https?:\/\/([a-z0-9-]+\.)*?amazon(\.[a-z]{2,}){1,}\/gp\/.*?(redirector.html|cart\/ajax-update.html|video\/api\/)/$removeparam
 @@/^https?:\/\/([a-z0-9-]+\.)*?amazon(\.[a-z]{2,}){1,}\/(hz\/reviews-render\/ajax\/|message-us\?|s\?)/$removeparam
 @@||mail.google.com/mail/u/$removeparam
@@ -1443,8 +1461,9 @@ $removeparam=si,domain=youtube.com|youtu.be
 !
 # [uBlock Origin] Source: https://ublockorigin.github.io/uAssets/filters/lan-block.txt
 [uBlock Origin]
+[uBlock Origin]
 ! Title: Block Outsider Intrusion into LAN
-! Last modified: Fri, 26 Apr 2024 07:50:47 +0000
+! Last modified: Thu, 06 Jun 2024 21:33:33 +0000
 ! Expires: 29 days
 ! Description: Prevents public internet sites from digging into your local LAN files.
 ! Requested here: https://github.com/uBlockOrigin/uAssets/issues/4318
@@ -1517,6 +1536,8 @@ $removeparam=si,domain=youtube.com|youtu.be
 ||homerouter.cpe^$3p,domain=~localhost|~127.0.0.1|~[::1]|~0.0.0.0|~[::]|~local
 ||huaweimobilewifi.com^$3p,domain=~localhost|~127.0.0.1|~[::1]|~0.0.0.0|~[::]|~local
 ||localbattle.net^$3p,domain=~localhost|~127.0.0.1|~[::1]|~0.0.0.0|~[::]|~local
+||my.keenetic.net^$3p,domain=~localhost|~127.0.0.1|~[::1]|~0.0.0.0|~[::]|~local
+||my.router^$3p,domain=~localhost|~127.0.0.1|~[::1]|~0.0.0.0|~[::]|~local
 ||myfritz.box^$3p,domain=~localhost|~127.0.0.1|~[::1]|~0.0.0.0|~[::]|~local
 ||mygateway^$3p,domain=~localhost|~127.0.0.1|~[::1]|~0.0.0.0|~[::]|~local
 ||mobile.hotspot^$3p,domain=~localhost|~127.0.0.1|~[::1]|~0.0.0.0|~[::]|~local
@@ -1600,13 +1621,13 @@ $removeparam=si,domain=youtube.com|youtu.be
 ! Description: Block most third-party fonts. Allows for Material Icons and WOFF fonts in order to not break sites.
 ! Homepage: https://github.com/yokoffing/filterlists
 ! Expires: 4 days (update frequency)
-! Version: 24 March 2024
+! Version: 22 May 2024
 ! Syntax: AdBlock
 
 !!! ALLOWLIST
 @@||ajax.googleapis.com/ajax/libs/webfont/$script,domain=bootsnipp.com|regexpal.com|typepad.com
+@@||amazonaws.com^$font,3p,domain=dollartree.com
 @@||googleapis.com/ajax/libs/webfont/$domain=typepad.com
-! @@||cloudfront.net^$font,domain=noip.com|phabricator.services.mozilla.com|securelist.com|status.proton.me
 @@||fast.fonts.net/jsapi/$script
 @@||fonts.googleapis.com$domain=abc.xyz|google.com|blog.google|blogger.com|chromium.org|freetaxusa.com|fmoviesz.to|gaggle.fun|googlesource.com|grow.google|groq.com|myeducator.com|reedsy.com|reliaslearning.com|socialworkers.org|googleapps.com|vocabulary.com|web.dev|youtube.com
 @@||fonts.gstatic.com$domain=about.google|ai.google|bloble.io|blog.google|blogger.com|cenreader.com|chrome.com|chromium.org|dexscreener.com|google.com|domains.google|googlesource.com|grow.google|groq.com|material.io|myeducator.com|reedsy.com|reliaslearning.com|safety.google|socialworkers.org|toolbox.googleapps.com|vocabulary.com|web.dev|youtube.com
@@ -1633,9 +1654,6 @@ $removeparam=si,domain=youtube.com|youtu.be
 @@Material+Icons
 @@/font-awesome
 @@||fontawesome.com^
-!@@||fonts.googleapis.com/css?family=Material+Icons
-!@@||fonts.googleapis.com/icon?family=Material+Icons
-!@@||fonts.gstatic.com/s/materialicons
 
 ! Privacy-friendly drop-in replacement for Google Fonts
 ! [1] https://fonts.coollabs.io/
