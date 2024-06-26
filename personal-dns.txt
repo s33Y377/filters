@@ -22,6 +22,7 @@
 ||*.ir^
 ||*.th^
 ||*.tw^
+||*.fun^$important
 !
 !
 ###################### App BLockings #####################################
@@ -344,7 +345,6 @@ $cookie=/__utm[a-z]/
 !
 ######## Annoying Content #########
 !
-||*.fun^$important
 ||linktr.ee*
 ||onlyfans.com^
 ||skimresources.^
@@ -605,7 +605,6 @@ $cookie=/__utm[a-z]/
 ||spy.com^
 ||st-win.qureka.com^
 ||talentjobs.mailspear.com^
-||topdailylist.com^
 ||track.clickonik.com^
 ||track.saygames.io^
 ||trafficbiz.xyz^
