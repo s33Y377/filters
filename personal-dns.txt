@@ -43,7 +43,6 @@
 @@||tradepub.com^$important # Blocked by 1 host pro domain
 @@||video-downloads.googleusercontent.com^$domain=video-downloads.googleusercontent.com,important,app=idm.internet.download.manager.plus
 #@@||gvt1.com^$important,app=com.android.vending
-@@||videos.porndig.com^
 !
 !###################### kik app Domain #############################
 !
@@ -140,6 +139,7 @@ $removeparam=wickedid
 $cookie=/__utm[a-z]/
 ||baidu.com^$cookie
 ||facebook.com^$cookie
+||meta.com^$cookie
 ||instagram.com^$cookie
 ||medium.com^$cookie
 ||towardsdatascience.com^cookie
@@ -1460,9 +1460,8 @@ $removeparam=si,domain=youtube.com|youtu.be
 !
 # [uBlock Origin] Source: https://ublockorigin.github.io/uAssets/filters/lan-block.txt
 [uBlock Origin]
-[uBlock Origin]
 ! Title: Block Outsider Intrusion into LAN
-! Last modified: Thu, 06 Jun 2024 21:33:33 +0000
+! Last modified: Mon, 15 Jul 2024 22:12:43 +0000
 ! Expires: 29 days
 ! Description: Prevents public internet sites from digging into your local LAN files.
 ! Requested here: https://github.com/uBlockOrigin/uAssets/issues/4318
@@ -1584,7 +1583,11 @@ $removeparam=si,domain=youtube.com|youtu.be
 @@||localhost^$from=deutsche-rentenversicherung.de
 @@||127.0.0.1^$from=bund.de|organspende-register.de|bayernportal.de|mv-serviceportal.de
 !
+! https://github.com/uBlockOrigin/uAssets/pull/24488
+@@||localhost^$websocket,domain=www.faceit.com
+!
 ! ——— END
+!
 !
 !
 !
