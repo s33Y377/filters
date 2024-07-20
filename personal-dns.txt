@@ -65,6 +65,7 @@ $removeparam=cexp_var
 $removeparam=ck_subscriber_id,domain=learnopencv.com
 $removeparam=client
 $removeparam=ref
+$removeparam=ref2
 $removeparam=ref*
 $removeparam=source
 $removeparam=uc_param_str
