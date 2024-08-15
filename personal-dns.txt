@@ -138,7 +138,6 @@ $removeparam=campaign
 !
 !########### Block all cookies from following Domain ################
 !
-||youtube.com^$cookie
 $cookie=/__utm[a-z]/
 ||baidu.com^$cookie
 ||facebook.com^$cookie
