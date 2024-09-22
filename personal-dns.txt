@@ -1,7 +1,7 @@
 ! Title: personal-dns
 ! Description: personal-optimized-filters
-! Version: V.2024.09.17
-! Last modified: 2024-09-17
+! Version: V.2024.09.22
+! Last modified: 2024-09-22
 ! Homepage: https://github.com/s33Y377/filters
 ! filters: ClearURLs for uBo, Block Outsider Intrusion into LANs, Block third party fonts
 !
@@ -16,13 +16,13 @@
 !
 !########## Country ###########
 !
-||*.cf^
-||*.br^
-||*.cn^
-||*.ir^
-||*.th^
-||*.tw^
+||*.br^$important
+||*.cf^$important
+||*.cn^$important
 ||*.fun^$important
+||*.ir^$important
+||*.th^$important
+||*.tw^$important
 !
 !
 ###################### App BLockings #####################################
@@ -58,16 +58,16 @@
 !
 !########### $removeparam Tracking Parameters ##########################
 !
-$removeparam=li_fat_id
 $removeparam=/utm_.*/
 $removeparam=_f
 $removeparam=cexp_id
 $removeparam=cexp_var
 $removeparam=ck_subscriber_id,domain=learnopencv.com
 $removeparam=client
+$removeparam=li_fat_id
 $removeparam=ref
-$removeparam=ref2
 $removeparam=ref*
+$removeparam=ref2
 $removeparam=source
 $removeparam=uc_param_str
 $removeparam=uclick_id # Uber engineering
@@ -386,11 +386,11 @@ $cookie=/__utm[a-z]/
 @@||inbox.google.com/sync/
 @@||s.youtube.com^$important
 @@||youtube-ui.l.google.com^
+||*crashlytics.com
 ||adservice.google.*^
 ||ampproject.net^
 ||analytics.google.com^
 ||cdn.ampproject.org^
-||*crashlytics.com
 ||fonts.googleapis.com^$third-party
 ||googleadservices*^$important
 ||googleadservices.com/pagead/^$important
@@ -427,28 +427,28 @@ $cookie=/__utm[a-z]/
 ############ Mobile Brands Domain ########################
 !
 #||*oneplus.*^
-||allawnos.com^
-||analytics.oneplus.cn^
 ||*heytapdl.com^
 ||*heytapmobile.com^
 ||*oppomobile.com^
+||allawnos.com^
+||analytics.oneplus.cn^
 !
 !
 #||miui.com^
 #||xiaomi.com^
-||in.global.market.xiaomi.com^
 ||data.mistat.india.xiaomi.com
 ||data.mistat.intl.xiaomi.com
 ||data.mistat.intl.xiaomi.com^
 ||data.mistat.rus.xiaomi.com
 ||data.mistat.xiaomi.com
+||in.global.market.xiaomi.com^
+||mi.com^
 ||open.oneplus.net^
 ||sa.api.intl.miui.com^
 ||tracking.india.miui.com
 ||tracking.intl.miui.com
 ||tracking.miui.com
 ||tracking.rus.miui.com
-||mi.com^
 !
 ############ Apple ########################
 !
@@ -1470,13 +1470,19 @@ $removeparam=si,domain=youtube.com|youtu.be
 # [uBlock Origin] Source: https://ublockorigin.github.io/uAssets/filters/lan-block.txt
 [uBlock Origin]
 ! Title: Block Outsider Intrusion into LAN
-! Last modified: Sun, 11 Aug 2024 00:57:20 +0000
+! Last modified: Fri, 20 Sep 2024 12:04:01 +0000
 ! Expires: 29 days
 ! Description: Prevents public internet sites from digging into your local LAN files.
 ! Requested here: https://github.com/uBlockOrigin/uAssets/issues/4318
 ! Revived for: https://github.com/uBlockOrigin/uBlock-issues/issues/1070
 ! Homepage: https://github.com/uBlockOrigin/uAssets
 ! License: https://github.com/uBlockOrigin/uAssets/blob/master/LICENSE
+!
+!#if cap_ipaddress
+! https://github.com/uBlockOrigin/uBlock-issues/issues/1070#issuecomment-707237653
+! https://github.com/uBlockOrigin/uBlock-discussions/discussions/910
+*$3p,strict3p,ipaddress=lan,domain=~localhost|~127.0.0.1|~[::1]|~0.0.0.0|~[::]|~local
+!#else
 !
 ! ——— LAN
 ! https://en.wikipedia.org/wiki/Private_network
@@ -1506,6 +1512,7 @@ $removeparam=si,domain=youtube.com|youtu.be
 !
 ! ——— any local
 ! https://en.wikipedia.org/wiki/0.0.0.0
+!#endif
 !
 ||0.0.0.0^$3p,domain=~localhost|~127.0.0.1|~[::1]|~0.0.0.0|~[::]|~local
 ||[::]^$3p,domain=~localhost|~127.0.0.1|~[::1]|~0.0.0.0|~[::]|~local
