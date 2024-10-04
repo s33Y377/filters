@@ -1,7 +1,7 @@
 ! Title: personal-dns
 ! Description: personal-optimized-filters
-! Version: V.2024.09.22
-! Last modified: 2024-09-22
+! Version: V.2024.10.04
+! Last modified: 2024-10-04
 ! Homepage: https://github.com/s33Y377/filters
 ! filters: ClearURLs for uBo, Block Outsider Intrusion into LANs, Block third party fonts
 !
@@ -658,7 +658,7 @@ $cookie=/__utm[a-z]/
 ! Title: ClearURLs for uBo (unofficial)
 ! Homepage: https://github.com/DandelionSprout/adfilt/discussions/163
 ! Description: Want to use ClearURLs' tracking protection without installing another extension? This list is a (unofficial) version of the ClearURLs rules, designed for use in uBlock Origin and AdGuard. This ONLY includes the URL parameter removal functionality from ClearURLs, and not the other functions.
-! Last updated: 25/06/2024
+! Last updated: 01/10/2024
 ! Script last updated: 25/6/2024
 ! Expires: 1 day
 ! Licence: https://github.com/DandelionSprout/adfilt/blob/master/LICENSE.md
@@ -1093,6 +1093,7 @@ $removeparam=si,domain=youtube.com|youtu.be
 ||bilibili.com^$removeparam=buvid
 ||bilibili.com^$removeparam=is_story_h5
 ||bilibili.com^$removeparam=up_id
+||space.bilibili.com^$removeparam=spm_id_from
 ||m.bilibili.com^$removeparam=bbid
 ||m.bilibili.com^$removeparam=ts
 ||live.bilibili.com^$removeparam=visit_id
@@ -1469,8 +1470,9 @@ $removeparam=si,domain=youtube.com|youtu.be
 !
 # [uBlock Origin] Source: https://ublockorigin.github.io/uAssets/filters/lan-block.txt
 [uBlock Origin]
+[uBlock Origin]
 ! Title: Block Outsider Intrusion into LAN
-! Last modified: Fri, 20 Sep 2024 12:04:01 +0000
+! Last modified: Mon, 30 Sep 2024 11:50:05 +0000
 ! Expires: 29 days
 ! Description: Prevents public internet sites from digging into your local LAN files.
 ! Requested here: https://github.com/uBlockOrigin/uAssets/issues/4318
@@ -1482,7 +1484,9 @@ $removeparam=si,domain=youtube.com|youtu.be
 ! https://github.com/uBlockOrigin/uBlock-issues/issues/1070#issuecomment-707237653
 ! https://github.com/uBlockOrigin/uBlock-discussions/discussions/910
 *$3p,strict3p,ipaddress=lan,domain=~localhost|~127.0.0.1|~[::1]|~0.0.0.0|~[::]|~local
-!#else
+!#endif
+
+!#if !cap_ipaddress
 !
 ! ——— LAN
 ! https://en.wikipedia.org/wiki/Private_network
@@ -1645,7 +1649,7 @@ $removeparam=si,domain=youtube.com|youtu.be
 ! Description: Block most third-party fonts. Allows for Material Icons and WOFF fonts in order to not break sites.
 ! Homepage: https://github.com/yokoffing/filterlists
 ! Expires: 4 days (update frequency)
-! Version: 29 August 2024
+! Version: 2 October 2024
 ! Syntax: AdBlock
 
 !!! ALLOWLIST
@@ -1653,7 +1657,7 @@ $removeparam=si,domain=youtube.com|youtu.be
 @@||amazonaws.com^$font,3p,domain=dollartree.com
 @@||googleapis.com/ajax/libs/webfont/$domain=typepad.com
 @@||fast.fonts.net/jsapi/$script
-@@||fonts.googleapis.com$domain=abc.xyz|google.com|blog.google|blogger.com|browser.works|chromium.org|entertrained.app|freetaxusa.com|fmoviesz.to|gaggle.fun|googlesource.com|grow.google|groq.com|loanadministration.com|myeducator.com|nerdfonts.com|reedsy.com|reliaslearning.com|shop.flipperzero.one|socialworkers.org|googleapps.com|vocabulary.com|web.dev|youtube.com
+! @@||fonts.googleapis.com$domain=abc.xyz|google.com|blog.google|blogger.com|browser.works|chromium.org|entertrained.app|freetaxusa.com|fmoviesz.to|gaggle.fun|googlesource.com|grow.google|groq.com|loanadministration.com|myeducator.com|nerdfonts.com|reedsy.com|reliaslearning.com|shop.flipperzero.one|socialworkers.org|googleapps.com|vocabulary.com|web.dev|youtube.com
 @@||fonts.gstatic.com$domain=about.google|ai.google|bloble.io|blog.google|blogger.com|cenreader.com|chrome.com|chromium.org|codingfont.com|dexscreener.com|entertrained.app|google.com|domains.google|googlesource.com|grow.google|groq.com|material.io|myeducator.com|nerdfonts.com|reedsy.com|reliaslearning.com|safety.google|socialworkers.org|toolbox.googleapps.com|vocabulary.com|web.dev|youtube.com
 @@||googleusercontent.com/static/fonts/$domain=tudocelular.com
 @@||myfonts.net$domain=myfonts.com
@@ -1701,7 +1705,7 @@ $removeparam=si,domain=youtube.com|youtu.be
 ||fonts.bauernet.me^
 ||fonts.cdnfonts.com^$3p
 ||fonts.condenast.com^$script,3p
-||fonts.googleapis.com^ 
+! ||fonts.googleapis.com^ 
 ||fonts.gotraffic.net^$script
 ||fonts.gstatic.com^$3p
 ||fonts.nymag.com^$script,3p
