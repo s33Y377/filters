@@ -1,7 +1,7 @@
 ! Title: personal-dns
 ! Description: personal-optimized-filters
-! Version: V.2024.10.04
-! Last modified: 2024-10-04
+! Version: V.2024.10.19
+! Last modified: 2024-10-19
 ! Homepage: https://github.com/s33Y377/filters
 ! filters: ClearURLs for uBo, Block Outsider Intrusion into LANs, Block third party fonts
 !
@@ -515,11 +515,12 @@ $cookie=/__utm[a-z]/
 #@@||mxplay.com^
 #@@||mxplay.com^$important,app=com.mxtech.videoplayer.pro
 #@@||qqcdntest.mxplay.com^
+#||evt.mxplay.com^$important
+#||mxlive.mxplay.com^$important
+#||mxplay.*
 @@||subtitle.mxplay.com^
-||evt.mxplay.com^$important
 ||juspay.in^$important,app=com.mxtech.videoplayer.pro
-||mxlive.mxplay.com^$important
-||mxplay.*
+||mxshorts.akamaized.net^
 !
 ############ User Filters #################
 !
@@ -586,7 +587,6 @@ $cookie=/__utm[a-z]/
 ||maxcdn-bootstrapcdn.com^
 ||metrics.mzstatic.com^
 ||mosite.in^
-||mxshorts.akamaized.net^
 ||myaccount.pmc.com^
 ||notify.bugsnag.com^
 ||ohrdsplu.com^
@@ -1470,9 +1470,8 @@ $removeparam=si,domain=youtube.com|youtu.be
 !
 # [uBlock Origin] Source: https://ublockorigin.github.io/uAssets/filters/lan-block.txt
 [uBlock Origin]
-[uBlock Origin]
 ! Title: Block Outsider Intrusion into LAN
-! Last modified: Mon, 30 Sep 2024 11:50:05 +0000
+! Last modified: Wed, 09 Oct 2024 03:11:55 +0000
 ! Expires: 29 days
 ! Description: Prevents public internet sites from digging into your local LAN files.
 ! Requested here: https://github.com/uBlockOrigin/uAssets/issues/4318
@@ -1480,12 +1479,11 @@ $removeparam=si,domain=youtube.com|youtu.be
 ! Homepage: https://github.com/uBlockOrigin/uAssets
 ! License: https://github.com/uBlockOrigin/uAssets/blob/master/LICENSE
 !
-!#if cap_ipaddress
 ! https://github.com/uBlockOrigin/uBlock-issues/issues/1070#issuecomment-707237653
 ! https://github.com/uBlockOrigin/uBlock-discussions/discussions/910
+!#if cap_ipaddress
 *$3p,strict3p,ipaddress=lan,domain=~localhost|~127.0.0.1|~[::1]|~0.0.0.0|~[::]|~local
 !#endif
-
 !#if !cap_ipaddress
 !
 ! ——— LAN
@@ -1513,10 +1511,10 @@ $removeparam=si,domain=youtube.com|youtu.be
 /^\w+:\/\/127\.(?:(?:[1-9]?\d|1\d\d|2(?:[0-4]\d|5[0-5]))\.){2}(?:[1-9]?\d|1\d\d|2(?:[0-4]\d|5[0-5]))[:/]/$3p,domain=~localhost|~127.0.0.1|~[::1]|~0.0.0.0|~[::]|~local
 ||[::1]^$3p,domain=~localhost|~127.0.0.1|~[::1]|~0.0.0.0|~[::]|~local
 ||localhost^$3p,domain=~localhost|~127.0.0.1|~[::1]|~0.0.0.0|~[::]|~local
+!#endif
 !
 ! ——— any local
 ! https://en.wikipedia.org/wiki/0.0.0.0
-!#endif
 !
 ||0.0.0.0^$3p,domain=~localhost|~127.0.0.1|~[::1]|~0.0.0.0|~[::]|~local
 ||[::]^$3p,domain=~localhost|~127.0.0.1|~[::1]|~0.0.0.0|~[::]|~local
@@ -1649,7 +1647,7 @@ $removeparam=si,domain=youtube.com|youtu.be
 ! Description: Block most third-party fonts. Allows for Material Icons and WOFF fonts in order to not break sites.
 ! Homepage: https://github.com/yokoffing/filterlists
 ! Expires: 4 days (update frequency)
-! Version: 2 October 2024
+! Version: 11 October 2024
 ! Syntax: AdBlock
 
 !!! ALLOWLIST
@@ -1657,7 +1655,7 @@ $removeparam=si,domain=youtube.com|youtu.be
 @@||amazonaws.com^$font,3p,domain=dollartree.com
 @@||googleapis.com/ajax/libs/webfont/$domain=typepad.com
 @@||fast.fonts.net/jsapi/$script
-! @@||fonts.googleapis.com$domain=abc.xyz|google.com|blog.google|blogger.com|browser.works|chromium.org|entertrained.app|freetaxusa.com|fmoviesz.to|gaggle.fun|googlesource.com|grow.google|groq.com|loanadministration.com|myeducator.com|nerdfonts.com|reedsy.com|reliaslearning.com|shop.flipperzero.one|socialworkers.org|googleapps.com|vocabulary.com|web.dev|youtube.com
+@@||fonts.googleapis.com$domain=abc.xyz|google.com|blog.google|blogger.com|browser.works|chromium.org|entertrained.app|freetaxusa.com|fmoviesz.to|gaggle.fun|googlesource.com|grow.google|groq.com|loanadministration.com|myeducator.com|nerdfonts.com|reedsy.com|reliaslearning.com|shop.flipperzero.one|socialworkers.org|googleapps.com|vocabulary.com|web.dev|youtube.com
 @@||fonts.gstatic.com$domain=about.google|ai.google|bloble.io|blog.google|blogger.com|cenreader.com|chrome.com|chromium.org|codingfont.com|dexscreener.com|entertrained.app|google.com|domains.google|googlesource.com|grow.google|groq.com|material.io|myeducator.com|nerdfonts.com|reedsy.com|reliaslearning.com|safety.google|socialworkers.org|toolbox.googleapps.com|vocabulary.com|web.dev|youtube.com
 @@||googleusercontent.com/static/fonts/$domain=tudocelular.com
 @@||myfonts.net$domain=myfonts.com
@@ -1705,7 +1703,8 @@ $removeparam=si,domain=youtube.com|youtu.be
 ||fonts.bauernet.me^
 ||fonts.cdnfonts.com^$3p
 ||fonts.condenast.com^$script,3p
-! ||fonts.googleapis.com^ 
+! Blocking Google Font API may break some sites that rely on this script to load
+||fonts.googleapis.com^ 
 ||fonts.gotraffic.net^$script
 ||fonts.gstatic.com^$3p
 ||fonts.nymag.com^$script,3p
@@ -1753,7 +1752,6 @@ $removeparam=si,domain=youtube.com|youtu.be
 !||cdnjs.cloudflare.com/ajax/libs/font-awesome^$3p
 !||fontawesome.com^$3p
 !||wp.com^*/fonts/$3p
-!
 !
 !
 !
