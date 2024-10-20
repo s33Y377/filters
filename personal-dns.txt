@@ -1,7 +1,7 @@
 ! Title: personal-dns
 ! Description: personal-optimized-filters
-! Version: V.2024.10.19
-! Last modified: 2024-10-19
+! Version: V.2024.10.20
+! Last modified: 2024-10-20
 ! Homepage: https://github.com/s33Y377/filters
 ! filters: ClearURLs for uBo, Block Outsider Intrusion into LANs, Block third party fonts
 !
@@ -221,7 +221,6 @@ $cookie=/__utm[a-z]/
 !########## Social network #########
 !
 #||9gag.com^
-#||discord.com^
 #||linkedin.com^
 #||netflix.com^
 #||pinterest.com^
@@ -229,6 +228,7 @@ $cookie=/__utm[a-z]/
 #||spotify.com^
 #||twitter.com^
 ||byteoversea.com^$important
+||discord.com^
 ||flickr.com^
 ||foursquare.com^
 ||gotinder.com^
@@ -316,7 +316,8 @@ $cookie=/__utm[a-z]/
 !
 !######### Allowed Domain ##########
 !
-#||api.gfycat.com^
+!
+!
 !
 !######### others #########
 !
@@ -373,7 +374,7 @@ $cookie=/__utm[a-z]/
 #@@||google.com/uviewer$domain=google.com
 #||android.clients.google.com^
 #||books.google.com^
-#||fonts.googleapis.com^
+#||fonts.googleapis.com^$third-party
 #||fonts.gstatic.com^$important
 #||ggpht.com^
 #||gstatic.*
@@ -391,7 +392,6 @@ $cookie=/__utm[a-z]/
 ||ampproject.net^
 ||analytics.google.com^
 ||cdn.ampproject.org^
-||fonts.googleapis.com^$third-party
 ||googleadservices*^$important
 ||googleadservices.com/pagead/^$important
 ||googleweblight.com^
@@ -434,6 +434,7 @@ $cookie=/__utm[a-z]/
 ||analytics.oneplus.cn^
 !
 !
+#||mi.com^
 #||miui.com^
 #||xiaomi.com^
 ||data.mistat.india.xiaomi.com
@@ -442,7 +443,6 @@ $cookie=/__utm[a-z]/
 ||data.mistat.rus.xiaomi.com
 ||data.mistat.xiaomi.com
 ||in.global.market.xiaomi.com^
-||mi.com^
 ||open.oneplus.net^
 ||sa.api.intl.miui.com^
 ||tracking.india.miui.com
@@ -518,7 +518,8 @@ $cookie=/__utm[a-z]/
 #||evt.mxplay.com^$important
 #||mxlive.mxplay.com^$important
 #||mxplay.*
-@@||subtitle.mxplay.com^
+#||subtitle.mxplay.com^
+@@||rest.opensubtitles.org
 ||juspay.in^$important,app=com.mxtech.videoplayer.pro
 ||mxshorts.akamaized.net^
 !
@@ -1704,7 +1705,7 @@ $removeparam=si,domain=youtube.com|youtu.be
 ||fonts.cdnfonts.com^$3p
 ||fonts.condenast.com^$script,3p
 ! Blocking Google Font API may break some sites that rely on this script to load
-||fonts.googleapis.com^ 
+||fonts.googleapis.com^
 ||fonts.gotraffic.net^$script
 ||fonts.gstatic.com^$3p
 ||fonts.nymag.com^$script,3p
