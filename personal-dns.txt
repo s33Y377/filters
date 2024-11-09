@@ -1,7 +1,7 @@
 ! Title: personal-dns
 ! Description: personal-optimized-filters
-! Version: V.2024.10.20
-! Last modified: 2024-10-20
+! Version: V.2024.11.10
+! Last modified: 2024-11-10
 ! Homepage: https://github.com/s33Y377/filters
 ! filters: ClearURLs for uBo, Block Outsider Intrusion into LANs, Block third party fonts
 !
@@ -14,7 +14,7 @@
 ||*^$header=x-Real-IP
 !
 !
-!########## Country ###########
+!########## Country / Domains ###########
 !
 ||*.br^$important
 ||*.cf^$important
@@ -124,9 +124,10 @@ $removeparam=wickedid
 $removeparam=campaign
 !
 !
-######################## Vanced Youtube #############################
+######################## Mod Blocks #############################
 !
 #||sponsor.ajay.app^
+#||sammods.github.io^$important,app=com.instapro2.android
 !
 ############ Search Engine Block ####################################
 !
@@ -136,6 +137,7 @@ $removeparam=campaign
 ||baidu.com^$important
 ||startpage.com^
 ||yandex.com^
+||yandex.ru^
 !
 !########### Block all cookies from following Domain ################
 !
@@ -314,7 +316,6 @@ $cookie=/__utm[a-z]/
 ||watson.live.com
 ||watson.microsoft.com
 !
-!######### Allowed Domain ##########
 !
 !
 !
@@ -443,6 +444,7 @@ $cookie=/__utm[a-z]/
 ||data.mistat.rus.xiaomi.com
 ||data.mistat.xiaomi.com
 ||in.global.market.xiaomi.com^
+||newsfeed.api.intl.miui.com
 ||open.oneplus.net^
 ||sa.api.intl.miui.com^
 ||tracking.india.miui.com
@@ -623,7 +625,6 @@ $cookie=/__utm[a-z]/
 ||vapi.apk.vidmate.net^
 ||vodhls-vh.akamaihd.net^
 ||watch.redd.it^
-||yandex.ru^
 !
 !
 !
@@ -1472,7 +1473,7 @@ $removeparam=si,domain=youtube.com|youtu.be
 # [uBlock Origin] Source: https://ublockorigin.github.io/uAssets/filters/lan-block.txt
 [uBlock Origin]
 ! Title: Block Outsider Intrusion into LAN
-! Last modified: Wed, 09 Oct 2024 03:11:55 +0000
+! Last modified: Tue, 05 Nov 2024 16:04:03 +0000
 ! Expires: 29 days
 ! Description: Prevents public internet sites from digging into your local LAN files.
 ! Requested here: https://github.com/uBlockOrigin/uAssets/issues/4318
@@ -1483,7 +1484,7 @@ $removeparam=si,domain=youtube.com|youtu.be
 ! https://github.com/uBlockOrigin/uBlock-issues/issues/1070#issuecomment-707237653
 ! https://github.com/uBlockOrigin/uBlock-discussions/discussions/910
 !#if cap_ipaddress
-*$3p,strict3p,ipaddress=lan,domain=~localhost|~127.0.0.1|~[::1]|~0.0.0.0|~[::]|~local
+*$strict3p,ipaddress=lan,domain=~localhost|~127.0.0.1|~[::1]|~0.0.0.0|~[::]|~local
 !#endif
 !#if !cap_ipaddress
 !
