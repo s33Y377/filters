@@ -62,8 +62,6 @@ $removeparam=/utm_.*/
 $removeparam=_f
 $removeparam=cexp_id
 $removeparam=cexp_var
-$removeparam=ck_subscriber_id,domain=learnopencv.com
-$removeparam=ref,domain=9gag.com
 $removeparam=client
 $removeparam=li_fat_id
 $removeparam=ref
@@ -73,6 +71,8 @@ $removeparam=source
 $removeparam=uc_param_str
 $removeparam=uclick_id # Uber engineering
 $removeparam=utm_*
+||9gag.com^$document,removeparam=ref
+||learnopencv.^$document,removeparam=ck_subscriber_id
 !
 ####### FB ###############
 !
