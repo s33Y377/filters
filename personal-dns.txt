@@ -1,7 +1,7 @@
 ! Title: personal-dns
 ! Description: personal-optimized-filters
-! Version: V.2024.11.10
-! Last modified: 2024-11-10
+! Version: V.2024.11.12
+! Last modified: 2024-11-12
 ! Homepage: https://github.com/s33Y377/filters
 ! filters: ClearURLs for uBo, Block Outsider Intrusion into LANs, Block third party fonts
 !
@@ -63,6 +63,7 @@ $removeparam=_f
 $removeparam=cexp_id
 $removeparam=cexp_var
 $removeparam=ck_subscriber_id,domain=learnopencv.com
+$removeparam=ref,domain=9gag.com
 $removeparam=client
 $removeparam=li_fat_id
 $removeparam=ref
