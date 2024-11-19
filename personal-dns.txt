@@ -1,7 +1,7 @@
 ! Title: personal-dns
 ! Description: personal-optimized-filters
-! Version: V.2024.11.12
-! Last modified: 2024-11-12
+! Version: V.2024.11.19
+! Last modified: 2024-11-19
 ! Homepage: https://github.com/s33Y377/filters
 ! filters: ClearURLs for uBo, Block Outsider Intrusion into LANs, Block third party fonts
 !
@@ -137,7 +137,7 @@ $removeparam=campaign
 #||yahoo.com^$important
 ||baidu.com^$important
 ||startpage.com^
-||yandex.com^
+||yandex.*^
 ||yandex.ru^
 !
 !########### Block all cookies from following Domain ################
@@ -359,17 +359,17 @@ $cookie=/__utm[a-z]/
 !
 ######### News Sites ################
 !
+#||aajtak.*^
+#||aajtaklive.in^
+#||abplive.com^
 #||indianexpress.com^
+#||indiatvnews.com^
 #||loksatta.com^
 #||ndtv.com^
+#||republicworld.com^
+#||tv9.com^
 #||zee5.com^
-||aajtak.*^
-||aajtaklive.in^
-||abplive.com^
-||indiatvnews.com^
 ||inshorts.*^
-||republicworld.com^
-||tv9.com^
 !
 ########## Google Domains ###########
 !
@@ -390,6 +390,8 @@ $cookie=/__utm[a-z]/
 @@||s.youtube.com^$important
 @@||youtube-ui.l.google.com^
 ||*crashlytics.com
+||*google-analytics*^$important
+||*googleadservices*^$important
 ||adservice.google.*^
 ||ampproject.net^
 ||analytics.google.com^
@@ -397,6 +399,7 @@ $cookie=/__utm[a-z]/
 ||googleadservices*^$important
 ||googleadservices.com/pagead/^$important
 ||googleweblight.com^
+||mail.google.com/mail/ads*^
 ||safebrowsing.googleapis.com^
 !
 ######################### find my device doesn't work ####################
