@@ -1,7 +1,7 @@
 ! Title: personal-dns
 ! Description: personal-optimized-filters
-! Version: V.2024.11.19
-! Last modified: 2024-11-19
+! Version: V.2024.11.29
+! Last modified: 2024-11-29
 ! Homepage: https://github.com/s33Y377/filters
 ! filters: ClearURLs for uBo, Block Outsider Intrusion into LANs, Block third party fonts
 !
@@ -127,8 +127,8 @@ $removeparam=campaign
 !
 ######################## Mod Blocks #############################
 !
-#||sponsor.ajay.app^
 #||sammods.github.io^$important,app=com.instapro2.android
+#||sponsor.ajay.app^
 !
 ############ Search Engine Block ####################################
 !
@@ -145,12 +145,12 @@ $removeparam=campaign
 $cookie=/__utm[a-z]/
 ||baidu.com^$cookie
 ||facebook.com^$cookie
-||meta.com^$cookie
+||imgur.com^$cookie
 ||instagram.com^$cookie
 ||medium.com^$cookie
+||meta.com^$cookie
 ||towardsdatascience.com^cookie
 ||zeenews.*^$cookie
-||imgur.com^$cookie
 !
 !########## Twitter #########
 !
@@ -535,6 +535,7 @@ $cookie=/__utm[a-z]/
 ||*.ngrok.io^
 ||*appspot.com^$important
 ||*dbankcloud.*^
+||*flurry.com^$important
 ||a.opmnstr.com^
 ||aaid.umeng.com^
 ||adsdk.yandex.ru^
@@ -629,6 +630,12 @@ $cookie=/__utm[a-z]/
 ||vapi.apk.vidmate.net^
 ||vodhls-vh.akamaihd.net^
 ||watch.redd.it^
+!
+! 23-Nov-2024 https://www.simplilearn.com
+www.simplilearn.com###google_onetap_appened
+!
+! 29-Nov-2024 https://chatgpt.com
+chatgpt.com##.md\:p-4.py-2\.5.px-3.bg-opacity-10.text-sm.border.rounded-2xl.gap-3.items-start.w-full.flex.bg-token-main-surface-primary.border-token-border-light.text-token-text-primary
 !
 !
 !
@@ -1476,8 +1483,9 @@ $removeparam=si,domain=youtube.com|youtu.be
 !
 # [uBlock Origin] Source: https://ublockorigin.github.io/uAssets/filters/lan-block.txt
 [uBlock Origin]
+[uBlock Origin]
 ! Title: Block Outsider Intrusion into LAN
-! Last modified: Tue, 05 Nov 2024 16:04:03 +0000
+! Last modified: Wed, 20 Nov 2024 17:44:39 +0000
 ! Expires: 29 days
 ! Description: Prevents public internet sites from digging into your local LAN files.
 ! Requested here: https://github.com/uBlockOrigin/uAssets/issues/4318
@@ -1611,12 +1619,13 @@ $removeparam=si,domain=youtube.com|youtu.be
 !
 ! https://github.com/uBlockOrigin/uAssets/issues/23388
 @@||localhost^$from=deutsche-rentenversicherung.de
-@@||127.0.0.1^$from=bund.de|organspende-register.de|bayernportal.de|mv-serviceportal.de
+@@||127.0.0.1^$from=bund.de|organspende-register.de|bayernportal.de|mv-serviceportal.de|governikus.de
 !
 ! https://github.com/uBlockOrigin/uAssets/pull/24488
 @@||localhost^$websocket,domain=www.faceit.com
 !
 ! ——— END
+!
 !
 !
 !
