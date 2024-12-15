@@ -1,7 +1,7 @@
 ! Title: personal-dns
 ! Description: personal-optimized-filters
-! Version: V.2024.11.29
-! Last modified: 2024-11-29
+! Version: V.2024.12.15
+! Last modified: 2024-12-15
 ! Homepage: https://github.com/s33Y377/filters
 ! filters: ClearURLs for uBo, Block Outsider Intrusion into LANs, Block third party fonts
 !
@@ -438,12 +438,12 @@ $cookie=/__utm[a-z]/
 ||allawnos.com^
 ||analytics.oneplus.cn^
 !
+# https://raw.githubusercontent.com/nextdns/native-tracking-domains/main/domains/xiaomi
 !
 #||mi.com^
 #||miui.com^
 #||xiaomi.com^
-||data.mistat.india.xiaomi.com
-||data.mistat.intl.xiaomi.com
+||data.mistat.india.xiaomi.com^
 ||data.mistat.intl.xiaomi.com^
 ||data.mistat.rus.xiaomi.com
 ||data.mistat.xiaomi.com
@@ -455,6 +455,7 @@ $cookie=/__utm[a-z]/
 ||tracking.intl.miui.com
 ||tracking.miui.com
 ||tracking.rus.miui.com
+
 !
 ############ Apple ########################
 !
@@ -481,12 +482,14 @@ $cookie=/__utm[a-z]/
 ||analytics-api.samsunghealthcn.*^
 ||analytics-api.samsunghealthcn.com^
 ||analytics.samsungknox.com^
+||bigdata.ssp.samsung.com
 ||bigdata.ssp.samsung.com^
 ||insights.samsung.com^
 ||nmetrics.samsung.com^
 ||samsungadhub.com^
 ||samsungnewsapi.picks.my^
 ||vas.samsungapps.com^
+!
 !
 ############ Huawei ########################
 !
@@ -532,6 +535,7 @@ $cookie=/__utm[a-z]/
 ############ User Filters #################
 !
 #||trafficmanager.net^
+||*sonos.com
 ||*.ngrok.io^
 ||*appspot.com^$important
 ||*dbankcloud.*^
