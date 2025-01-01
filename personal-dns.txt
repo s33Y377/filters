@@ -1,7 +1,7 @@
 ! Title: personal-dns
 ! Description: personal-optimized-filters
-! Version: V.2024.12.28
-! Last modified: 2024-12-28
+! Version: V.2025.01.02
+! Last modified: 2025-01-02
 ! Homepage: https://github.com/s33Y377/filters
 ! filters: ClearURLs for uBo, Block Outsider Intrusion into LANs, Block third party fonts
 !
@@ -140,7 +140,7 @@ $removeparam=campaign
 ||yandex.*^
 ||yandex.ru^
 !
-!########### Block all cookies from following Domain ################
+!########### Block / Accept all cookies from following Domain ################
 !
 $cookie=/__utm[a-z]/
 ||baidu.com^$cookie
@@ -151,6 +151,7 @@ $cookie=/__utm[a-z]/
 ||meta.com^$cookie
 ||towardsdatascience.com^cookie
 ||zeenews.*^$cookie
+@@||comick.io^$cookie
 !
 !########## Twitter #########
 !
