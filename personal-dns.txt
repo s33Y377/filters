@@ -151,7 +151,6 @@ $cookie=/__utm[a-z]/
 ||meta.com^$cookie
 ||towardsdatascience.com^cookie
 ||zeenews.*^$cookie
-@@||comick.io^$cookie
 !
 !########## Twitter #########
 !
