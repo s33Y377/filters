@@ -1493,9 +1493,8 @@ $removeparam=si,domain=youtube.com|youtu.be
 !
 # [uBlock Origin] Source: https://ublockorigin.github.io/uAssets/filters/lan-block.txt
 [uBlock Origin]
-[uBlock Origin]
 ! Title: Block Outsider Intrusion into LAN
-! Last modified: Wed, 20 Nov 2024 17:44:39 +0000
+! Last modified: Mon, 06 Jan 2025 13:31:16 +0000
 ! Expires: 29 days
 ! Description: Prevents public internet sites from digging into your local LAN files.
 ! Requested here: https://github.com/uBlockOrigin/uAssets/issues/4318
@@ -1604,6 +1603,8 @@ $removeparam=si,domain=youtube.com|youtu.be
 ||tplinkplclogin.net^$3p,domain=~localhost|~127.0.0.1|~[::1]|~0.0.0.0|~[::]|~local
 ||tplinkrepeater.net^$3p,domain=~localhost|~127.0.0.1|~[::1]|~0.0.0.0|~[::]|~local
 ||tplinkwifi.net^$3p,domain=~localhost|~127.0.0.1|~[::1]|~0.0.0.0|~[::]|~local
+||unifi^$3p,domain=~localhost|~127.0.0.1|~[::1]|~0.0.0.0|~[::]|~local
+||unifi.localdomain^$3p,domain=~localhost|~127.0.0.1|~[::1]|~0.0.0.0|~[::]|~local
 ||web.setup^$3p,domain=~localhost|~127.0.0.1|~[::1]|~0.0.0.0|~[::]|~local
 ||web.setup.home^$3p,domain=~localhost|~127.0.0.1|~[::1]|~0.0.0.0|~[::]|~local
 !
@@ -1629,7 +1630,7 @@ $removeparam=si,domain=youtube.com|youtu.be
 !
 ! https://github.com/uBlockOrigin/uAssets/issues/23388
 @@||localhost^$from=deutsche-rentenversicherung.de
-@@||127.0.0.1^$from=bund.de|organspende-register.de|bayernportal.de|mv-serviceportal.de|governikus.de
+@@||127.0.0.1^$from=bund.de|organspende-register.de|bayernportal.de|mv-serviceportal.de|governikus.de|deutsche-rentenversicherung.de
 !
 ! https://github.com/uBlockOrigin/uAssets/pull/24488
 @@||localhost^$websocket,domain=www.faceit.com
@@ -1672,12 +1673,12 @@ $removeparam=si,domain=youtube.com|youtu.be
 ! Description: Block most third-party fonts. Allows for Material Icons and WOFF fonts in order to not break sites.
 ! Homepage: https://github.com/yokoffing/filterlists
 ! Expires: 4 days (update frequency)
-! Version: 23 December 2024
+! Version: 24 December 2024
 ! Syntax: AdBlock
 
 !!! ALLOWLIST
 @@||ajax.googleapis.com/ajax/libs/webfont/$script,domain=bootsnipp.com|regexpal.com|typepad.com
-@@||amazonaws.com^$font,3p,domain=dollartree.com
+@@||amazonaws.com^$font,3p,domain=dollartree.com|plex.tv
 @@||googleapis.com/ajax/libs/webfont/$domain=typepad.com
 @@||fast.fonts.net/jsapi/$script
 @@||fonts.googleapis.com$domain=abc.xyz|google.com|blog.google|blogger.com|browser.works|chromium.org|entertrained.app|freetaxusa.com|fmoviesz.to|gaggle.fun|googlesource.com|grow.google|groq.com|loanadministration.com|myeducator.com|nerdfonts.com|reedsy.com|reliaslearning.com|shop.flipperzero.one|socialworkers.org|googleapps.com|vocabulary.com|web.dev|youtube.com
