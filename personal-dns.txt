@@ -1,7 +1,7 @@
 ! Title: personal-dns
 ! Description: personal-optimized-filters
-! Version: V.2025.01.02
-! Last modified: 2025-01-02
+! Version: V.2025.01.14
+! Last modified: 2025-01-14
 ! Homepage: https://github.com/s33Y377/filters
 ! filters: ClearURLs for uBo, Block Outsider Intrusion into LANs, Block third party fonts
 !
@@ -401,6 +401,8 @@ $cookie=/__utm[a-z]/
 ||googleweblight.com^
 ||mail.google.com/mail/ads*^
 ||safebrowsing.googleapis.com^
+||mtalk.google.com^
+||android.apis.google.com^
 !
 ######################### find my device doesn't work ####################
 !
@@ -535,6 +537,7 @@ $cookie=/__utm[a-z]/
 ############ User Filters #################
 !
 #||trafficmanager.net^
+||mixpanel.com^
 ||megastatics.com^$important
 ||*sonos.com
 ||*.ngrok.io^
