@@ -1,7 +1,7 @@
 ! Title: personal-dns
 ! Description: personal-optimized-filters
-! Version: V.2025.01.21
-! Last modified: 2025-01-21
+! Version: V.2025.01.29
+! Last modified: 2025-01-29
 ! Homepage: https://github.com/s33Y377/filters
 ! filters: ClearURLs for uBo, Block Outsider Intrusion into LANs, Block third party fonts
 !
@@ -333,13 +333,13 @@ $cookie=/__utm[a-z]/
 !
 ||*.adserver.snapads.*
 ||*analytics.yahoo.com^$important
-||analytics.tiktok.com^$important
 ||adconfig.wynk.*
 ||ads.phonepe.com^
 ||ads.reddit.com^$important
 ||ads.tiktok.com^$important
 ||ads.yap.yahoo.com^
 ||adserver.snapads.*
+||analytics.tiktok.com^$important
 ||api.mcoreads.com^
 ||chartbeat.*^
 ||cleverads.vn^
@@ -395,14 +395,14 @@ $cookie=/__utm[a-z]/
 ||adservice.google.*^
 ||ampproject.net^
 ||analytics.google.com^
+||android.apis.google.com^
 ||cdn.ampproject.org^
 ||googleadservices*^$important
 ||googleadservices.com/pagead/^$important
 ||googleweblight.com^
 ||mail.google.com/mail/ads*^
-||safebrowsing.googleapis.com^
 ||mtalk.google.com^
-||android.apis.google.com^
+||safebrowsing.googleapis.com^
 !
 ######################### find my device doesn't work ####################
 !
@@ -536,14 +536,13 @@ $cookie=/__utm[a-z]/
 !
 ############ User Filters #################
 !
+||facebook.com^$3p
 #||trafficmanager.net^
-||mixpanel.com^
-||megastatics.com^$important
-||*sonos.com
 ||*.ngrok.io^
 ||*appspot.com^$important
 ||*dbankcloud.*^
 ||*flurry.com^$important
+||*sonos.com
 ||a.opmnstr.com^
 ||aaid.umeng.com^
 ||adsdk.yandex.ru^
@@ -601,7 +600,9 @@ $cookie=/__utm[a-z]/
 ||livelogs.slike.in^
 ||logger.easeutility.com^
 ||maxcdn-bootstrapcdn.com^
+||megastatics.com^$important
 ||metrics.mzstatic.com^
+||mixpanel.com^
 ||mosite.in^
 ||myaccount.pmc.com^
 ||notify.bugsnag.com^
