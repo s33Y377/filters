@@ -507,6 +507,7 @@ $cookie=/__utm[a-z]/
 ||logbak.hicloud.com^
 ||logservice.hicloud.com^
 ||logservice1.hicloud.com^
+||*cdnhwc6.com^
 !
 ############## webrtc ################
 !
