@@ -601,7 +601,7 @@ $cookie=/__utm[a-z]/
 ||livelogs.slike.in^
 ||logger.easeutility.com^
 ||maxcdn-bootstrapcdn.com^
-||megastatics.com^$important
+||*megastatics.com^$important
 ||metrics.mzstatic.com^
 ||mixpanel.com^
 ||mosite.in^
