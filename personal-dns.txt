@@ -1,7 +1,7 @@
 ! Title: personal-dns
 ! Description: personal-optimized-filters
-! Version: V.2025.01.30
-! Last modified: 2025-01-30
+! Version: V.2025.02.20
+! Last modified: 2025-02-20
 ! Homepage: https://github.com/s33Y377/filters
 ! filters: ClearURLs for uBo, Block Outsider Intrusion into LANs, Block third party fonts
 !
@@ -134,9 +134,9 @@ $removeparam=campaign
 !
 #||bing.com^
 #||duckduckgo.com^$important
+#||startpage.com^$important
 #||yahoo.com^$important
 ||baidu.com^$important
-||startpage.com^
 ||yandex.*^
 ||yandex.ru^
 !
@@ -503,11 +503,11 @@ $cookie=/__utm[a-z]/
 #||metrics3.data.hicloud.com
 #||metrics4.data.hicloud.com
 #||metrics5.data.hicloud.com
+||*cdnhwc6.com^
 ||*hicloud.com^
 ||logbak.hicloud.com^
 ||logservice.hicloud.com^
 ||logservice1.hicloud.com^
-||*cdnhwc6.com^
 !
 ############## webrtc ################
 !
@@ -537,12 +537,13 @@ $cookie=/__utm[a-z]/
 !
 ############ User Filters #################
 !
-||facebook.com^$3p
 #||trafficmanager.net^
+@@||playmoviesdfe-pa.googleapis.com^
 ||*.ngrok.io^
 ||*appspot.com^$important
 ||*dbankcloud.*^
 ||*flurry.com^$important
+||*megastatics.com^$important
 ||*sonos.com
 ||a.opmnstr.com^
 ||aaid.umeng.com^
@@ -556,6 +557,7 @@ $cookie=/__utm[a-z]/
 ||app.adjust.com^
 ||appsflyer.com^
 ||aresssl.agoop.net^
+||assets.slite.com^
 ||batch-offer-api.xendercdn.com^
 ||bgr.com^
 ||bifrost-api.hotstar.com^
@@ -582,6 +584,7 @@ $cookie=/__utm[a-z]/
 ||errlog.umeng.com^
 ||etlanaberez.fun^
 ||extmaps-api.yandex.net^
+||facebook.com^$3p
 ||fairchildlive.com^
 ||fastclick.com^
 ||gjapplog.ucweb.com^
@@ -597,11 +600,11 @@ $cookie=/__utm[a-z]/
 ||j2apps.s.llnwi.net^
 ||kriply.com^
 ||launches.appsflyer.com^
+||library.arcplay.ai^
 ||lightstep.medium.systems^
 ||livelogs.slike.in^
 ||logger.easeutility.com^
 ||maxcdn-bootstrapcdn.com^
-||*megastatics.com^$important
 ||metrics.mzstatic.com^
 ||mixpanel.com^
 ||mosite.in^
@@ -686,8 +689,8 @@ chatgpt.com##.md\:p-4.py-2\.5.px-3.bg-opacity-10.text-sm.border.rounded-2xl.gap-
 ! Title: ClearURLs for uBo (unofficial)
 ! Homepage: https://github.com/DandelionSprout/adfilt/discussions/163
 ! Description: Want to use ClearURLs' tracking protection without installing another extension? This list is a (unofficial) version of the ClearURLs rules, designed for use in uBlock Origin and AdGuard. This ONLY includes the URL parameter removal functionality from ClearURLs, and not the other functions.
-! Last updated: 01/10/2024
-! Script last updated: 25/6/2024
+! Last updated: 2025-02-11
+! Script last updated: 2025-2-11
 ! Expires: 1 day
 ! Licence: https://github.com/DandelionSprout/adfilt/blob/master/LICENSE.md
 ! Warning: This list may break websites, and contains many problematic rules. Worse, it may even prevent other filterlists from working. There is not much the Adfilt maintainers can do, as this list is just the ClearURLs rules converted into a uBo/AdGuard filterlist. Use with caution.
@@ -729,6 +732,9 @@ chatgpt.com##.md\:p-4.py-2\.5.px-3.bg-opacity-10.text-sm.border.rounded-2xl.gap-
 ||amazon.*^$removeparam=content-id
 ||amazon.*^$removeparam=dib
 ||amazon.*^$removeparam=dib_tag
+||amazon.*^$removeparam=social_share
+||amazon.*^$removeparam=starsLeft
+||amazon.*^$removeparam=skipTwisterOG
 ||msn.com^$removeparam=cvid
 ||msn.com^$removeparam=ocid
 ||amazon.*/s?$removeparam=/^p[fd]_rd_[a-z]*=/
@@ -787,7 +793,10 @@ chatgpt.com##.md\:p-4.py-2\.5.px-3.bg-opacity-10.text-sm.border.rounded-2xl.gap-
 ||google.*^$removeparam=rlz
 ||google.*^$removeparam=i-would-rather-use-firefox
 ||google.*^$removeparam=pcampaignid
-||google.*^$removeparam=sca_esv
+||google.*^$removeparam=/^sca_(esv|upv)=/
+||google.*^$removeparam=iflsig
+||google.*^$removeparam=fbs
+||google.*^$removeparam=ictx
 ||google.*/search?$removeparam=sclient
 $removeparam=/^utm(_[a-z_]*)?=/
 $removeparam=/^ga_[a-z_]+=/
@@ -801,6 +810,7 @@ $removeparam=gs_l
 $removeparam=mkt_tok
 $removeparam=/^hmb_(campaign|medium|source)=/
 $removeparam=gclid
+$removeparam=srsltid
 $removeparam=/^otm_[a-z_]*=/
 $removeparam=cmpid
 $removeparam=os_ehash
@@ -809,7 +819,6 @@ $removeparam=_gl
 $removeparam=__twitter_impression
 $removeparam=/^wt_?z?mc=/
 $removeparam=wtrid
-$removeparam=/^[a-z]?mc=/
 $removeparam=dclid
 $removeparam=Echobox
 $removeparam=spm
@@ -839,6 +848,7 @@ $removeparam=feature,domain=youtube.com|youtu.be
 $removeparam=gclid,domain=youtube.com|youtu.be
 $removeparam=kw,domain=youtube.com|youtu.be
 $removeparam=si,domain=youtube.com|youtu.be
+$removeparam=pp,domain=youtube.com|youtu.be
 ||facebook.com^$removeparam=/^hc_[a-z_%\[\]0-9]*=/
 ||facebook.com^$removeparam=/^[a-z]*ref[a-z]*=/
 ||facebook.com^$removeparam=__tn__
@@ -885,6 +895,7 @@ $removeparam=si,domain=youtube.com|youtu.be
 ||reddit.com^$removeparam=%24original_url
 ||reddit.com^$removeparam=/^\x24original_url=/
 ||reddit.com^$removeparam=_branch_match_id
+||reddit.com^$removeparam=share_id
 ||netflix.com^$removeparam=trackId
 ||netflix.com^$removeparam=tctx
 ||netflix.com^$removeparam=/^jb[a-z]*?=/
@@ -985,6 +996,7 @@ $removeparam=si,domain=youtube.com|youtu.be
 ||moosejaw.com^$removeparam=spUserID
 ||moosejaw.com^$removeparam=spJobID
 ||moosejaw.com^$removeparam=spReportId
+||80000hours.org^$removeparam=int_campaign
 ||spotify.com^$removeparam=si
 ||yandex.*^$removeparam=lr
 ||yandex.*^$removeparam=redircnt
@@ -1153,11 +1165,29 @@ $removeparam=si,domain=youtube.com|youtu.be
 ||tiktok.com^$removeparam=u_code
 ||tiktok.com^$removeparam=preview_pb
 ||tiktok.com^$removeparam=_d
+||tiktok.com^$removeparam=_t
+||tiktok.com^$removeparam=_r
 ||tiktok.com^$removeparam=timestamp
 ||tiktok.com^$removeparam=user_id
 ||tiktok.com^$removeparam=share_app_name
 ||tiktok.com^$removeparam=share_iid
 ||tiktok.com^$removeparam=source
+||xiaohongshu.com^$removeparam=xhsshare
+||xiaohongshu.com^$removeparam=author_share
+||xiaohongshu.com^$removeparam=type
+||xiaohongshu.com^$removeparam=xsec_source
+||xiaohongshu.com^$removeparam=share_from_user_hidden
+||xiaohongshu.com^$removeparam=app_version
+||xiaohongshu.com^$removeparam=ignoreEngage
+||xiaohongshu.com^$removeparam=app_platform
+||xiaohongshu.com^$removeparam=apptime
+||xiaohongshu.com^$removeparam=appuid
+||xiaohongshu.com^$removeparam=shareRedId
+||xiaohongshu.com^$removeparam=share_id
+||xiaohongshu.com^$removeparam=exSource
+||xiaohongshu.com^$removeparam=verifyUuid
+||xiaohongshu.com^$removeparam=verifyType
+||xiaohongshu.com^$removeparam=verifyBiz
 ||autoplus.fr^$removeparam=idprob
 ||autoplus.fr^$removeparam=hash
 ||autoplus.fr^$removeparam=sending_id
@@ -1375,6 +1405,8 @@ $removeparam=si,domain=youtube.com|youtu.be
 ||lazada.(com|co.th|co.id|com.my|com.ph|sg|vn)^$removeparam=cid
 ||lazada.(com|co.th|co.id|com.my|com.ph|sg|vn)^$removeparam=impsrc
 ||lazada.(com|co.th|co.id|com.my|com.ph|sg|vn)^$removeparam=pos
+||office-partner.de^$removeparam=sPartner
+||office-partner.de^$removeparam=campaign
 @@/^https?:\/\/([a-z0-9-]+\.)*?amazon(\.[a-z]{2,}){1,}\/gp\/.*?(redirector.html|cart\/ajax-update.html|video\/api\/)/$removeparam
 @@/^https?:\/\/([a-z0-9-]+\.)*?amazon(\.[a-z]{2,}){1,}\/(hz\/reviews-render\/ajax\/|message-us\?|s\?)/$removeparam
 @@||mail.google.com/mail/u/$removeparam
@@ -1431,6 +1463,7 @@ $removeparam=si,domain=youtube.com|youtu.be
 @@||billiger.de/*mc=$removeparam
 @@||youtrack.cloud^$removeparam
 @@||cu.bankid.com^$removeparam
+@@||login.aliexpress.us^$removeparam
 @@||amazon-adsystem.*/v3/oor?$removeparam
 @@||youtube.com/signin?$removeparam
 @@/^https?:\/\/([a-z0-9-]+\.)*?facebook\.com\/.*?(plugins|ajax)\//$removeparam
@@ -1499,7 +1532,7 @@ $removeparam=si,domain=youtube.com|youtu.be
 # [uBlock Origin] Source: https://ublockorigin.github.io/uAssets/filters/lan-block.txt
 [uBlock Origin]
 ! Title: Block Outsider Intrusion into LAN
-! Last modified: Mon, 06 Jan 2025 13:31:16 +0000
+! Last modified: Tue, 18 Feb 2025 06:29:21 +0000
 ! Expires: 29 days
 ! Description: Prevents public internet sites from digging into your local LAN files.
 ! Requested here: https://github.com/uBlockOrigin/uAssets/issues/4318
@@ -1639,6 +1672,9 @@ $removeparam=si,domain=youtube.com|youtu.be
 !
 ! https://github.com/uBlockOrigin/uAssets/pull/24488
 @@||localhost^$websocket,domain=www.faceit.com
+
+! Clicknload https://community.brave.com/t/filecrypt-co-functionality-is-broken-when-shields-are-up/597698/
+@@||127.0.0.1^$domain=filecrypt.co
 !
 ! ——— END
 !
