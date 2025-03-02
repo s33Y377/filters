@@ -1,7 +1,7 @@
 ! Title: personal-dns
 ! Description: personal-optimized-filters
-! Version: V.2025.02.20
-! Last modified: 2025-02-20
+! Version: V.2025.03.02
+! Last modified: 2025-03-02
 ! Homepage: https://github.com/s33Y377/filters
 ! filters: ClearURLs for uBo, Block Outsider Intrusion into LANs, Block third party fonts
 !
@@ -689,7 +689,7 @@ chatgpt.com##.md\:p-4.py-2\.5.px-3.bg-opacity-10.text-sm.border.rounded-2xl.gap-
 ! Title: ClearURLs for uBo (unofficial)
 ! Homepage: https://github.com/DandelionSprout/adfilt/discussions/163
 ! Description: Want to use ClearURLs' tracking protection without installing another extension? This list is a (unofficial) version of the ClearURLs rules, designed for use in uBlock Origin and AdGuard. This ONLY includes the URL parameter removal functionality from ClearURLs, and not the other functions.
-! Last updated: 2025-02-11
+! Last updated: 2025-02-25
 ! Script last updated: 2025-2-11
 ! Expires: 1 day
 ! Licence: https://github.com/DandelionSprout/adfilt/blob/master/LICENSE.md
@@ -797,7 +797,6 @@ chatgpt.com##.md\:p-4.py-2\.5.px-3.bg-opacity-10.text-sm.border.rounded-2xl.gap-
 ||google.*^$removeparam=iflsig
 ||google.*^$removeparam=fbs
 ||google.*^$removeparam=ictx
-||google.*/search?$removeparam=sclient
 $removeparam=/^utm(_[a-z_]*)?=/
 $removeparam=/^ga_[a-z_]+=/
 $removeparam=yclid
@@ -1531,8 +1530,9 @@ $removeparam=pp,domain=youtube.com|youtu.be
 !
 # [uBlock Origin] Source: https://ublockorigin.github.io/uAssets/filters/lan-block.txt
 [uBlock Origin]
+[uBlock Origin]
 ! Title: Block Outsider Intrusion into LAN
-! Last modified: Tue, 18 Feb 2025 06:29:21 +0000
+! Last modified: Thu, 27 Feb 2025 10:53:05 +0000
 ! Expires: 29 days
 ! Description: Prevents public internet sites from digging into your local LAN files.
 ! Requested here: https://github.com/uBlockOrigin/uAssets/issues/4318
@@ -1612,6 +1612,7 @@ $removeparam=pp,domain=youtube.com|youtu.be
 ||fritz.box^$3p,domain=~localhost|~127.0.0.1|~[::1]|~0.0.0.0|~[::]|~local
 ||fritz.nas^$3p,domain=~localhost|~127.0.0.1|~[::1]|~0.0.0.0|~[::]|~local
 ||fritz.repeater^$3p,domain=~localhost|~127.0.0.1|~[::1]|~0.0.0.0|~[::]|~local
+||fritzbox.internal^$3p,domain=~localhost|~127.0.0.1|~[::1]|~0.0.0.0|~[::]|~local
 ||giga.cube^$3p,domain=~localhost|~127.0.0.1|~[::1]|~0.0.0.0|~[::]|~local
 ||hi.link^$3p,domain=~localhost|~127.0.0.1|~[::1]|~0.0.0.0|~[::]|~local
 ||hitronhub.home^$3p,domain=~localhost|~127.0.0.1|~[::1]|~0.0.0.0|~[::]|~local
@@ -1675,6 +1676,16 @@ $removeparam=pp,domain=youtube.com|youtu.be
 
 ! Clicknload https://community.brave.com/t/filecrypt-co-functionality-is-broken-when-shields-are-up/597698/
 @@||127.0.0.1^$domain=filecrypt.co
+
+! Unable to scan for hardware due to localhost https://pcsupport.lenovo.com/ https://github.com/brave/brave-browser/issues/43050
+@@||127.0.0.1^$domain=pcsupport.lenovo.com
+
+! https://studio.apollographql.com/sandbox/explorer (fixed in https://github.com/brave/adblock-lists/pull/2320)
+@@||localhost^$domain=apollographql.com
+
+! https://driverhub.asus.com/en (fixed in https://github.com/brave/adblock-lists/pull/2340)
+@@||127.0.0.1^$domain=driverhub.asus.com
+
 !
 ! ——— END
 !
