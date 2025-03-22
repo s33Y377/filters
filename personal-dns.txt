@@ -1,7 +1,7 @@
 ! Title: personal-dns
 ! Description: personal-optimized-filters
-! Version: V.2025.03.02
-! Last modified: 2025-03-02
+! Version: V.2025.03.22
+! Last modified: 2025-03-22
 ! Homepage: https://github.com/s33Y377/filters
 ! filters: ClearURLs for uBo, Block Outsider Intrusion into LANs, Block third party fonts
 !
@@ -33,6 +33,7 @@
 !
 #@@||bajajfinserv.in^
 #@@||gvt1.com^$important,app=com.android.vending
+@@||downloads.vivaldi.com/ddg/$important,app=com.vivaldi.browser
 @@||edge-chat.instagram.com^
 @@||email.mg-d0.substack.com^
 @@||github.com/uazo/cromite/$important,app=org.cromite.cromite
@@ -137,7 +138,7 @@ $removeparam=campaign
 #||startpage.com^$important
 #||yahoo.com^$important
 ||baidu.com^$important
-||yandex.*^
+||*yandex.*^
 ||yandex.ru^
 !
 !########### Block / Accept all cookies from following Domain ################
@@ -689,7 +690,7 @@ chatgpt.com##.md\:p-4.py-2\.5.px-3.bg-opacity-10.text-sm.border.rounded-2xl.gap-
 ! Title: ClearURLs for uBo (unofficial)
 ! Homepage: https://github.com/DandelionSprout/adfilt/discussions/163
 ! Description: Want to use ClearURLs' tracking protection without installing another extension? This list is a (unofficial) version of the ClearURLs rules, designed for use in uBlock Origin and AdGuard. This ONLY includes the URL parameter removal functionality from ClearURLs, and not the other functions.
-! Last updated: 2025-02-25
+! Last updated: 2025-03-14
 ! Script last updated: 2025-2-11
 ! Expires: 1 day
 ! Licence: https://github.com/DandelionSprout/adfilt/blob/master/LICENSE.md
@@ -1532,7 +1533,7 @@ $removeparam=pp,domain=youtube.com|youtu.be
 [uBlock Origin]
 [uBlock Origin]
 ! Title: Block Outsider Intrusion into LAN
-! Last modified: Thu, 27 Feb 2025 10:53:05 +0000
+! Last modified: Fri, 14 Mar 2025 10:51:23 +0000
 ! Expires: 29 days
 ! Description: Prevents public internet sites from digging into your local LAN files.
 ! Requested here: https://github.com/uBlockOrigin/uAssets/issues/4318
@@ -1630,6 +1631,7 @@ $removeparam=pp,domain=youtube.com|youtu.be
 ||plex.direct^$3p,domain=~localhost|~127.0.0.1|~[::1]|~0.0.0.0|~[::]|~local|~app.plex.tv
 ||repeater.asus.com^$3p,domain=~localhost|~127.0.0.1|~[::1]|~0.0.0.0|~[::]|~local
 ||router.asus.com^$3p,domain=~localhost|~127.0.0.1|~[::1]|~0.0.0.0|~[::]|~local
+||router.synology.com^$3p,domain=~localhost|~127.0.0.1|~[::1]|~0.0.0.0|~[::]|~local
 ||routerlogin.com^$3p,domain=~localhost|~127.0.0.1|~[::1]|~0.0.0.0|~[::]|~local
 ||routerlogin.net^$3p,domain=~localhost|~127.0.0.1|~[::1]|~0.0.0.0|~[::]|~local
 ||samsung.router^$3p,domain=~localhost|~127.0.0.1|~[::1]|~0.0.0.0|~[::]|~local
@@ -1725,7 +1727,7 @@ $removeparam=pp,domain=youtube.com|youtu.be
 ! Description: Block most third-party fonts. Allows for Material Icons and WOFF fonts in order to not break sites.
 ! Homepage: https://github.com/yokoffing/filterlists
 ! Expires: 4 days (update frequency)
-! Version: 15 January 2025
+! Version: 14 March 2025
 ! Syntax: AdBlock
 
 !!! ALLOWLIST
@@ -1733,7 +1735,7 @@ $removeparam=pp,domain=youtube.com|youtu.be
 @@||amazonaws.com^$font,3p,domain=dollartree.com|plex.tv
 @@||googleapis.com/ajax/libs/webfont/$domain=typepad.com
 @@||fast.fonts.net/jsapi/$script
-@@||fonts.googleapis.com$domain=abc.xyz|android.com|blog.google|blogger.com|browser.works|chromium.org|entertrained.app|freetaxusa.com|fmoviesz.to|gaggle.fun|google.com|googlesource.com|grow.google|groq.com|loanadministration.com|myeducator.com|nerdfonts.com|reedsy.com|reliaslearning.com|shop.flipperzero.one|socialworkers.org|googleapps.com|vocabulary.com|web.dev|youtube.com
+@@||fonts.googleapis.com$domain=abc.xyz|advancedmd.com|android.com|blog.google|blogger.com|browser.works|chromium.org|cloud.digitalocean.com|entertrained.app|freetaxusa.com|fmoviesz.to|gaggle.fun|google.com|googlesource.com|grow.google|groq.com|loanadministration.com|myeducator.com|nerdfonts.com|reedsy.com|reliaslearning.com|shop.flipperzero.one|socialworkers.org|googleapps.com|vocabulary.com|web.dev|youtube.com
 @@||fonts.gstatic.com$domain=about.google|ai.google|android.com|bloble.io|blog.google|blogger.com|cenreader.com|chrome.com|chromium.org|cloudskillsboost.google|codingfont.com|dexscreener.com|entertrained.app|google.com|domains.google|googlesource.com|grow.google|groq.com|material.io|myeducator.com|nerdfonts.com|reedsy.com|reliaslearning.com|safety.google|skills.google|socialworkers.org|toolbox.googleapps.com|vocabulary.com|web.dev|youtube.com
 @@||googleusercontent.com/static/fonts/$domain=tudocelular.com
 @@||myfonts.net$domain=myfonts.com
@@ -1759,10 +1761,12 @@ $removeparam=pp,domain=youtube.com|youtu.be
 @@/font-awesome
 @@||fontawesome.com^
 
-! Privacy-friendly drop-in replacement for Google Fonts
+! Privacy-friendly font providers
 ! [1] https://fonts.coollabs.io/
+! [2] https://github.com/yokoffing/filterlists/commit/5037ef44f4e3e55ab3bc91d9aafd56febed58519#commitcomment-153461417
 @@||cdn.coollabs.io/fonts^
 @@||api.fonts.coollabs.io^
+@@||fonts.bunny.net^
 
 !!! DENYLIST
 /cdn-cgi/pe/bag2?*googleapis.com*webfont.js
@@ -1830,8 +1834,6 @@ $removeparam=pp,domain=youtube.com|youtu.be
 !||cdnjs.cloudflare.com/ajax/libs/font-awesome^$3p
 !||fontawesome.com^$3p
 !||wp.com^*/fonts/$3p
-!
-!
 !
 !
 !
