@@ -1,7 +1,7 @@
 ! Title: personal-dns
 ! Description: personal-optimized-filters
-! Version: V.2025.03.22
-! Last modified: 2025-03-22
+! Version: V.2025.04.05
+! Last modified: 2025-04-05
 ! Homepage: https://github.com/s33Y377/filters
 ! filters: ClearURLs for uBo, Block Outsider Intrusion into LANs, Block third party fonts
 !
@@ -398,12 +398,14 @@ $cookie=/__utm[a-z]/
 ||analytics.google.com^
 ||android.apis.google.com^
 ||cdn.ampproject.org^
+||clientservices.googleapis.com^$important
 ||googleadservices*^$important
 ||googleadservices.com/pagead/^$important
 ||googleweblight.com^
 ||mail.google.com/mail/ads*^
 ||mtalk.google.com^
 ||safebrowsing.googleapis.com^
+||stats.g.doubleclick.net^$important
 !
 ######################### find my device doesn't work ####################
 !
@@ -604,6 +606,7 @@ $cookie=/__utm[a-z]/
 ||library.arcplay.ai^
 ||lightstep.medium.systems^
 ||livelogs.slike.in^
+||loanoffer*^
 ||logger.easeutility.com^
 ||maxcdn-bootstrapcdn.com^
 ||metrics.mzstatic.com^
@@ -690,7 +693,7 @@ chatgpt.com##.md\:p-4.py-2\.5.px-3.bg-opacity-10.text-sm.border.rounded-2xl.gap-
 ! Title: ClearURLs for uBo (unofficial)
 ! Homepage: https://github.com/DandelionSprout/adfilt/discussions/163
 ! Description: Want to use ClearURLs' tracking protection without installing another extension? This list is a (unofficial) version of the ClearURLs rules, designed for use in uBlock Origin and AdGuard. This ONLY includes the URL parameter removal functionality from ClearURLs, and not the other functions.
-! Last updated: 2025-03-14
+! Last updated: 2025-04-04
 ! Script last updated: 2025-2-11
 ! Expires: 1 day
 ! Licence: https://github.com/DandelionSprout/adfilt/blob/master/LICENSE.md
@@ -902,6 +905,9 @@ $removeparam=pp,domain=youtube.com|youtu.be
 ||techcrunch.com^$removeparam=ncid
 ||techcrunch.com^$removeparam=sr
 ||techcrunch.com^$removeparam=sr_share
+||techcrunch.com^$removeparam=guccounter
+||techcrunch.com^$removeparam=guce_referrer
+||techcrunch.com^$removeparam=guce_referrer_sig
 ||bing.*^$removeparam=form
 ||bing.*^$removeparam=sk
 ||bing.*^$removeparam=sp
@@ -1407,6 +1413,9 @@ $removeparam=pp,domain=youtube.com|youtu.be
 ||lazada.(com|co.th|co.id|com.my|com.ph|sg|vn)^$removeparam=pos
 ||office-partner.de^$removeparam=sPartner
 ||office-partner.de^$removeparam=campaign
+||thetimes.co.uk^$removeparam=shareToken
+||metro.co.uk^$removeparam=ito
+||forbes.com^$removeparam=sh
 @@/^https?:\/\/([a-z0-9-]+\.)*?amazon(\.[a-z]{2,}){1,}\/gp\/.*?(redirector.html|cart\/ajax-update.html|video\/api\/)/$removeparam
 @@/^https?:\/\/([a-z0-9-]+\.)*?amazon(\.[a-z]{2,}){1,}\/(hz\/reviews-render\/ajax\/|message-us\?|s\?)/$removeparam
 @@||mail.google.com/mail/u/$removeparam
@@ -1481,6 +1490,7 @@ $removeparam=pp,domain=youtube.com|youtu.be
 @@||api.bilibili.com^$removeparam
 @@||space.bilibili.com^$removeparam
 @@||marketscreener.com/search/?$removeparam
+@@||edith.xiaohongshu.com/api/sns/web/v1/user/hover_card$removeparam
 
 ! This is an allowlist added by the Adfilt maintainers
 @@||tix.axs.com^$removeparam=utm_campaign
@@ -1531,9 +1541,8 @@ $removeparam=pp,domain=youtube.com|youtu.be
 !
 # [uBlock Origin] Source: https://ublockorigin.github.io/uAssets/filters/lan-block.txt
 [uBlock Origin]
-[uBlock Origin]
 ! Title: Block Outsider Intrusion into LAN
-! Last modified: Fri, 14 Mar 2025 10:51:23 +0000
+! Last modified: Mon, 24 Mar 2025 01:46:58 +0000
 ! Expires: 29 days
 ! Description: Prevents public internet sites from digging into your local LAN files.
 ! Requested here: https://github.com/uBlockOrigin/uAssets/issues/4318
@@ -1626,6 +1635,7 @@ $removeparam=pp,domain=youtube.com|youtu.be
 ||myfritz.box^$3p,domain=~localhost|~127.0.0.1|~[::1]|~0.0.0.0|~[::]|~local
 ||mygateway^$3p,domain=~localhost|~127.0.0.1|~[::1]|~0.0.0.0|~[::]|~local
 ||mobile.hotspot^$3p,domain=~localhost|~127.0.0.1|~[::1]|~0.0.0.0|~[::]|~local
+||mwlogin.net^$3p,domain=~localhost|~127.0.0.1|~[::1]|~0.0.0.0|~[::]|~local
 ||ntt.setup^$3p,domain=~localhost|~127.0.0.1|~[::1]|~0.0.0.0|~[::]|~local
 ||pi.hole^$3p,domain=~localhost|~127.0.0.1|~[::1]|~0.0.0.0|~[::]|~local
 ||plex.direct^$3p,domain=~localhost|~127.0.0.1|~[::1]|~0.0.0.0|~[::]|~local|~app.plex.tv
@@ -1727,7 +1737,7 @@ $removeparam=pp,domain=youtube.com|youtu.be
 ! Description: Block most third-party fonts. Allows for Material Icons and WOFF fonts in order to not break sites.
 ! Homepage: https://github.com/yokoffing/filterlists
 ! Expires: 4 days (update frequency)
-! Version: 14 March 2025
+! Version: 2 April 2025
 ! Syntax: AdBlock
 
 !!! ALLOWLIST
@@ -1789,7 +1799,9 @@ $removeparam=pp,domain=youtube.com|youtu.be
 ||fonts.googleapis.com^ 
 ||fonts.gotraffic.net^$script
 ||fonts.gstatic.com^$3p
+||fonts.loox.io^$3p
 ||fonts.nymag.com^$script,3p
+||fonts.shopify.com^$3p
 ||fonts.shopifycdn.com^$3p
 ||fonts.smdg.ca^$3p
 ||fonts.staticworld.net^$3p
@@ -1810,6 +1822,9 @@ $removeparam=pp,domain=youtube.com|youtu.be
 ||netdna.bootstrapcdn.com^*/fonts/$3p
 ||qmerce.com/assets/$font
 ||rackcdn.com/fonts/$font,3p
+! square-fonts-production-f.squarecdn.com
+||squarecdn.com^$font,3p
+||stamped.io/fonts/$font,3p
 ||typefront.com^$3p
 ||typesquare.com^$font,3p
 ||use.fonticons.com^$3p
