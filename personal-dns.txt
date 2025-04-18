@@ -1,7 +1,7 @@
 ! Title: personal-dns
 ! Description: personal-optimized-filters
-! Version: V.2025.04.05
-! Last modified: 2025-04-05
+! Version: V.2025.04.18
+! Last modified: 2025-04-18
 ! Homepage: https://github.com/s33Y377/filters
 ! filters: ClearURLs for uBo, Block Outsider Intrusion into LANs, Block third party fonts
 !
@@ -109,6 +109,8 @@ $removeparam=__hstc
 $removeparam=__s
 $removeparam=_hsenc
 $removeparam=_openstat
+$removeparam=app
+$removeparam=campaign
 $removeparam=FORM
 $removeparam=hsCtaTracking
 $removeparam=mc_eid
@@ -123,7 +125,6 @@ $removeparam=s_cid
 $removeparam=vero_conv
 $removeparam=vero_id
 $removeparam=wickedid
-$removeparam=campaign
 !
 !
 ######################## Mod Blocks #############################
@@ -1737,16 +1738,16 @@ $removeparam=pp,domain=youtube.com|youtu.be
 ! Description: Block most third-party fonts. Allows for Material Icons and WOFF fonts in order to not break sites.
 ! Homepage: https://github.com/yokoffing/filterlists
 ! Expires: 4 days (update frequency)
-! Version: 2 April 2025
+! Version: 17 April 2025b
 ! Syntax: AdBlock
 
 !!! ALLOWLIST
 @@||ajax.googleapis.com/ajax/libs/webfont/$script,domain=bootsnipp.com|regexpal.com|typepad.com
 @@||amazonaws.com^$font,3p,domain=dollartree.com|plex.tv
-@@||googleapis.com/ajax/libs/webfont/$domain=typepad.com
+@@||googleapis.com/ajax/libs/webfont/$domain=presentationzen.com|typepad.com
 @@||fast.fonts.net/jsapi/$script
-@@||fonts.googleapis.com$domain=abc.xyz|advancedmd.com|android.com|blog.google|blogger.com|browser.works|chromium.org|cloud.digitalocean.com|entertrained.app|freetaxusa.com|fmoviesz.to|gaggle.fun|google.com|googlesource.com|grow.google|groq.com|loanadministration.com|myeducator.com|nerdfonts.com|reedsy.com|reliaslearning.com|shop.flipperzero.one|socialworkers.org|googleapps.com|vocabulary.com|web.dev|youtube.com
-@@||fonts.gstatic.com$domain=about.google|ai.google|android.com|bloble.io|blog.google|blogger.com|cenreader.com|chrome.com|chromium.org|cloudskillsboost.google|codingfont.com|dexscreener.com|entertrained.app|google.com|domains.google|googlesource.com|grow.google|groq.com|material.io|myeducator.com|nerdfonts.com|reedsy.com|reliaslearning.com|safety.google|skills.google|socialworkers.org|toolbox.googleapps.com|vocabulary.com|web.dev|youtube.com
+@@||fonts.googleapis.com$domain=abc.xyz|advancedmd.com|android.com|blog.google|blogger.com|browser.works|chromium.org|cloud.digitalocean.com|entertrained.app|freetaxusa.com|fmoviesz.to|gaggle.fun|google.com|googlesource.com|grow.google|groq.com|loanadministration.com|myeducator.com|nerdfonts.com|presentationzen.com|reedsy.com|reliaslearning.com|shop.flipperzero.one|socialworkers.org|googleapps.com|vocabulary.com|web.dev|youtube.com
+@@||fonts.gstatic.com$domain=about.google|ai.google|android.com|bloble.io|blog.google|blogger.com|cenreader.com|chrome.com|chromium.org|cloudskillsboost.google|codingfont.com|dexscreener.com|entertrained.app|google.com|domains.google|googlesource.com|grow.google|groq.com|material.io|myeducator.com|nerdfonts.com|reedsy.com|reliaslearning.com|safety.google|skills.google|socialworkers.org|textfx.withgoogle.com|toolbox.googleapps.com|vocabulary.com|web.dev|youtube.com|zen.­unit.ms
 @@||googleusercontent.com/static/fonts/$domain=tudocelular.com
 @@||myfonts.net$domain=myfonts.com
 @@||typekit.com$font
@@ -1772,11 +1773,14 @@ $removeparam=pp,domain=youtube.com|youtu.be
 @@||fontawesome.com^
 
 ! Privacy-friendly font providers
-! [1] https://fonts.coollabs.io/
-! [2] https://github.com/yokoffing/filterlists/commit/5037ef44f4e3e55ab3bc91d9aafd56febed58519#commitcomment-153461417
 @@||cdn.coollabs.io/fonts^
 @@||api.fonts.coollabs.io^
 @@||fonts.bunny.net^
+@@||fontlay.com^
+
+! Blocking Google Font API may prevent access to many sites
+||fonts.googleapis.com^
+||googleapis.com/ajax/libs/webfont/$3p
 
 !!! DENYLIST
 /cdn-cgi/pe/bag2?*googleapis.com*webfont.js
@@ -1789,14 +1793,13 @@ $removeparam=pp,domain=youtube.com|youtu.be
 ||disquscdn.com/next/assets/font/$3p
 ||edgefonts.net^$3p
 ||fast.fonts.com^$3p
+||font.sec.miui.com/font^$3p
 ||fonts.net$3p
 ||fontdeck.com^$3p
 ||fonts.advance.net^$3p
 ||fonts.bauernet.me^
 ||fonts.cdnfonts.com^$3p
 ||fonts.condenast.com^$script,3p
-! Blocking Google Font API may break some sites that rely on this script to load
-||fonts.googleapis.com^ 
 ||fonts.gotraffic.net^$script
 ||fonts.gstatic.com^$3p
 ||fonts.loox.io^$3p
@@ -1808,13 +1811,15 @@ $removeparam=pp,domain=youtube.com|youtu.be
 ||fonts.timeinc.net^
 ||fonts.ub-assets.com^$3p
 ||fonts.voxmedia.com^$3p
+||fonts-api.wp.com^$3p
+||fonts.wp.com^$3p
 ||gannett-cdn.com^*/fonts/$font,3p
 ||gannettdigital.com^*/fonts/$font,3p
 ||gfonts.jifo.co^
 ||google.com/swg/$font,3p
-||googleapis.com/ajax/libs/webfont/$3p
 ||googleusercontent.com/static/fonts/$3p
 ||gotraffic.net^$font
+||klaviyo.com/custom-fonts^$3p
 ||kinja-static.com/assets/fonts/$font,3p
 ||myfontastic.com^$3p
 ||myfonts.net^$3p
@@ -1849,6 +1854,4 @@ $removeparam=pp,domain=youtube.com|youtu.be
 !||cdnjs.cloudflare.com/ajax/libs/font-awesome^$3p
 !||fontawesome.com^$3p
 !||wp.com^*/fonts/$3p
-!
-!
 !
