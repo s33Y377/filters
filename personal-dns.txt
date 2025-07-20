@@ -1,7 +1,7 @@
 ! Title: personal-dns
 ! Description: personal-optimized-filters
-! Version: V.2025.06.08
-! Last modified: 2025-06-08
+! Version: V.2025.07.20
+! Last modified: 2025-07-20
 ! Homepage: https://github.com/s33Y377/filters
 ! filters: ClearURLs for uBo, Block Outsider Intrusion into LANs, Block third party fonts
 !
@@ -1544,9 +1544,8 @@ $removeparam=pp,domain=youtube.com|youtu.be
 !
 # [uBlock Origin] Source: https://ublockorigin.github.io/uAssets/filters/lan-block.txt
 [uBlock Origin]
-[uBlock Origin]
 ! Title: Block Outsider Intrusion into LAN
-! Last modified: Thu, 05 Jun 2025 10:32:30 +0000
+! Last modified: Sun, 20 Jul 2025 09:55:45 +0000
 ! Expires: 29 days
 ! Description: Prevents public internet sites from digging into your local LAN files.
 ! Requested here: https://github.com/uBlockOrigin/uAssets/issues/4318
@@ -1623,15 +1622,16 @@ $removeparam=pp,domain=youtube.com|youtu.be
 ||airport^$3p,domain=~localhost|~127.0.0.1|~[::1]|~0.0.0.0|~[::]|~local
 ||arcor.easybox^$3p,domain=~localhost|~127.0.0.1|~[::1]|~0.0.0.0|~[::]|~local
 ||aterm.me^$3p,domain=~localhost|~127.0.0.1|~[::1]|~0.0.0.0|~[::]|~local
+||belkin.range^$3p,domain=~localhost|~127.0.0.1|~[::1]|~0.0.0.0|~[::]|~local
 ||bthub.home^$3p,domain=~localhost|~127.0.0.1|~[::1]|~0.0.0.0|~[::]|~local
 ||bthomehub.home^$3p,domain=~localhost|~127.0.0.1|~[::1]|~0.0.0.0|~[::]|~local
-||cloudmesh.net^$3p,domain=~localhost|~127.0.0.1|~[::1]|~0.0.0.0|~[::]|~local
 ||congstar.box^$3p,domain=~localhost|~127.0.0.1|~[::1]|~0.0.0.0|~[::]|~local
 ||connect.box^$3p,domain=~localhost|~127.0.0.1|~[::1]|~0.0.0.0|~[::]|~local
 ||console.gl-inet.com^$3p,domain=~localhost|~127.0.0.1|~[::1]|~0.0.0.0|~[::]|~local
 ||dishy.starlink.com^$3p,domain=~localhost|~127.0.0.1|~[::1]|~0.0.0.0|~[::]|~local
 ||easy.box^$3p,domain=~localhost|~127.0.0.1|~[::1]|~0.0.0.0|~[::]|~local
 ||etxr^$3p,domain=~localhost|~127.0.0.1|~[::1]|~0.0.0.0|~[::]|~local
+||extender.belkin.com^$3p,domain=~localhost|~127.0.0.1|~[::1]|~0.0.0.0|~[::]|~local
 ||fire.walla^$3p,domain=~localhost|~127.0.0.1|~[::1]|~0.0.0.0|~[::]|~local
 ||fritz.box^$3p,domain=~localhost|~127.0.0.1|~[::1]|~0.0.0.0|~[::]|~local
 ||fritz.nas^$3p,domain=~localhost|~127.0.0.1|~[::1]|~0.0.0.0|~[::]|~local
@@ -1651,6 +1651,8 @@ $removeparam=pp,domain=youtube.com|youtu.be
 ||mobile.hotspot^$3p,domain=~localhost|~127.0.0.1|~[::1]|~0.0.0.0|~[::]|~local
 ||mwlogin.net^$3p,domain=~localhost|~127.0.0.1|~[::1]|~0.0.0.0|~[::]|~local
 ||ntt.setup^$3p,domain=~localhost|~127.0.0.1|~[::1]|~0.0.0.0|~[::]|~local
+||orbilogin.com^$3p,domain=~localhost|~127.0.0.1|~[::1]|~0.0.0.0|~[::]|~local
+||orbilogin.net^$3p,domain=~localhost|~127.0.0.1|~[::1]|~0.0.0.0|~[::]|~local
 ||pi.hole^$3p,domain=~localhost|~127.0.0.1|~[::1]|~0.0.0.0|~[::]|~local
 ||plex.direct^$3p,domain=~localhost|~127.0.0.1|~[::1]|~0.0.0.0|~[::]|~local|~app.plex.tv
 ||repeater.asus.com^$3p,domain=~localhost|~127.0.0.1|~[::1]|~0.0.0.0|~[::]|~local
@@ -1672,6 +1674,7 @@ $removeparam=pp,domain=youtube.com|youtu.be
 ||unifi.localdomain^$3p,domain=~localhost|~127.0.0.1|~[::1]|~0.0.0.0|~[::]|~local
 ||web.setup^$3p,domain=~localhost|~127.0.0.1|~[::1]|~0.0.0.0|~[::]|~local
 ||web.setup.home^$3p,domain=~localhost|~127.0.0.1|~[::1]|~0.0.0.0|~[::]|~local
+||www.wyzerouter.com^$3p,domain=~localhost|~127.0.0.1|~[::1]|~0.0.0.0|~[::]|~local
 !
 ! ——— EXCEPTIONS
 !
@@ -1712,6 +1715,12 @@ $removeparam=pp,domain=youtube.com|youtu.be
 ! https://driverhub.asus.com/en (fixed in https://github.com/brave/adblock-lists/pull/2340)
 @@||127.0.0.1^$domain=driverhub.asus.com
 
+! https://www.reddit.com/r/uBlockOrigin/comments/1lb0bwo/ubol_ruleset_migration/
+@@||127.0.0.1^$domain=bancobrasil.com.br
+@@||127.0.0.1^$domain=bb.com.br
+@@||127.0.0.1^$domain=bradesco.com.br
+@@||127.0.0.1^$domain=dell.com
+
 !
 ! ——— END
 !
@@ -1751,7 +1760,7 @@ $removeparam=pp,domain=youtube.com|youtu.be
 ! Description: Block most third-party fonts. Allows for Material Icons and WOFF fonts in order to not break sites.
 ! Homepage: https://github.com/yokoffing/filterlists
 ! Expires: 4 days (update frequency)
-! Version: 3 June 2025
+! Version: 9 June 2025
 ! Syntax: AdBlock
 
 !!! ALLOWLIST
@@ -1760,7 +1769,7 @@ $removeparam=pp,domain=youtube.com|youtu.be
 @@||googleapis.com/ajax/libs/webfont/$domain=presentationzen.com|typepad.com
 @@||fast.fonts.net/jsapi/$script
 @@||fonts.googleapis.com$domain=abc.xyz|advancedmd.com|android.com|blog.google|blogger.com|browser.works|chromium.org|cloud.digitalocean.com|entertrained.app|freetaxusa.com|fmoviesz.to|gaggle.fun|google.com|googlesource.com|grow.google|groq.com|loanadministration.com|myeducator.com|nerdfonts.com|presentationzen.com|reedsy.com|reliaslearning.com|riverside.fm|shop.flipperzero.one|socialworkers.org|googleapps.com|vocabulary.com|web.dev|youtube.com
-@@||fonts.gstatic.com$domain=about.google|ai.google|android.com|bloble.io|blog.google|blogger.com|cenreader.com|chrome.com|chromium.org|cloudskillsboost.google|codingfont.com|dexscreener.com|entertrained.app|domains.google|googlesource.com|grow.google|groq.com|material.io|myeducator.com|nerdfonts.com|reedsy.com|reliaslearning.com|safety.google|skills.google|socialworkers.org|textfx.withgoogle.com|toolbox.googleapps.com|vocabulary.com|web.dev|youtube.com|unit.ms|docs.google.com|sheets.google.com|slides.google.com|forms.google.com
+@@||fonts.gstatic.com$domain=about.google|ai.google|android.com|bloble.io|blog.google|blogger.com|cenreader.com|chrome.com|chromium.org|cloudskillsboost.google|codingfont.com|dexscreener.com|entertrained.app|domains.google|googlesource.com|grow.google|groq.com|material.io|myeducator.com|nerdfonts.com|reedsy.com|reliaslearning.com|safety.google|skills.google|socialworkers.org|textfx.withgoogle.com|toolbox.googleapps.com|vocabulary.com|web.dev|youtube.com|unit.ms|docs.google.com|sheets.google.com|slides.google.com|forms.google.com|myaccount.google.com|ogs.google.com|play.google.com
 @@||googleusercontent.com/static/fonts/$domain=tudocelular.com
 @@||myfonts.net$domain=myfonts.com
 @@||typekit.com$font
