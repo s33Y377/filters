@@ -1,7 +1,7 @@
 ! Title: personal-dns
 ! Description: personal-optimized-filters
-! Version: V.2025.07.20
-! Last modified: 2025-07-20
+! Version: V.2025.07.31
+! Last modified: 2025-07-31
 ! Homepage: https://github.com/s33Y377/filters
 ! filters: ClearURLs for uBo, Block Outsider Intrusion into LANs, Block third party fonts
 !
@@ -25,6 +25,10 @@
 ||*.tw^$important
 !
 !
+###################### Network BLockings #####################################
+!
+*:5222$network,app=org.telegram.plus
+!
 ###################### App BLockings #####################################
 !
 ||spotify.com^$important,app=com.samsung.android.honeyboard
@@ -38,12 +42,14 @@
 @@||email.mg-d0.substack.com^
 @@||github.com/uazo/cromite/$important,app=org.cromite.cromite
 @@||m.recipes.timesofindia.com^$important
+@@||m2mediagroup.com^
 @@||oneassist.in^
 @@||snowflake.com^$domain=snowflake.com,important
 @@||spclient.wg.spotify.com^$app=com.spotify.lite,important
 @@||spclient.wg.spotify.com^$app=com.spotify.music,important
 @@||tradepub.com^$important # Blocked by 1 host pro domain
 @@||video-downloads.googleusercontent.com^$domain=video-downloads.googleusercontent.com,important,app=idm.internet.download.manager.plus
+@@||video-nss.xhpingcdn.com^$domain=xhamster.com,important,app=idm.internet.download.manager.plus
 !
 !###################### kik app Domain #############################
 !
@@ -389,6 +395,7 @@ $cookie=/__utm[a-z]/
 @@||ajax.googleapis.com^
 @@||fonts.gstatic.com^$domain=fonts.googleapis.com,important
 @@||inbox.google.com/sync/
+@@||playmoviesdfe-pa.googleapis.com^
 @@||s.youtube.com^$important
 @@||youtube-ui.l.google.com^
 ||*crashlytics.com
@@ -403,10 +410,16 @@ $cookie=/__utm[a-z]/
 ||googleadservices*^$important
 ||googleadservices.com/pagead/^$important
 ||googleweblight.com^
+||history.google.com^
+||inputtools.googleapis.com^
 ||mail.google.com/mail/ads*^
+||meetings.googleapis.com^$important
 ||mtalk.google.com^
+||restrictedapps-pa.googleapis.com^$important,app=com.google.android.gsf
 ||safebrowsing.googleapis.com^
 ||stats.g.doubleclick.net^$important
+||sync.googleapis.com^
+||update.googleapis.com^
 !
 ######################### find my device doesn't work ####################
 !
@@ -539,12 +552,22 @@ $cookie=/__utm[a-z]/
 ||juspay.in^$important,app=com.mxtech.videoplayer.pro
 ||mxshorts.akamaized.net^
 !
+!
+############ Truecaller #################
+!
+||comments-noneu.truecaller.com^
+||messenger-noneu.truecaller.com^
+||presence-grpc-noneu.truecaller.com^
+||survey-noneu.truecaller.com^
+||messenger-noneu.truecaller.com^$app=com.truecaller
+||survey-noneu.truecaller.com^$app=com.truecaller
+||*.gamedva.*^$important,app=com.truecaller
+!
 ############ User Filters #################
 !
 #||trafficmanager.net^
-@@||playmoviesdfe-pa.googleapis.com^
-||*allawnos.com^
 ||*.ngrok.io^
+||*allawnos.com^
 ||*appspot.com^$important
 ||*dbankcloud.*^
 ||*flurry.com^$important
@@ -592,6 +615,7 @@ $cookie=/__utm[a-z]/
 ||facebook.com^$3p
 ||fairchildlive.com^
 ||fastclick.com^
+||gamifyspace.com^$important
 ||gjapplog.ucweb.com^
 ||helpshift.com^
 ||img.vidmatefilm.org^
