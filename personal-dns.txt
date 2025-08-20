@@ -1,7 +1,7 @@
 ! Title: personal-dns
 ! Description: personal-optimized-filters
-! Version: V.2025.08.04
-! Last modified: 2025-08-04
+! Version: V.2025.08.20
+! Last modified: 2025-08-20
 ! Homepage: https://github.com/s33Y377/filters
 ! filters: ClearURLs for uBo, Block Outsider Intrusion into LANs, Block third party fonts
 !
@@ -144,18 +144,18 @@ $removeparam=wickedid
 #||duckduckgo.com^$important
 #||startpage.com^$important
 #||yahoo.com^$important
-||baidu.com^$important
 ||*yandex.*^
+||baidu.com^$important
 ||yandex.ru^
 !
 !########### Block / Accept all cookies from following Domain ################
 !
+#||medium.com^$cookie
 $cookie=/__utm[a-z]/
 ||baidu.com^$cookie
 ||facebook.com^$cookie
 ||imgur.com^$cookie
 ||instagram.com^$cookie
-#||medium.com^$cookie
 ||meta.com^$cookie
 ||towardsdatascience.com^cookie
 ||zeenews.*^$cookie
@@ -184,10 +184,18 @@ $cookie=/__utm[a-z]/
 !
 !########## Brave #########
 !
+#||brave-core-ext.s3.brave.com^
+||*ping.brave.com
 ||ads-serve.brave.com^
-||brave-core-ext.s3.brave.com^
+||ads.brave.com
+||ads‑static.brave.com^
+||analytics.brave.com^
+||bsg.brave.com^
 ||etoro.com^
+||location.brave.com^
 ||p3a.brave.com^
+||referrals.brave.com^
+||rewards.brave.com^
 ||safebrowsing.brave.com^
 ||variations.brave.com^
 !
@@ -1574,7 +1582,7 @@ $removeparam=pp,domain=youtube.com|youtu.be
 ! Description: Block most third-party fonts. Allows for Material Icons and WOFF fonts in order to not break sites.
 ! Homepage: https://github.com/yokoffing/filterlists
 ! Expires: 4 days (update frequency)
-! Version: 9 June 2025
+! Version: 13 August 2025
 ! Syntax: AdBlock
 
 !!! ALLOWLIST
@@ -1583,7 +1591,7 @@ $removeparam=pp,domain=youtube.com|youtu.be
 @@||googleapis.com/ajax/libs/webfont/$domain=presentationzen.com|typepad.com
 @@||fast.fonts.net/jsapi/$script
 @@||fonts.googleapis.com$domain=abc.xyz|advancedmd.com|android.com|blog.google|blogger.com|browser.works|chromium.org|cloud.digitalocean.com|entertrained.app|freetaxusa.com|fmoviesz.to|gaggle.fun|google.com|googlesource.com|grow.google|groq.com|loanadministration.com|myeducator.com|nerdfonts.com|presentationzen.com|reedsy.com|reliaslearning.com|riverside.fm|shop.flipperzero.one|socialworkers.org|googleapps.com|vocabulary.com|web.dev|youtube.com
-@@||fonts.gstatic.com$domain=about.google|ai.google|android.com|bloble.io|blog.google|blogger.com|cenreader.com|chrome.com|chromium.org|cloudskillsboost.google|codingfont.com|dexscreener.com|entertrained.app|domains.google|googlesource.com|grow.google|groq.com|material.io|myeducator.com|nerdfonts.com|reedsy.com|reliaslearning.com|safety.google|skills.google|socialworkers.org|textfx.withgoogle.com|toolbox.googleapps.com|vocabulary.com|web.dev|youtube.com|unit.ms|docs.google.com|sheets.google.com|slides.google.com|forms.google.com|myaccount.google.com|ogs.google.com|play.google.com
+@@||fonts.gstatic.com$domain=about.google|ai.google|android.com|bloble.io|blog.google|blogger.com|cenreader.com|chrome.com|chromium.org|cloudskillsboost.google|codingfont.com|dexscreener.com|entertrained.app|domains.google|google.*|googlesource.com|grow.google|groq.com|material.io|myeducator.com|nerdfonts.com|reedsy.com|reliaslearning.com|safety.google|skills.google|socialworkers.org|textfx.withgoogle.com|toolbox.googleapps.com|vocabulary.com|web.dev|youtube.com|unit.ms|docs.google.com|sheets.google.com|slides.google.com|forms.google.com|myaccount.google.com|ogs.google.com|play.google.com
 @@||googleusercontent.com/static/fonts/$domain=tudocelular.com
 @@||myfonts.net$domain=myfonts.com
 @@||typekit.com$font
@@ -1692,4 +1700,5 @@ $removeparam=pp,domain=youtube.com|youtu.be
 !||cdnjs.cloudflare.com/ajax/libs/font-awesome^$3p
 !||fontawesome.com^$3p
 !||wp.com^*/fonts/$3p
+
 
