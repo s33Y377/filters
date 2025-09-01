@@ -1,7 +1,7 @@
 ! Title: personal-dns
 ! Description: personal-optimized-filters
-! Version: V.2025.08.22
-! Last modified: 2025-08-22
+! Version: V.2025.09.02
+! Last modified: 2025-09-02
 ! Homepage: https://github.com/s33Y377/filters
 ! filters: ClearURLs for uBo, Block Outsider Intrusion into LANs, Block third party fonts
 !
@@ -214,13 +214,13 @@ $cookie=/__utm[a-z]/
 !
 ####### Twitch ############
 !
-||ext-twitch.tv
-||jtvnw.net
-||ttvnw.net
-||twitch.map.fastly.net
-||twitch.tv^
-||twitchcdn.net
-||twitchsvc.net
+#||ext-twitch.tv
+#||jtvnw.net
+#||ttvnw.net
+#||twitch.map.fastly.net
+#||twitch.tv^
+#||twitchcdn.net
+#||twitchsvc.net
 !
 !
 ####### Tinder ############
