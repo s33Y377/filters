@@ -1,7 +1,7 @@
 ! Title: personal-dns
 ! Description: personal-optimized-filters
-! Version: V.2025.09.02
-! Last modified: 2025-09-02
+! Version: V.2025.09.16
+! Last modified: 2025-09-16
 ! Homepage: https://github.com/s33Y377/filters
 ! filters: ClearURLs for uBo, Block Outsider Intrusion into LANs, Block third party fonts
 !
@@ -407,12 +407,46 @@ $cookie=/__utm[a-z]/
 !
 ############ Mobile Brands Domain ########################
 !
+#||*heytapdl.com^
+#||*heytapmobile.com^
 #||*oneplus.*^
-||*heytapdl.com^
-||*heytapmobile.com^
-||*oppomobile.com^
-||allawnos.com^
-||analytics.oneplus.cn^
+#||*oppomobile.com^
+#||allawnos.com^
+||a.heytapmobile.*
+||account.heytapmobile.*
+||ad.allawnos.*
+||ad.oppo.*
+||ads.heytap.*
+||ads.heytapmobile.*
+||ads.oppo.*
+||adse.xtest.heytap.*
+||adx.allawnos.*
+||adx.oppo.com
+||analytics.oneplus.*
+||analytics.oppo.*
+||browser.oppo.*
+||bugly.qq.*
+||crash.oppo.*
+||crashlytics.oppo.*
+||data.allawnos.*
+||data.heytapmobile.*
+||data.oppo.*
+||exception.oppo.*
+||game.heytapmobile.*
+||log.heytap.*
+||log.heytapmobile.*
+||log.oppo.*
+||log.ysdk.qq.*
+||metrics.oppo.*
+||pay.oppo.*
+||promotion.oppo.*
+||push.allawnos.*
+||push.heytapmobile.*
+||push.oppo.com
+||stats.oppomobile.*
+||theme.oppo.*
+||tracking.oppomobile.*
+||uads.oppo.*
 !
 # https://raw.githubusercontent.com/nextdns/native-tracking-domains/main/domains/xiaomi
 !
