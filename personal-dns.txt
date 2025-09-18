@@ -1,7 +1,7 @@
 ! Title: personal-dns
 ! Description: personal-optimized-filters
-! Version: V.2025.09.16
-! Last modified: 2025-09-16
+! Version: V.2025.09.18
+! Last modified: 2025-09-18
 ! Homepage: https://github.com/s33Y377/filters
 ! filters: ClearURLs for uBo, Block Outsider Intrusion into LANs, Block third party fonts
 !
@@ -412,6 +412,9 @@ $cookie=/__utm[a-z]/
 #||*oneplus.*^
 #||*oppomobile.com^
 #||allawnos.com^
+||*ads-in.heytapmobile.*
+||*ads.heytapmobile.*
+||*ads.oppomobile.*
 ||a.heytapmobile.*
 ||account.heytapmobile.*
 ||ad.allawnos.*
@@ -420,6 +423,7 @@ $cookie=/__utm[a-z]/
 ||ads.heytapmobile.*
 ||ads.oppo.*
 ||adse.xtest.heytap.*
+||adsfs.oppomobile.*
 ||adx.allawnos.*
 ||adx.oppo.com
 ||analytics.oneplus.*
@@ -447,6 +451,7 @@ $cookie=/__utm[a-z]/
 ||theme.oppo.*
 ||tracking.oppomobile.*
 ||uads.oppo.*
+||wallpaper-service-in.allownos.*
 !
 # https://raw.githubusercontent.com/nextdns/native-tracking-domains/main/domains/xiaomi
 !
