@@ -1,7 +1,7 @@
 ! Title: personal-dns
 ! Description: personal-optimized-filters
-! Version: V.2025.09.18
-! Last modified: 2025-09-18
+! Version: V.2025.09.25
+! Last modified: 2025-09-25
 ! Homepage: https://github.com/s33Y377/filters
 ! filters: ClearURLs for uBo, Block Outsider Intrusion into LANs, Block third party fonts
 !
@@ -27,7 +27,7 @@
 !
 ###################### Network BLockings #####################################
 !
-*:5222$network,app=org.telegram.plus
+!
 !
 ###################### App BLockings #####################################
 !
@@ -294,7 +294,7 @@ $cookie=/__utm[a-z]/
 ||sdk.privacy-center.*
 ||v.fwmrm.net^
 !
-!#########Ads & Analytics Domains#################
+!######### Ads & Analytics Domains #################
 !
 ||*.adserver.snapads.*
 ||*analytics.yahoo.com^$important
@@ -563,7 +563,6 @@ $cookie=/__utm[a-z]/
 !
 #||trafficmanager.net^
 ||*.ngrok.io^
-||*allawnos.com^
 ||*appspot.com^$important
 ||*dbankcloud.*^
 ||*flurry.com^$important
