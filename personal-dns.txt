@@ -1,7 +1,7 @@
 ! Title: personal-dns
 ! Description: personal-optimized-filters
-! Version: V.2025.10.21
-! Last modified: 2025-10-21
+! Version: V.2025.11.16
+! Last modified: 2025-11-16
 ! Homepage: https://github.com/s33Y377/filters
 ! filters: ClearURLs for uBo, Block Outsider Intrusion into LANs, Block third party fonts
 !
@@ -50,6 +50,7 @@
 @@||tradepub.com^$important # Blocked by 1 host pro domain
 @@||video-downloads.googleusercontent.com^$domain=video-downloads.googleusercontent.com,important,app=idm.internet.download.manager.plus
 @@||video-nss.xhpingcdn.com^$domain=xhamster.com,important,app=idm.internet.download.manager.plus
+@@||manhuagold.top^$important,app=org.koitharu.kotatsu
 !
 !###################### kik app Domain #############################
 !
@@ -80,6 +81,7 @@ $removeparam=uclick_id # Uber engineering
 $removeparam=utm_*
 ||9gag.com^$document,removeparam=ref
 ||learnopencv.^$document,removeparam=ck_subscriber_id
+||xnxx.com^$important,removeparam
 !
 !
 ######################## Mod Blocks #############################
@@ -334,7 +336,9 @@ $cookie=/__utm[a-z]/
 #||republicworld.com^
 #||tv9.com^
 #||zee5.com^
+||indiatoday.in^$important,removeparam
 ||inshorts.*^
+||ndtv.com^$important,removeparam
 !
 ########## Google Domains ###########
 !
@@ -363,6 +367,7 @@ $cookie=/__utm[a-z]/
 ||analytics.google.com^
 ||android.apis.google.com^
 ||cdn.ampproject.org^
+||chromesyncpasswords-pa.googleapis.com^
 ||clientservices.googleapis.com^$important
 ||googleadservices*^$important
 ||googleadservices.com/pagead/^$important
@@ -553,13 +558,14 @@ $cookie=/__utm[a-z]/
 !
 ############ Truecaller #################
 !
+||*.gamedva.*^$important,app=com.truecaller
 ||comments-noneu.truecaller.com^
+||contact-lists-noneu.truecaller.com^$important,app=com.truecaller
 ||messenger-noneu.truecaller.com^
+||messenger-noneu.truecaller.com^$app=com.truecaller
 ||presence-grpc-noneu.truecaller.com^
 ||survey-noneu.truecaller.com^
-||messenger-noneu.truecaller.com^$app=com.truecaller
 ||survey-noneu.truecaller.com^$app=com.truecaller
-||*.gamedva.*^$important,app=com.truecaller
 !
 ############ User Filters #################
 !
@@ -570,6 +576,7 @@ $cookie=/__utm[a-z]/
 ||*flurry.com^$important
 ||*megastatics.com^$important
 ||*sonos.com
+||192.168.0.1^$important,app=com.cs.cinemain
 ||a.opmnstr.com^
 ||aaid.umeng.com^
 ||adsdk.yandex.ru^
@@ -590,6 +597,7 @@ $cookie=/__utm[a-z]/
 ||boaphaps.net^
 ||branch.io^
 ||browser.sentry-cdn.com^
+||btcpay.priorato.org^
 ||catbeardx.com^
 ||cdn.branch.io^
 ||cdn.optimizely.com^
@@ -601,6 +609,7 @@ $cookie=/__utm[a-z]/
 ||d2r1yp2w7bby2u.cloudfront.net^
 ||d33wubrfki0l68.cloudfront.net^
 ||d3jaymjyiads5d.cloudfront.net^
+||datasec-kmsex-fr.heytapmobile.com^
 ||deadline.com^
 ||disqus.com^
 ||e.crashlytics.com^
@@ -612,6 +621,7 @@ $cookie=/__utm[a-z]/
 ||facebook.com^$3p
 ||fairchildlive.com^
 ||fastclick.com^
+||feature-api.palmplaystore.com^
 ||gamifyspace.com^$important
 ||gjapplog.ucweb.com^
 ||helpshift.com^
@@ -622,6 +632,7 @@ $cookie=/__utm[a-z]/
 ||indusos.com^
 ||insight.ucweb.com^
 ||install2view.com^
+||ip2location.io^$important,app=com.anilab.android
 ||ipv4only.arpa^
 ||j2apps.s.llnwi.net^
 ||kriply.com^
@@ -636,6 +647,7 @@ $cookie=/__utm[a-z]/
 ||mixpanel.com^
 ||mosite.in^
 ||myaccount.pmc.com^
+||nacdn.novelhubapp.com^
 ||notify.bugsnag.com^
 ||ohrdsplu.com^
 ||onetrust.com^
