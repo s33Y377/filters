@@ -1,7 +1,7 @@
 ! Title: personal-dns
 ! Description: personal-optimized-filters
-! Version: V.2025.11.16
-! Last modified: 2025-11-16
+! Version: V.2025.11.27
+! Last modified: 2025-11-27
 ! Homepage: https://github.com/s33Y377/filters
 ! filters: ClearURLs for uBo, Block Outsider Intrusion into LANs, Block third party fonts
 !
@@ -149,6 +149,45 @@ $cookie=/__utm[a-z]/
 ||rewards.brave.com^
 ||safebrowsing.brave.com^
 ||variations.brave.com^
+!
+!
+!
+!
+!########## Search Engine #########
+!! Disable "Anonymous local results"
+search.brave.com##+js(set-cookie, useLocation, 0)
+!
+!! Disable "Answer with AI"
+#search.brave.com##+js(set-cookie, summarizer, 0)
+!
+!! Disable Safe Search
+search.brave.com##+js(set-cookie, safesearch, off)
+!
+!! Open links in new tab
+search.brave.com##+js(set-cookie, olnt, 1)
+!
+!! Search in all regions
+#search.brave.com##+js(set-cookie, country, all)
+!
+!
+!
+!! Disable AI Search Assist
+#duckduckgo.com##+js(set-cookie, be, 0)
+!
+!! Disable Duck.ai links/nags/promotions
+#duckduckgo.com##+js(set-cookie, bg, -1)
+!
+!! Disable Safe Search
+duckduckgo.com##+js(set-cookie, p, -2)
+!
+!! Disable use of location for nearby results
+duckduckgo.com##+js(set-cookie, at, -1)
+!
+!! Hide AI-generated images
+duckduckgo.com##+js(set-cookie, bj, 1)
+!
+!! Open Links in a New Tab
+duckduckgo.com##+js(set-cookie, n, 1)
 !
 !########## Vimeo #########
 !
