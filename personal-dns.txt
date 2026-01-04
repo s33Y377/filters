@@ -50,8 +50,8 @@
 @@||spclient.wg.spotify.com^$app=com.spotify.music,important
 @@||tradepub.com^$important # Blocked by 1 host pro domain
 @@||video-downloads.googleusercontent.com^$domain=video-downloads.googleusercontent.com,important,app=idm.internet.download.manager.plus
-@@||video-nss.xhpingcdn.com^$domain=xhamster.com,important,app=com.vivaldi.browser
-@@||video-nss.xhpingcdn.com^$domain=xhamster.com,important,app=idm.internet.download.manager.plus
+@@||*.xhpingcdn.com^$domain=xhamster.com,important,app=com.vivaldi.browser
+@@||*.xhpingcdn.com^$domain=xhamster.com,important,app=idm.internet.download.manager.plus
 !
 !###################### kik app Domain #############################
 !
