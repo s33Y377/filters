@@ -51,7 +51,7 @@
 @@||tradepub.com^$important # Blocked by 1 host pro domain
 @@||video-downloads.googleusercontent.com^$domain=video-downloads.googleusercontent.com,important,app=idm.internet.download.manager.plus
 #@@||*.xhpingcdn.com^$domain=xhamster.com,important,app=com.vivaldi.browser
-@@||video-nss.xhpingcdn.com^$domain=xhamster.com,important,app=idm.internet.download.manager.plus
+#@@||video-nss.xhpingcdn.com^$domain=xhamster.com,important,app=idm.internet.download.manager.plus
 !
 !###################### kik app Domain #############################
 !
@@ -82,7 +82,7 @@ $removeparam=uclick_id # Uber engineering
 $removeparam=utm_*
 ||9gag.com^$document,removeparam=ref
 ||learnopencv.^$document,removeparam=ck_subscriber_id
-||xnxx.com^$important,removeparam
+#||xnxx.com^$important,removeparam
 !
 !
 ######################## Mod Blocks #############################
@@ -732,49 +732,6 @@ chatgpt.com##.md\:p-4.py-2\.5.px-3.bg-opacity-10.text-sm.border.rounded-2xl.gap-
 !
 ! 29-Nov-2024 https://data-flair.training
 ||data-flair.training/blogs/wp-content/uploads/sites/*$image
-!
-!
-!
-!
-!
-!
-!
-!
-!
-!
-!
-!
-!
-!
-!
-!
-!
-!
-!
-!
-!
-!
-!
-!
-!
-!
-!
-!
-!
-!
-!
-!
-!
-!
-!
-!
-!
-!
-!
-!
-!
-!
-!
 !
 !
 !
