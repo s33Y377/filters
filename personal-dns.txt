@@ -1,7 +1,7 @@
 ! Title: personal-dns
 ! Description: personal-optimized-filters
-! Version: V.2026.01.10
-! Last modified: 2026-01-10
+! Version: V.2026.01.24
+! Last modified: 2026-01-24
 ! Homepage: https://github.com/s33Y377/filters
 ! filters: ClearURLs for uBo, Block Outsider Intrusion into LANs, Block third party fonts
 !
@@ -407,8 +407,10 @@ duckduckgo.com##+js(set-cookie, n, 1)
 ||analytics.google.com^
 ||android.apis.google.com^
 ||cdn.ampproject.org^
+||chromekanonymityauth-pa.googleapis.com^
 ||chromesyncentities-pa.googleapis.com^
 ||chromesyncpasswords-pa.googleapis.com^
+||chromeorigintrials-pa.googleapis.com^
 ||clientservices.googleapis.com^$important
 ||googleadservices*^$important
 ||googleadservices.com/pagead/^$important
