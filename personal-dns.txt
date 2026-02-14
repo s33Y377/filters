@@ -1,7 +1,7 @@
 ! Title: personal-dns
 ! Description: personal-optimized-filters
-! Version: V.2026.02.11
-! Last modified: 2026-02-11
+! Version: V.2026.02.14
+! Last modified: 2026-02-14
 ! Homepage: https://github.com/s33Y377/filters
 ! filters: ClearURLs for uBo, Block Outsider Intrusion into LANs, Block third party fonts
 !
@@ -19,7 +19,7 @@
 ||*.br^$important
 ||*.cf^$important
 ||*.cn^$important
-||*.fun^$important
+#||*.fun^$important
 ||*.ir^$important
 ||*.th^$important
 ||*.tw^$important
@@ -35,10 +35,12 @@
 !
 !###################### WishListed Domain on app/domain #############################
 !
+#@@||*.xhpingcdn.com^$domain=xhamster.com,important,app=com.vivaldi.browser
 #@@||bajajfinserv.in^
 #@@||gvt1.com^$important,app=com.android.vending
-@@||druid.apache.org^
+#@@||video-nss.xhpingcdn.com^$domain=xhamster.com,important,app=idm.internet.download.manager.plus
 @@||downloads.vivaldi.com/ddg/$important,app=com.vivaldi.browser
+@@||druid.apache.org^
 @@||edge-chat.instagram.com^
 @@||email.mg-d0.substack.com^
 @@||github.com/uazo/cromite/$important,app=org.cromite.cromite
@@ -51,8 +53,6 @@
 @@||spclient.wg.spotify.com^$app=com.spotify.music,important
 @@||tradepub.com^$important # Blocked by 1 host pro domain
 @@||video-downloads.googleusercontent.com^$domain=video-downloads.googleusercontent.com,important,app=idm.internet.download.manager.plus
-#@@||*.xhpingcdn.com^$domain=xhamster.com,important,app=com.vivaldi.browser
-#@@||video-nss.xhpingcdn.com^$domain=xhamster.com,important,app=idm.internet.download.manager.plus
 !
 !###################### kik app Domain #############################
 !
@@ -68,6 +68,7 @@
 !
 !########### $removeparam Tracking Parameters ##########################
 !
+#||xnxx.com^$important,removeparam
 $removeparam=/utm_.*/
 $removeparam=_f
 $removeparam=cexp_id
@@ -82,9 +83,8 @@ $removeparam=uc_param_str
 $removeparam=uclick_id # Uber engineering
 $removeparam=utm_*
 ||9gag.com^$document,removeparam=ref
-||learnopencv.^$document,removeparam=ck_subscriber_id
-#||xnxx.com^$important,removeparam
 ||instagram.com^$removeparam=igsh
+||learnopencv.^$document,removeparam=ck_subscriber_id
 !
 !
 ######################## Mod Blocks #############################
@@ -97,9 +97,9 @@ $removeparam=utm_*
 #||bing.com^
 #||duckduckgo.com^$important
 #||startpage.com^$important
-#||yahoo.com^$important
 ||*yandex.*^
 ||baidu.com^$important
+||yahoo.com^$important
 ||yandex.ru^
 !
 !########### Block / Accept all cookies from following Domain ################
