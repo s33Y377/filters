@@ -1,7 +1,7 @@
 ! Title: personal-dns
 ! Description: personal-optimized-filters
-! Version: V.2026.04.30
-! Last modified: 2026-04-30
+! Version: V.2026.05.23
+! Last modified: 2026-05-23
 ! Homepage: https://github.com/s33Y377/filters
 ! filters: Basic filters
 !
@@ -362,7 +362,7 @@ duckduckgo.com##+js(set-cookie, n, 1)
 !
 ######## Annoying Content #########
 !
-||linktr.ee*
+#||linktr.ee*
 ||onlyfans.com^
 ||skimresources.^
 ||unlockd.me^
@@ -375,13 +375,14 @@ duckduckgo.com##+js(set-cookie, n, 1)
 #||indianexpress.com^
 #||indiatvnews.com^
 #||loksatta.com^
-#||ndtv.com^
 #||republicworld.com^
-#||tv9.com^
-#||zee5.com^
+www.tribuneindia.com##.read-bw-article
 ||indiatoday.in^$important,removeparam
 ||inshorts.*^
 ||ndtv.com^$important,removeparam
+||ndtv.com^$important,removeparam
+||tv9.com^
+||zee5.com^
 !
 ########## Google Domains ###########
 !
