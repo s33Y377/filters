@@ -1,7 +1,7 @@
 ! Title: personal-dns
 ! Description: personal-optimized-filters
-! Version: V.2026.08.09
-! Last modified: 2026-08-09
+! Version: V.2026.08.16
+! Last modified: 2026-08-16
 ! Homepage: https://github.com/s33Y377/filters
 ! filters: Basic filters
 !
@@ -35,7 +35,7 @@
 !
 !###################### WishListed Domain on app/domain #############################
 !
-#@@||*.xhpingcdn.com^$domain=xhamster.com,important,app=com.vivaldi.browser
+#@@||*.xhpingcdn.com^$domain=xhamster.com,important
 #@@||bajajfinserv.in^
 #@@||gvt1.com^$important,app=com.android.vending
 #@@||video-nss.xhpingcdn.com^$domain=xhamster.com,important,app=idm.internet.download.manager.plus
@@ -54,6 +54,7 @@
 @@||tradepub.com^$important # Blocked by 1 host pro domain
 @@||ublockdns.com
 @@||video-downloads.googleusercontent.com^$domain=video-downloads.googleusercontent.com,important,app=idm.internet.download.manager.plus
+@@||www.sbicard.com^
 !
 !###################### kik app Domain #############################
 !
@@ -340,6 +341,10 @@ duckduckgo.com##+js(set-cookie, n, 1)
 !
 !######### Ads & Analytics Domains #################
 !
+*/ads.js
+*/advertisement.js
+*/analytics.js
+*/pagead.js
 ||*.adserver.snapads.*
 ||*analytics.yahoo.com^$important
 ||adconfig.wynk.*
@@ -358,7 +363,6 @@ duckduckgo.com##+js(set-cookie, n, 1)
 ||metric.mzstatic.*^
 ||widgets.pinterest.com^
 ||yt.moatads.*^
-*/ads.js
 !
 ######## Annoying Content #########
 !
@@ -379,7 +383,6 @@ duckduckgo.com##+js(set-cookie, n, 1)
 www.tribuneindia.com##.read-bw-article
 ||indiatoday.in^$important,removeparam
 ||inshorts.*^
-||ndtv.com^$important,removeparam
 ||ndtv.com^$important,removeparam
 ||tv9.com^
 ||zee5.com^
@@ -412,9 +415,9 @@ www.tribuneindia.com##.read-bw-article
 ||android.apis.google.com^
 ||cdn.ampproject.org^
 ||chromekanonymityauth-pa.googleapis.com^
+||chromeorigintrials-pa.googleapis.com^
 ||chromesyncentities-pa.googleapis.com^
 ||chromesyncpasswords-pa.googleapis.com^
-||chromeorigintrials-pa.googleapis.com^
 ||clientservices.googleapis.com^$important
 ||googleadservices*^$important
 ||googleadservices.com/pagead/^$important
@@ -641,6 +644,7 @@ www.tribuneindia.com##.read-bw-article
 ||bgr.com^
 ||bifrost-api.hotstar.com^
 ||blog.disqus.com^
+||bnc.lt^
 ||boaphaps.net^
 ||branch.io^
 ||browser.sentry-cdn.com^
@@ -652,6 +656,7 @@ www.tribuneindia.com##.read-bw-article
 ||clarity.ms^$important # Clarity is a analytics tool that show how users are interacting with your website through session replays and heatmaps.
 ||clientstream.launchdarkly.com^
 ||connect.in^ # redirect sites to official pages
+||ctsmnfx.com^
 ||d1y3vfophxf7ip.cloudfront.net^
 ||d2r1yp2w7bby2u.cloudfront.net^
 ||d33wubrfki0l68.cloudfront.net^
@@ -695,6 +700,7 @@ www.tribuneindia.com##.read-bw-article
 ||mosite.in^
 ||myaccount.pmc.com^
 ||nacdn.novelhubapp.com^
+||ngfts.lge.com^
 ||notify.bugsnag.com^
 ||ohrdsplu.com^
 ||onetrust.com^
@@ -707,6 +713,7 @@ www.tribuneindia.com##.read-bw-article
 ||reports.crashlytics.com^
 ||rhxdsplm.com^
 ||robbreport.com^
+||rudderstack.com^
 ||s.glance-cdn.net^
 ||s.skimresources.com^
 ||s0.wp.com^
@@ -718,8 +725,10 @@ www.tribuneindia.com##.read-bw-article
 ||sockjs-us2.pusher.com^
 ||sockjs-us2.pusher.com^$important
 ||sourcingjournal.com^
+||spa.sportslivetoday.com^
 ||spy.com^
 ||st-win.qureka.com^
+||static.klaviyo.com^
 ||talentjobs.mailspear.com^
 ||track.clickonik.com^
 ||track.saygames.io^
