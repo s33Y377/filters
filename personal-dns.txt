@@ -1,7 +1,7 @@
 ! Title: personal-dns
 ! Description: personal-optimized-filters
-! Version: V.2026.08.16
-! Last modified: 2026-08-16
+! Version: V.2026.08.27
+! Last modified: 2026-08-27
 ! Homepage: https://github.com/s33Y377/filters
 ! filters: Basic filters
 !
@@ -350,6 +350,7 @@ duckduckgo.com##+js(set-cookie, n, 1)
 ||adconfig.wynk.*
 ||ads.phonepe.com^
 ||ads.reddit.com^$important
+redditstatic.com/ads
 ||ads.tiktok.com^$important
 ||ads.yap.yahoo.com^
 ||adserver.snapads.*
@@ -619,6 +620,10 @@ www.tribuneindia.com##.read-bw-article
 ############ User Filters #################
 !
 #||trafficmanager.net^
+||ads.soundcloud.com^
+||ads.deezer.com^
+||adsserver.megaphone.fm^
+||ads.iheart.com^
 ||*.ngrok.io^
 ||*appspot.com^$important
 ||*dbankcloud.*^
