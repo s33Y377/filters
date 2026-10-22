@@ -1,7 +1,7 @@
 ! Title: personal-dns
 ! Description: personal-optimized-filters
-! Version: V.2026.08.27
-! Last modified: 2026-08-27
+! Version: V.2026.10.22
+! Last modified: 2026-10-22
 ! Homepage: https://github.com/s33Y377/filters
 ! filters: Basic filters
 !
@@ -188,6 +188,10 @@ duckduckgo.com##+js(set-cookie, at, -1)
 duckduckgo.com##+js(set-cookie, bj, 1)
 !! Open Links in a New Tab
 duckduckgo.com##+js(set-cookie, n, 1)
+!
+!
+# sxyprn site
+sxyprn.com##+js(set-cookie, aavvcc, 1)
 !
 !
 !########## Vimeo #########
