@@ -1,7 +1,7 @@
 ! Title: personal-dns
 ! Description: personal-optimized-filters
-! Version: V.2026.10.22
-! Last modified: 2026-10-22
+! Version: V.2026.11.15
+! Last modified: 2026-11-15
 ! Homepage: https://github.com/s33Y377/filters
 ! filters: Basic filters
 !
@@ -390,7 +390,7 @@ www.tribuneindia.com##.read-bw-article
 ||inshorts.*^
 ||ndtv.com^$important,removeparam
 ||tv9.com^
-||zee5.com^
+#||zee5.com^
 !
 ########## Google Domains ###########
 !
